@@ -1,0 +1,5 @@
+name: "Exsetecon"
+description: "Exsetecon web services"
+baseurl: "/"
+markdown: rdiscount
+permalink: pretty

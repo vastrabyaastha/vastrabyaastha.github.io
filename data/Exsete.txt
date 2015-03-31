@@ -1,0 +1,24 @@
+Homepage:
+
+Exsete Consulting Ltd. (century Gothic, 30pt,#333366)
+Home (Century gothic, bold, #ff3333, 12 pt)
+Contact (century gothic, regular, 12 pt, #000000) 
+Freidae, Daku, Nukad Naatak- 24 pt century gothic bold color #ffffff
+
+Rectanle W-537 px h: 59 px at the bottom of each section color #ffffff, opacity 55%.
+Image courtesy of - OPen Sans regular 10 pt color #ffffff
+Rohit Sant - OPen Sans Bold 12 pt #ffffff
+
+Connect page:
+Bg color -#66ccff opacity 64%
+Email ID, Subject, Category & Content- Aller LIght 14 pt, #000000
+Email, Subject and category rectangle:304 px W 44 px h, opacity 72%, color - #ffffff
+Content rectangle-w 304 px h 118 px color #ffffff
+
+© 2015 by Exsete Consulting Pvt. Ltd. -at the bottom centre, centiry gothic regular , 9 pt, #000000
+
+Drop us a message- 24 pt Century gothic regular, #ffffff
+
+Exsete Consulting Pvt. Ltd.22/139 A, Vikram Vihar Lajpat Nagar IV.New Delhi-110024Tel: +91 11 4109 7988connect@exsete.com 
+
+- Century c=gothic regular 18pt (name and mail ID -#333366)
