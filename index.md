@@ -2,14 +2,18 @@
 layout: default_home
 title: Exsete Home Page
 ---
-<div class="row">
-    <div class="col-sm-4">
-        <img id="home_iphone" src="/data/img/section%201.png" alt="phone">
+<div class="row top-pad">
+    <div class="col-sm-4 pad-l-0 pad">
+    <a href="http://www.freidae.com/">
+        <img class="sec-img" id="home_iphone" src="/data/img/section%201.png" alt="Freidae">
+    </a>
     </div>
     <div class="col-sm-4">
-        <img id="home_iphone" src="/data/img/section%202.png" alt="phone">
+    <img class="sec-img" id="home_iphone" src="/data/img/Section%202.png" alt="Nukkad Natak">
     </div>
     <div class="col-sm-4">
-        <img id="home_iphone" src="/data/img/section%203.png" alt="phone">
+    <a href="http://www.daku.net.in/">
+        <img class="sec-img" id="home_iphone" src="/data/img/section%203.png" alt="Daku">
+    </a>
     </div>
 </div>
