@@ -1,0 +1,17 @@
+$('document').ready(function(){
+    $("#sec1").hover(function(){
+        $("#sec2,#sec3").css("opacity","0.4");
+    },function(){
+        $("#sec2,#sec3").css("opacity","1");
+    });
+    $("#sec2").hover(function(){
+        $("#sec1,#sec3").css("opacity","0.4");
+    },function(){
+        $("#sec1,#sec3").css("opacity","1");
+    });
+    $("#sec3").hover(function(){
+        $("#sec2,#sec1").css("opacity","0.4");
+    },function(){
+        $("#sec2,#sec1").css("opacity","1");
+    });
+});

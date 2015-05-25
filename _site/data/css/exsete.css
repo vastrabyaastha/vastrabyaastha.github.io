@@ -1,7 +1,6 @@
-
 .sec-img {
+    height: 580px;
     width: 107%;
-    height: 740px;
 }
 
 .pad-l-0 {
@@ -10,4 +9,58 @@
 
 .top-pad {
     padding-top: 51px;
+}
+
+#top_nav_div {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+#navbar-logo {
+    margin-top: -2%;
+    width: 15%;
+}
+.navbar-default {
+    background-color: #FFFFFF;
+    height: 70px;
+}
+
+.Navbar-title-font {
+    color: #333366!important;
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+    padding-bottom: 0px;
+    padding-top: 14px;
+    width: 110%;
+}
+
+.navbar-top-list {
+    margin-top: 1%;
+      width: 16%;
+}
+
+.navbar-top-li {
+    border-top: 3px solid black;
+    margin-right: 10%;
+}
+.navbar-top-li:hover{
+    border-top-color: crimson;
+}
+
+#top_nav_ul {
+    width: 100%;
+}
+
+.navbar-li-a {
+    font-family: 'Muli', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000000!important;
+}
+.navbar-li-a:hover {
+    color: crimson!important;
+}
+
+.padtopfrfixednav {
+    padding-top: 19px;
 }
