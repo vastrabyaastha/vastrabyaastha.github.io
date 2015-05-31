@@ -162,7 +162,7 @@
 }
 
 .cont-bottom-txt {
-      margin-top: 75px;
+      margin-top: 40px;
       width: auto;
       text-align: center;
       font-family: 'Century Gothic';
@@ -176,4 +176,8 @@
 
 #myNavbar {
     min-width: 191px;
+}
+
+.margin-top {
+    margin-top: 45px
 }

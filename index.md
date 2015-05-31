@@ -24,7 +24,7 @@ title: Exsete Home Page
 <div class="container-fluid bakgrnd-con">
     <a name="contact"></a>
     <h3 class="heading-con">Drop Us A Message</h3>
-    <div class="row">
+    <div class="row margin-top">
         <div class="col-sm-6">
             <form role="form" method="POST"  id="form_reach_us" >
                 <div class="form-group">
@@ -56,8 +56,8 @@ title: Exsete Home Page
                 22/139 A, Vikram Vihar<br> 
                 Lajpat Nagar IV.<br>
                 New Delhi-110024<br>
-                Tel: +91 11 4109 7988<br>
-                <span class="cont-font-col">connect@exsete.com</span> <br>
+                <span class="glyphicon glyphicon-phone-alt"></span>  Tel: +91 11 4109 7988<br>
+                <span class="cont-font-col"><span class="glyphicon glyphicon-envelope"></span>  connect@exsete.com</span> <br>
             </p>
         </div>
     </div>
