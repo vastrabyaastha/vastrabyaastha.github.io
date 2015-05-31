@@ -1,16 +1,16 @@
 $('document').ready(function(){
     $("#sec1").hover(function(){
-        $("#sec2,#sec3").css("opacity","0.4");
+        $("#sec2,#sec3").css("opacity","0.7");
     },function(){
         $("#sec2,#sec3").css("opacity","1");
     });
     $("#sec2").hover(function(){
-        $("#sec1,#sec3").css("opacity","0.4");
+        $("#sec1,#sec3").css("opacity","0.7");
     },function(){
         $("#sec1,#sec3").css("opacity","1");
     });
     $("#sec3").hover(function(){
-        $("#sec2,#sec1").css("opacity","0.4");
+        $("#sec2,#sec1").css("opacity","0.7");
     },function(){
         $("#sec2,#sec1").css("opacity","1");
     });

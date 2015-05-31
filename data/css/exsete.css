@@ -1,6 +1,6 @@
 .sec-img {
-    height: 580px;
-    width: 107%;
+    height: 586px;
+    width: 115%;
 }
 
 .pad-l-0 {
@@ -8,7 +8,7 @@
 }
 
 .top-pad {
-    padding-top: 51px;
+    padding-top: 62px;
 }
 
 #top_nav_div {
@@ -23,12 +23,17 @@
 .navbar-default {
     background-color: #FFFFFF;
     height: 70px;
+    box-shadow: 0px 2px 15px black;
 }
 
 .Navbar-title-font {
     color: #333366!important;
-    font-family: 'Muli', sans-serif;
     font-size: 30px;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 35.2000007629395px;
     padding-bottom: 0px;
     padding-top: 14px;
     width: 110%;
@@ -61,6 +66,103 @@
     color: crimson!important;
 }
 
-.padtopfrfixednav {
+.pad-t-15-lr-0 {
     padding-top: 19px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.mar-l-12 {
+    margin-left: 12%;
+}
+
+.pad-0 {
+    padding: 0px;
+}
+
+.mar-r-12 {
+    margin-right: 12%;
+}
+
+.grey-col {
+    background-color: darkgrey;
+}
+
+.heading-con {
+    text-align: center;
+    font-family: 'Century Gothic';
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 35.2000007629395px;
+    color: #ffffff;
+}
+
+.bakgrnd-con {
+    background-color: rgba(102,204,255,0.64);
+}
+
+.margin-lr-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.form-control {
+      width: 60%!important;
+  background-color: rgba(255, 255, 255, .72)!important;
+  border-radius: 14px!important;
+  text-align: center;
+  font-size: 19px!important;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 304px;
+  height: 50px!important;
+}
+
+#btn-submit {
+      background: #89ccdd;
+      border-radius: 14px;
+      box-shadow: 5px 4px 12px #2E3838;
+      height: 34px;
+      margin-left: auto!important;
+      margin-right: auto!important;
+      width: 100%;
+      font-size: 16px;
+    }
+
+.btn-div {
+      width: 23%;
+      min-width: 145px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+#content {
+    height: auto!important;
+}
+
+.p-details {
+      margin-top: 10%;
+      margin-left: 19%;
+      text-align: justify;
+      font-size: 20px;
+      font-family: 'Century Gothic';
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 35.2000007629395px;
+}
+
+.cont-font-col {
+    color: #333366;
+}
+
+.cont-bottom-txt {
+      margin-top: 75px;
+      width: auto;
+      text-align: center;
+      font-family: 'Century Gothic';
+      font-size: 12px;
 }
