@@ -109,16 +109,18 @@
 }
 
 .form-control {
-      width: 60%!important;
-  background-color: rgba(255, 255, 255, .72)!important;
-  border-radius: 14px!important;
-  text-align: center;
-  font-size: 19px!important;
-  margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 304px;
-  height: 50px!important;
+    width: 60%!important;
+    background-color: rgba(255, 255, 255, .72)!important;
+    border-radius: 14px!important;
+    text-align: center;
+    font-family: 'Century Gothic';
+    color: #000000;
+    font-size: 19px!important;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 304px;
+    height: 50px!important;
 }
 
 #btn-submit {
@@ -165,4 +167,14 @@
       text-align: center;
       font-family: 'Century Gothic';
       font-size: 12px;
+}
+
+#sel1 {
+    padding-left: 37%;
+    padding-right: 23%;
+    height: 56px;
+}
+
+#myNavbar {
+    min-width: 191px;
 }
