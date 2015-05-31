@@ -181,3 +181,8 @@
 .margin-top {
     margin-top: 45px
 }
+
+#sec1,#sec2,#sec3{
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
