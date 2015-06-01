@@ -28,10 +28,10 @@ title: Exsete Home Page
         <div class="col-sm-6">
             <form role="form" method="POST"  id="form_reach_us" >
                 <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required autofocus>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="subject" required >
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="subject" required/>
                 </div>
                 <div class="form-group">
                     <select class="form-control" id="sel1" name="category">
