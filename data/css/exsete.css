@@ -23,7 +23,6 @@
 .navbar-default {
     background-color: #FFFFFF;
     height: 70px;
-    box-shadow: 0px 2px 15px black;
 }
 
 .Navbar-title-font {
@@ -106,6 +105,10 @@
 .margin-lr-0 {
     margin-left: 0px;
     margin-right: 0px;
+    overflow: hidden;
+    max-height: 650px;
+    padding-top: 0px;
+    height: auto;
 }
 
 .form-control {
@@ -132,6 +135,7 @@
       margin-right: auto!important;
       width: 100%;
       font-size: 16px;
+      margin-top: 9px
     }
 
 .btn-div {
@@ -146,7 +150,7 @@
 }
 
 .p-details {
-      margin-top: 10%;
+      margin-top: 0%;
       margin-left: 19%;
       text-align: justify;
       font-size: 20px;
@@ -162,7 +166,7 @@
 }
 
 .cont-bottom-txt {
-      margin-top: 40px;
+      margin-top: 116px;
       width: auto;
       text-align: center;
       font-family: 'Century Gothic';
@@ -179,10 +183,14 @@
 }
 
 .margin-top {
-    margin-top: 45px
+    margin-top: 100px
 }
 
 #sec1,#sec2,#sec3{
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
+}
+.backgrnd-img-hm {
+    padding-top: 41px;
+    width: 110%;
 }
