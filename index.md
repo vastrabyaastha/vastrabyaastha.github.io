@@ -3,7 +3,7 @@ layout: default_home
 title: Exsete Home Page
 ---
 <!--home page-->
-<div class="row top-pad grey-col margin-lr-0">
+<div class="row top-pad grey-col margin-lr-0" id="home-page">
     <!--
         <div class="col-sm-3 pad-0 mar-l-12" id="sec1">
             <a href="http://www.freidae.com/">
