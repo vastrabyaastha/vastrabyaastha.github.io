@@ -1,17 +1,17 @@
 $('document').ready(function(){
-    $("#sec1").hover(function(){
-        $("#sec2,#sec3").css("opacity","0.8");
+    $("#section-1").hover(function(){
+        $("#section-2,#section-3").css("background-color","rgba(136,136,136,0.7)");
     },function(){
-        $("#sec2,#sec3").css("opacity","1");
+        $("#section-2,#section-3").css("background-color","rgba(0,0,0,0)");
     });
-    $("#sec2").hover(function(){
-        $("#sec1,#sec3").css("opacity","0.8");
+    $("#section-2").hover(function(){
+        $("#section-1,#section-3").css("background-color","rgba(136,136,136,0.7)");
     },function(){
-        $("#sec1,#sec3").css("opacity","1");
+        $("#section-1,#section-3").css("background-color","rgba(0,0,0,0)");
     });
-    $("#sec3").hover(function(){
-        $("#sec2,#sec1").css("opacity","0.8");
+    $("#section-3").hover(function(){
+        $("#section-2,#section-1").css("background-color","rgba(136,136,136,0.7)");
     },function(){
-        $("#sec2,#sec1").css("opacity","1");
+        $("#section-2,#section-1").css("background-color","rgba(0,0,0,0)");
     });
 });
