@@ -1,16 +1,16 @@
 $('document').ready(function(){
     $("#section-1").hover(function(){
-        $("#section-2,#section-3").css("background-color","rgba(136,136,136,0.7)");
+        $("#section-2,#section-3").css("background-color","rgba(255,255,255,0.55)");
     },function(){
         $("#section-2,#section-3").css("background-color","rgba(0,0,0,0)");
     });
     $("#section-2").hover(function(){
-        $("#section-1,#section-3").css("background-color","rgba(136,136,136,0.7)");
+        $("#section-1,#section-3").css("background-color","rgba(255,255,255,0.55)");
     },function(){
         $("#section-1,#section-3").css("background-color","rgba(0,0,0,0)");
     });
     $("#section-3").hover(function(){
-        $("#section-2,#section-1").css("background-color","rgba(136,136,136,0.7)");
+        $("#section-2,#section-1").css("background-color","rgba(255,255,255,0.55)");
     },function(){
         $("#section-2,#section-1").css("background-color","rgba(0,0,0,0)");
     });
