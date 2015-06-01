@@ -165,8 +165,8 @@
 }
 
 .cont-bottom-txt {
-    margin-top: 12%;
-      width: auto;
+      width: 98%;
+      position: absolute;
       text-align: center;
       font-family: 'Century Gothic';
       font-size: 12px;
@@ -178,7 +178,7 @@
 }
 
 #myNavbar {
-    min-width: 192px;
+    min-width: 210px;
 }
 
 .margin-top {
@@ -186,6 +186,10 @@
 }
 
 #section-1,#section-2,#section-3{
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+#section-sub-1,#section-sub-2,#section-sub-3{
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
 }
@@ -243,4 +247,12 @@
 #section-3 {
     margin-left: 66%;
     width: 34%;
+}
+
+.text-details {
+    display: none;
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    text-align: justify;
 }

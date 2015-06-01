@@ -28,6 +28,10 @@ title: Exsete Home Page
             <span class="text-home">
                 Freidae
             </span>
+            <br/>
+            <span class="text-details">
+            lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor
+            </span>
             <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
         </div>
     </div></a>
@@ -39,6 +43,10 @@ title: Exsete Home Page
             <span class="text-home">
             Nukkad Naatak
             </span>
+            <br/>
+            <span class="text-details">
+            lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor
+            </span>
             <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
         </div>
     </div>
@@ -49,6 +57,10 @@ title: Exsete Home Page
         <div class="sec-1 div-box-bck" id="section-sub-3">
             <span class="text-home">
             Daku
+            </span>
+            <br/>
+            <span class="text-details">
+            lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor
             </span>
             <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
         </div>
