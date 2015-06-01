@@ -194,3 +194,60 @@
     padding-top: 41px;
     width: 110%;
 }
+
+.section-div {
+    margin-top: -74%;
+    height: 600px;
+    width: 33%;
+}
+
+.div-box-bck {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 59px;
+    padding-left: 20%;
+    padding-top: 10px;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.55);
+}
+
+.text-home {
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divider-div {
+    height: 599px;
+  margin-top: -74%;
+  width: 1%;
+  padding: 0px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+
+
+
+
+#section-2 {
+    margin-left: 33%;  
+}
+
+
+
+#divider-div-1 {
+    margin-left: 33%;
+}
+
+#divider-div-2 {
+    margin-left: 66%;
+}
+
+#section-3 {
+    margin-left: 66%;
+    width: 34%;
+}
