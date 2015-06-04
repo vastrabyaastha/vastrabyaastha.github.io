@@ -41,8 +41,6 @@ title: Exsete Home Page
     <a href="http://www.daku.net.in">
         <div class="col-sm-3 section-div"id="section-3">
         <div class="courtesy-div">
-            <span class="courtesy-sml">Image courtesy of</span>
-            <span class="courtesy-big"> Rohit Sant</span>
         </div>
         <div class="sec-1 div-box-bck" id="section-sub-3">
             <span class="text-home">
@@ -90,6 +88,9 @@ title: Exsete Home Page
     </div>
     <br>
     <p class="cont-bottom-txt">
-    © 2015 by Exsete Consulting Pvt. Ltd.
+        © 2015 by Exsete Consulting Pvt. Ltd.
+        <a href="http://www.rohitsant.com">
+            <span class="courtesy-sml"> Image courtesy of Rohit Sant</span>
+        </a>
     </p>
 </div>
