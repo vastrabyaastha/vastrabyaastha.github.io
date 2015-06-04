@@ -21,9 +21,11 @@ $('document').ready(function(){
         $("#section-2,#section-1").css("background-color","rgba(255,255,255,0.55)");
         $("#section-3 .text-details").fadeIn();
         $("#section-sub-3").css("height","200px");
+        $('.courtesy-div').css("bottom","34%")
     },function(){
         $("#section-2,#section-1").css("background-color","rgba(0,0,0,0)");
         $("#section-3 .text-details").fadeOut();
         $("#section-sub-3").css("height","59px");
+        $('.courtesy-div').css("bottom","10%")
     });
 });

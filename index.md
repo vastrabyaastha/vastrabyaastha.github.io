@@ -4,89 +4,82 @@ title: Exsete Home Page
 ---
 <!--home page-->
 <div class="row top-pad grey-col margin-lr-0" id="home-page">
-    <!--
-        <div class="col-sm-3 pad-0 mar-l-12" id="sec1">
-            <a href="http://www.freidae.com/">
-                <img class="sec-img img-responsive" id="sec1" src="/data/img/section%201.png" alt="Freidae">
-            </a>
-        </div>
-        <div class="col-sm-3 pad-0" id="sec2">
-            <a href="http://www.nukkadnaatak.com">
-                <img class="sec-img img-responsive" id="sec2" src="/data/img/Section%202.png" alt="Nukkad Natak">
-            </a>
-        </div>
-        <div class="col-sm-3 pad-0 mar-r-12" id="sec3">
-            <a href="http://www.daku.net.in/">
-                <img class="sec-img img-responsive" id="sec3" src="/data/img/section%203.png" alt="Daku">
-            </a>
-        </div>
-    -->
     <img src="data/img/background.jpg" alt="background" id="background-img" class="img-responsive backgrnd-img-hm"/>
     <!--section1-->
-    <a href="http://www.freidae.com"><div class="col-sm-3 section-div" id="section-1">
-        <div class="sec-1 div-box-bck" id="section-sub-1">
-            <span class="text-home">
-                Freidae
-            </span>
-            <br/>
-            <span class="text-details">
-            lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor
-            </span>
-            <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
+    <a href="http://www.freidae.com">
+        <div class="col-sm-3 section-div" id="section-1">
+            <div class="sec-1 div-box-bck" id="section-sub-1">
+                <span class="text-home">
+                    Freidae
+                </span>
+                <br/>
+                <span class="text-details">
+                Your personal Man Friday. Lets you focus on things you love, while taking care of the routine jobs
+                </span>
+                <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
+            </div>
         </div>
-    </div></a>
-    <div class="col-sm-1 divider-div" id="divider-div-1">
-    </div>
+    </a>
+    <div class="col-sm-1 divider-div" id="divider-div-1"></div>
     <!--section2-->
-    <div class="col-sm-3 section-div"id="section-2">
+    <a href="http://www.nukkadnaatak.com">
+        <div class="col-sm-3 section-div"id="section-2">
         <div class="sec-1 div-box-bck" id="section-sub-2">
             <span class="text-home">
             Nukkad Naatak
             </span>
             <br/>
             <span class="text-details">
-            lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor
+            Share everyday joys with the world. Live stream your talent, experience and fun.  
             </span>
             <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
         </div>
     </div>
-    <div class="col-sm-1 divider-div" id="divider-div-2">
-    </div>
+    </a>
+    <div class="col-sm-1 divider-div" id="divider-div-2"></div>
     <!--section3-->
-    <div class="col-sm-3 section-div"id="section-3">
+    <a href="http://www.daku.net.in">
+        <div class="col-sm-3 section-div"id="section-3">
+        <div class="courtesy-div">
+            <span class="courtesy-sml">Image courtesy of</span>
+            <span class="courtesy-big"> Rohit Sant</span>
+        </div>
         <div class="sec-1 div-box-bck" id="section-sub-3">
             <span class="text-home">
             Daku
             </span>
             <br/>
             <span class="text-details">
-            lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor
+            Get notice and reach out to your audience with our digital marketing services
             </span>
             <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
         </div>
     </div>
+    </a>
 </div>
 <!--contact page-->
 <div class="container-fluid bakgrnd-con" id="contact-page-div">
     <a name="contact"></a>
     <h3 class="heading-con">Drop Us A Message</h3>
     <div class="row margin-top">
-        <div class="col-sm-6">
+        <div class="col-sm-6" id="form-div">
             <form role="form" method="POST"  id="form_reach_us" >
                 <div class="form-group">
                     <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required/>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" id="content" placeholder="Content" name="content" required ></textarea>
+                    <textarea class="form-control" rows="5" id="content" placeholder="Comment" name="comment" required ></textarea>
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><p style="text-align: center;">Submit</p></button>
                 </div>
             </form>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" id="contact-detail-div">
             <p class="p-details">
-                <span class="cont-font-col">Exsete Consulting Pvt. Ltd.</span><br><br>
+                <span class="cont-font-col">
+                    Exsete Consulting Pvt. Ltd.
+                </span><br><br>
                 22/139 A, Vikram Vihar<br> 
                 Lajpat Nagar IV.<br>
                 New Delhi-110024<br>
