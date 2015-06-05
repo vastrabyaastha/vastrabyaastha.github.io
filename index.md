@@ -56,6 +56,16 @@ title: Exsete Home Page
     </a>
 </div>
 <!--contact page-->
+<script>
+    contactForm();
+</script>
+<div id="overlay">
+    <div id="popup">
+        <h4 id="sndg-msg-rchus">Sending Message<br></h4>
+        <img src="/data/img/reach_us/ajax-loader.gif" id="loading-indicator-rchus" >
+        <div id="reachus_message" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again." data-success="Message successfully sent!"></div>
+    </div>
+</div>
 <div class="container-fluid bakgrnd-con" id="contact-page-div">
     <a name="contact"></a>
     <h3 class="heading-con">Drop Us A Message</h3>
@@ -66,7 +76,7 @@ title: Exsete Home Page
                     <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required/>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" id="content" placeholder="Comment" name="comment" required ></textarea>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" required ></textarea>
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><p style="text-align: center;">Submit</p></button>
