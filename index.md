@@ -56,13 +56,10 @@ title: Exsete Home Page
     </a>
 </div>
 <!--contact page-->
-<script>
-    contactForm();
-</script>
 <div id="overlay">
     <div id="popup">
         <h4 id="sndg-msg-rchus">Sending Message<br></h4>
-        <img src="/data/img/reach_us/ajax-loader.gif" id="loading-indicator-rchus" >
+        <img src="/data/img/ajax-loader.GIF" id="loading-indicator-rchus" >
         <div id="reachus_message" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again." data-success="Message successfully sent!"></div>
     </div>
 </div>

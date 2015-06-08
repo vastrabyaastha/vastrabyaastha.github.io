@@ -1,5 +1,5 @@
 function contactForm() {
-    var contactFormHost = 'https://reachus-exsete.herokuapp.com',
+    var contactFormHost = 'http://reachus-exsete.herokuapp.com',
         form = $('#form_reach_us'),
         notice = $('#reachus_message');
 
@@ -30,3 +30,12 @@ function contactForm() {
     }
     return false;
 }
+$('document').ready(function(){
+    $("#btn-submit").click(function(){
+        $("#overlay, #popup").fadeIn();
+        return contactForm();
+    });
+    $(document).ajaxComplete(function(event, request, settings) {
+        $('#popup,#overlay').fadeOut(6000);
+    });
+});
