@@ -48,7 +48,7 @@ title: Exsete Home Page
             </span>
             <br/>
             <span class="text-details">
-            Get notice and reach out to your audience with our digital marketing services
+            Get noticed and reach out to your audience with our digital marketing services
             </span>
             <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
         </div>
