@@ -84,7 +84,7 @@ title: Exsete Home Page
             <p class="p-details">
                 <span class="cont-font-col">
                     Exsete Consulting Pvt. Ltd.
-                </span><br><br>
+                </span><br class="hide-mobile"><br>
                 22/139 A, Vikram Vihar<br> 
                 Lajpat Nagar IV.<br>
                 New Delhi-110024<br>
@@ -95,7 +95,7 @@ title: Exsete Home Page
     </div>
     <br>
     <p class="cont-bottom-txt">
-        © 2015 by Exsete Consulting Pvt. Ltd.
+        © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display">
         <a href="http://www.rohitsant.com">
             <span class="courtesy-sml"> Image courtesy of Rohit Sant</span>
         </a>

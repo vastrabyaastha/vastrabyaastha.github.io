@@ -200,7 +200,7 @@ a{
 }
 .backgrnd-img-hm {
     padding-top: 41px;
-    width: 110%;
+    width: 100%;
 }
 
 .section-div {
@@ -294,42 +294,6 @@ a{
     background: linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0.35)); /*Standard*/
 }
 
-@media (max-width: 768px)
-{
-    .navbar-top-list{
-        background-color: white;
-        height: 97px;
-        border-top: white;
-        margin-top: -38px;
-    }
-    .navbar-top-li{
-        width: 113%;
-    }
-    .navbar-brand{
-        padding-left: 0px;
-    }
-    #navbar-logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navbar-default{
-        height: 98px;
-    }
-    .navbar-logo-text{
-        margin-left: auto;
-        margin-right: auto;
-        width: 97%;
-        display: block;
-    }
-    .navbar-toggle{
-        margin-top: 17%;
-    }
-}
-.courtesy-sml {
-    color: initial;
-}
-
 #overlay {
     background-color: rgba(0, 0, 0, .7);
     bottom: 0;
@@ -375,4 +339,96 @@ a{
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     word-wrap: break-word
+}
+
+.courtesy-sml {
+    color: initial;
+}
+
+.mobile-display {
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+    .navbar-top-list{
+        background-color: white;
+        height: 97px;
+        border-top: white;
+        margin-top: -8px;
+    }
+    .navbar-top-li{
+        width: 113%;
+    }
+    .navbar-brand{
+        width: 82%;
+        padding-left: 2%;
+        padding-top: 3%;
+    }
+    #navbar-logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar-default{
+        height: 61px;
+    }
+    .navbar-logo-text{
+        padding-left: 4%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 97%;
+    }
+    .navbar-toggle{
+        margin-top: 4%;
+    }
+    #top_nav_div{
+        height: 61px;
+    }
+    .navbar-header{
+        width: 107%;
+        height: 61px;
+    }
+    .section-div{
+        display: block;
+        width: 100%;
+        height: 102px;
+        margin-top: 0%;
+    }
+    .div-box-bck{
+        height: 102px;
+    }
+    #section-2{
+        margin-top: -99%;
+        margin-left: 0%;
+    }
+    #section-3{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -96%;
+    }
+    .heading-con{
+        margin-top: 2%;
+    }
+    .margin-top{
+        margin-top: 4%;
+    }
+    .p-details{
+        margin-left: auto;
+        margin-top: -2%;
+        text-align: center;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .mobile-display{
+        display: block;
+    }
+    .cont-bottom-txt{
+        margin-bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    .divider-div{
+        visibility: hidden;
+    }
 }
