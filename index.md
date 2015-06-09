@@ -4,7 +4,7 @@ title: Exsete Home Page
 ---
 <!--home page-->
 <div class="row top-pad grey-col margin-lr-0" id="home-page">
-    <img src="data/img/background.jpg" alt="background" id="background-img" class="img-responsive backgrnd-img-hm"/>
+    <img src="data/img/background.png" alt="background" id="background-img" class="img-responsive backgrnd-img-hm"/>
     <!--section1-->
     <a href="http://www.freidae.com">
         <div class="col-sm-3 section-div" id="section-1">
