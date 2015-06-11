@@ -28,7 +28,7 @@ $('document').ready(function(){
         $("#section-3 .text-details").fadeOut();
         $("#section-sub-3").css("height","59px");
     });
-    if($(window).width()<768){
+    if($(window).width()<=768){
         $("#section-1").hover(function(){
             $("#section-1").css("height","200px");
         },function(){
