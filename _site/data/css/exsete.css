@@ -266,15 +266,7 @@ a{
     text-align: justify;
 }
 
-.courtesy-div {
-    position: absolute;
-    bottom: 10%;
-    color: #fff;
-    text-align: right;
-    width: 92%;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-}
+
 
 
 
@@ -368,6 +360,8 @@ a{
     #navbar-logo{
         margin-left: auto;
         margin-right: auto;
+        width: 20%;
+        margin-top: -1%;
     }
     .navbar-default{
         height: 61px;
@@ -430,5 +424,8 @@ a{
     }
     .divider-div{
         visibility: hidden;
+    }
+    #section-2,#section-3{
+        position: absolute;
     }
 }
