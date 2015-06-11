@@ -6,7 +6,7 @@ var divHeight=(winheight-$("#background-img").height()-$("#top_nav_div").height(
 $(document).ready(function(){
     $('#home-page').css('max-height',winheight-17 + 'px');
     //for mobile site
-    if($(window).width()<768){
+    if($(window).width()<=768){
         $('#home-page').css('height',winheight-17 + 'px');
         $("#section-1,#section-2,#section-3,#section-sub-1,#section-sub-2,#section-sub-3").css("height",divHeight);
         $("#section-2").css("bottom",divHeight);
