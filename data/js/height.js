@@ -9,6 +9,7 @@ $(document).ready(function(){
     if($(window).width()<=768){
         $('#home-page').css('height',winheight-17 + 'px');
         $("#section-1,#section-2,#section-3,#section-sub-1,#section-sub-2,#section-sub-3").css("height",divHeight);
+        $("#section-1").css("bottom",(2*divHeight)+1);
         $("#section-2").css("bottom",divHeight);
         $("#section-3").css("bottom","0");
     }

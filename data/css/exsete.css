@@ -105,6 +105,10 @@ a{
 
 .bakgrnd-con {
     background-color: rgba(102,204,255,0.64);
+    background: -webkit-linear-gradient(bottom,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Fx 3.6-15*/
+    background: linear-gradient(to top,rgba(102,204,255,0), rgba(102,204,255,0.9)); /*Standard*/
 }
 
 .margin-lr-0 {
@@ -204,9 +208,10 @@ a{
 }
 
 .section-div {
-    margin-top: -74%;
-    height: 600px;
-    width: 33%;
+      height: 1000px;
+      width: 33%;
+      position: absolute;
+      bottom: 0px;
 }
 
 .div-box-bck {
@@ -265,12 +270,6 @@ a{
     font-size: 16px;
     text-align: justify;
 }
-
-
-
-
-
-
 
 .hover-background-l{
     background: -webkit-linear-gradient(right,rgba(0,0,0,0),rgba(0,0,0,0.35)); /*Safari 5.1-6*/
@@ -428,4 +427,8 @@ a{
     #section-2,#section-3{
         position: absolute;
     }
+}
+
+#Button-txt {
+    text-align: center;
 }

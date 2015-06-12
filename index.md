@@ -4,10 +4,10 @@ title: Exsete Home Page
 ---
 <!--home page-->
 <div class="row top-pad grey-col margin-lr-0" id="home-page">
-    <img src="data/img/background.png" alt="background" id="background-img" class="img-responsive backgrnd-img-hm"/>
+    <img src="data/img/background.jpg" alt="background" id="background-img" class="img-responsive backgrnd-img-hm"/>
     <!--section1-->
     <a href="http://www.freidae.com">
-        <div class="col-sm-3 section-div" id="section-1">
+        <div class="col-sm-3 section-div" id="section-1" title="Freidae">
             <div class="sec-1 div-box-bck" id="section-sub-1">
                 <span class="text-home">
                     Freidae
@@ -23,7 +23,7 @@ title: Exsete Home Page
     <div class="col-sm-1 divider-div" id="divider-div-1"></div>
     <!--section2-->
     <a href="http://www.nukkadnaatak.com">
-        <div class="col-sm-3 section-div"id="section-2">
+    <div class="col-sm-3 section-div"id="section-2" title="Nukkad Naatak">
         <div class="sec-1 div-box-bck" id="section-sub-2">
             <span class="text-home">
             Nukkad Naatak
@@ -39,7 +39,7 @@ title: Exsete Home Page
     <div class="col-sm-1 divider-div" id="divider-div-2"></div>
     <!--section3-->
     <a href="http://www.daku.net.in">
-        <div class="col-sm-3 section-div"id="section-3">
+        <div class="col-sm-3 section-div"id="section-3" title="Daku">
         <div class="sec-1 div-box-bck" id="section-sub-3">
             <span class="text-home">
             Daku
@@ -68,18 +68,18 @@ title: Exsete Home Page
         <div class="col-sm-6" id="form-div">
             <form role="form" method="POST"  id="form_reach_us" >
                 <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" required/>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" title="Enter Your Email" required/>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" required ></textarea>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content" required ></textarea>
                 </div>
                 <div class="form-group btn-div">
-                    <button id="btn-submit" type="submit" class="btn" onclick="return false;"><p style="text-align: center;">Submit</p></button>
+                    <button id="btn-submit" type="submit" class="btn" onclick="return false;"><p id="Button-txt" title="Click to Submit">Submit</p></button>
                 </div>
             </form>
         </div>
         <div class="col-sm-6" id="contact-detail-div">
-            <p class="p-details">
+            <p class="p-details" title="Exsete Contact Details">
                 <span class="cont-font-col">
                     Exsete Consulting Pvt. Ltd.
                 </span><br class="hide-mobile"><br>
@@ -92,7 +92,7 @@ title: Exsete Home Page
         </div>
     </div>
     <br>
-    <p class="cont-bottom-txt">
+    <p class="cont-bottom-txt" title="Copyright Exsete">
         © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display">
         <a href="http://www.rohitsant.com">
             <span class="courtesy-sml"> Image courtesy of Rohit Sant</span>
