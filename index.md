@@ -16,7 +16,7 @@ title: Exsete Home Page
                 <span class="text-details">
                 Your personal Man Friday. Lets you focus on things you love, while taking care of the routine jobs
                 </span>
-                <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
+                <img src="data/img/Freidae%20Logo.png" alt="freidae symbol" id="freidae-symbol" class="symbol"/>
             </div>
         </div>
     </a>
@@ -32,7 +32,7 @@ title: Exsete Home Page
             <span class="text-details">
             Share everyday joys with the world. Live stream your talent, experience and fun.  
             </span>
-            <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
+            <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
         </div>
     </div>
     </a>
@@ -48,7 +48,7 @@ title: Exsete Home Page
             <span class="text-details">
             Get noticed and reach out to your audience with our digital marketing services
             </span>
-            <!--<img src="data/img/freidae%20symbol.png" alt="freidae symbol" id="freidae-symbol" class=""/>-->
+            <img src="data/img/Daku%20logo.png" alt="Daku symbol" id="Daku-symbol" class="symbol"/>
         </div>
     </div>
     </a>

@@ -201,6 +201,7 @@ a{
 #section-sub-1,#section-sub-2,#section-sub-3{
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
+    padding-left: 10%;
 }
 .backgrnd-img-hm {
     padding-top: 41px;
@@ -431,4 +432,22 @@ a{
 
 #Button-txt {
     text-align: center;
+}
+
+.symbol {
+    width: 15%;
+    position: absolute;
+    top: 6px;
+    left: 57%;
+}
+
+#Nukkad-Natak-symbol {
+    left: 76%;
+    width: 19%;
+    top: 15px;
+}
+
+#Daku-symbol {
+    width: 24%;
+    top: 16px;
 }
