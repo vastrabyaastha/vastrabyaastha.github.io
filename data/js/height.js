@@ -17,7 +17,7 @@ $(document).ready(function(){
     $('#contact-page-div').css('height',winheight-61 + 'px');
     $('.cont-bottom-txt').css('bottom',-winheight+59+'px');
     $(window).resize(function(){
-        $('div').css("border","5px solid red");
+        //$('div').css("border","5px solid red");
         $('#home-page').css('max-height',winheight-17 + 'px');
         //for mobile site
         if($(window).width()<=768){
