@@ -109,6 +109,7 @@ a{
     background: -o-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Opera 11.1-12*/
     background: -moz-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Fx 3.6-15*/
     background: linear-gradient(to top,rgba(102,204,255,0), rgba(102,204,255,0.9)); /*Standard*/
+    overflow: overlay;
 }
 
 .margin-lr-0 {
@@ -120,24 +121,21 @@ a{
 }
 
 .form-control {
-    width: 60%!important;
-    background-color: rgba(255,255,255,.72)!important;
-    border-radius: 14px!important;
+    width: 60%;
+    background-color: rgba(255,255,255,.72);
     text-align: center;
     font-family: 'Century Gothic';
     color: #000000;
-    font-size: 19px!important;
+    font-size: 19px;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     min-width: 304px;
-    height: 50px!important;
+    height: 50px;
 }
 
 #btn-submit {
       background: #89ccdd;
-      border-radius: 14px;
-      box-shadow: 5px 4px 12px #2E3838;
       height: 34px;
       margin-left: auto!important;
       margin-right: auto!important;
@@ -174,11 +172,12 @@ a{
 }
 
 .cont-bottom-txt {
-      width: 98%;
-      position: absolute;
-      text-align: center;
-      font-family: 'Century Gothic';
-      font-size: 12px;
+    width: 98%;
+    position: relative;
+    bottom: -117px;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 12px;
 }
 
 #sel1 {

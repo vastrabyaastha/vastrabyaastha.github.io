@@ -23,7 +23,7 @@ title: Exsete Home Page
     <div class="col-sm-1 divider-div" id="divider-div-1"></div>
     <!--section2-->
     <a href="http://www.nukkadnaatak.com">
-    <div class="col-sm-3 section-div"id="section-2" title="Nukkad Naatak">
+    <div class="col-sm-3 section-div" id="section-2" title="Nukkad Naatak">
         <div class="sec-1 div-box-bck" id="section-sub-2">
             <span class="text-home">
             Nukkad Naatak
@@ -39,7 +39,7 @@ title: Exsete Home Page
     <div class="col-sm-1 divider-div" id="divider-div-2"></div>
     <!--section3-->
     <a href="http://www.daku.net.in">
-        <div class="col-sm-3 section-div"id="section-3" title="Daku">
+        <div class="col-sm-3 section-div" id="section-3" title="Daku">
         <div class="sec-1 div-box-bck" id="section-sub-3">
             <span class="text-home">
             Daku
@@ -56,14 +56,16 @@ title: Exsete Home Page
 <!--contact page-->
 <div id="overlay">
     <div id="popup">
-        <h4 id="sndg-msg-rchus">Sending Message<br></h4>
-        <img src="/data/img/ajax-loader.GIF" id="loading-indicator-rchus" >
+        <h4 id="sndg-msg-rchus">Sending Message<br/></h4>
+        <img src="/data/img/ajax-loader.GIF" id="loading-indicator-rchus" alt="ajax loader">
         <div id="reachus_message" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again." data-success="Message successfully sent!"></div>
     </div>
 </div>
 <div class="container-fluid bakgrnd-con" id="contact-page-div">
-    <a name="contact"></a>
-    <h3 class="heading-con">Drop Us A Message</h3>
+    <a id="contact"></a>
+    <header>
+        <h3 class="heading-con">Drop Us A Message</h3>
+    </header>
     <div class="row margin-top">
         <div class="col-sm-6" id="form-div">
             <form role="form" method="POST"  id="form_reach_us" >
@@ -74,7 +76,7 @@ title: Exsete Home Page
                     <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content" required ></textarea>
                 </div>
                 <div class="form-group btn-div">
-                    <button id="btn-submit" type="submit" class="btn" onclick="return false;"><p id="Button-txt" title="Click to Submit">Submit</p></button>
+                    <button id="btn-submit" type="submit" class="btn" onclick="return false;"><span id="Button-txt" title="Click to Submit">Submit</p></button>
                 </div>
             </form>
         </div>
@@ -82,20 +84,22 @@ title: Exsete Home Page
             <p class="p-details" title="Exsete Contact Details">
                 <span class="cont-font-col">
                     Exsete Consulting Pvt. Ltd.
-                </span><br class="hide-mobile"><br>
-                22/139 A, Vikram Vihar<br> 
-                Lajpat Nagar IV.<br>
-                New Delhi-110024<br>
-                <span class="glyphicon glyphicon-phone-alt"></span>  Tel: +91 11 4109 7988<br>
-                <span class="cont-font-col"><span class="glyphicon glyphicon-envelope"></span>  connect@exsete.com</span> <br>
+                </span><br class="hide-mobile"/><br/>
+                22/139 A, Vikram Vihar<br/> 
+                Lajpat Nagar IV.<br/>
+                New Delhi-110024<br/>
+                <span class="glyphicon glyphicon-phone-alt"></span>  Tel: +91 11 4109 7988<br/>
+                <span class="cont-font-col"><span class="glyphicon glyphicon-envelope"></span>  connect@exsete.com</span> <br/>
             </p>
         </div>
     </div>
-    <br>
-    <p class="cont-bottom-txt" title="Copyright Exsete">
-        © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display">
-        <a href="http://www.rohitsant.com">
-            <span class="courtesy-sml"> Image courtesy of Rohit Sant</span>
-        </a>
-    </p>
+    <br/>
+    <footer>
+        <p class="cont-bottom-txt" title="Copyright Exsete">
+            © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display"/>
+            <a href="http://www.rohitsant.com">
+                <span class="courtesy-sml"> Image courtesy of Rohit Sant</span>
+            </a>
+        </p>
+    </footer>
 </div>
