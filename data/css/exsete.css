@@ -109,7 +109,6 @@ a{
     background: -o-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Opera 11.1-12*/
     background: -moz-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Fx 3.6-15*/
     background: linear-gradient(to top,rgba(102,204,255,0), rgba(102,204,255,0.9)); /*Standard*/
-    overflow: overlay;
 }
 
 .margin-lr-0 {
@@ -346,19 +345,19 @@ a{
 .symbol {
     width: 15%;
     position: absolute;
-    top: 6px;
-    left: 57%;
+    top: 2px;
+    right: 10%;
 }
 
 #Nukkad-Natak-symbol {
     left: 76%;
     width: 19%;
-    top: 15px;
+    top: 8px;
 }
 
 #Daku-symbol {
     width: 24%;
-    top: 16px;
+    top: 6px;
 }
 
 /* This only works with JavaScript,
@@ -373,8 +372,12 @@ if it's not present, don't show loader */
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url(/data/img/ajax-loader.GIF) 43% no-repeat, url(/data/img/logo.png) center no-repeat;
+    background: url(/data/img/ajax-loader.GIF) 41% no-repeat, url(/data/img/logo.png) center no-repeat;
     background-color: #fff;
+}
+
+#freidae-symbol {
+    max-width: 51px;
 }
 
 @media (max-width: 768px)
@@ -457,6 +460,7 @@ if it's not present, don't show loader */
         margin-bottom: 0px;
         left: 0px;
         width: 100%;
+        bottom: 0px;
     }
     .divider-div{
         visibility: hidden;
@@ -464,5 +468,12 @@ if it's not present, don't show loader */
     #section-2,#section-3{
         position: absolute;
     }
+    .se-pre-con {
+        background: url(/data/img/ajax-loader.GIF) 22% no-repeat, url(/data/img/logo.png) center no-repeat;
+        background-color: #fff;
+    }
+    .footer {
+        position: relative;
+        bottom: 36px;
+    }
 }
-

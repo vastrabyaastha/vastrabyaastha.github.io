@@ -94,7 +94,7 @@ title: Exsete Home Page
         </div>
     </div>
     <br/>
-    <footer>
+    <footer class="footer">
         <p class="cont-bottom-txt" title="Copyright Exsete">
             © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display"/>
             <a href="http://www.rohitsant.com">
