@@ -13,7 +13,7 @@ $(document).ready(function(){
         $("#section-2").css("bottom",divHeight);
         $("#section-3").css("bottom","0");
     }
-    $('#section-1,#section-2,#section-3,#divider-div-1,#divider-div-2').css('height',winheight-50 + 'px');
+    $('#divider-div-1,#divider-div-2').css('height',winheight-50 + 'px');
     $('#contact-page-div').css('height',winheight-61 + 'px');
     $(window).resize(function(){
         var winheightr = $(window).height();
@@ -28,7 +28,7 @@ $(document).ready(function(){
             $("#section-2").css("bottom",divHeightr);
             $("#section-3").css("bottom","0");
         }
-        $('#section-1,#section-2,#section-3,#divider-div-1,#divider-div-2').css('height',winheightr-50 + 'px');
+        $('#divider-div-1,#divider-div-2').css('height',winheightr-50 + 'px');
         $('#contact-page-div').css('height',(winheightr-61) + 'px');
     });
 });
