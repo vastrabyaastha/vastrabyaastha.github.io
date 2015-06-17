@@ -5,27 +5,27 @@ title: Exsete Home Page
 <!--home page-->
 <div class="row top-pad grey-col margin-lr-0" id="home-page">
     <img src="data/img/background.jpg" alt="background" id="background-img" class="img-responsive backgrnd-img-hm"/>
-    <!--section1-->
-    <a href="http://www.freidae.com">
-        <div class="col-sm-3 section-div" id="section-1" title="Freidae">
+    <!--section 1: Freidae-->
+    <a href="http://www.freidae.com" id="freidae-a-out">
+        <div class="col-sm-3 section-div" id="section-1">
             <div class="sec-1 div-box-bck" id="section-sub-1">
-                <span class="text-home">
-                    Freidae
+                <span class="text-home" id="sention-h-1">
+                Freidae
                 </span>
                 <br/>
-                <span class="text-details">
-                Your personal Man Friday. Lets you focus on things you love, while taking care of the routine jobs
-                </span>
-                <img src="data/img/Freidae%20Logo.png" alt="freidae symbol" id="freidae-symbol" class="symbol"/>
+                    <div class="text-details collapse" id="section-t-1">
+                    Your personal Man Friday. Lets you focus on things you love, while taking care of the routine jobs
+                    </div>
+                    <img src="data/img/Freidae%20Logo.png" alt="freidae symbol" id="freidae-symbol" class="symbol"/>
             </div>
         </div>
     </a>
     <div class="col-sm-1 divider-div" id="divider-div-1"></div>
-    <!--section2-->
-    <a href="http://www.nukkadnaatak.com">
-    <div class="col-sm-3 section-div" id="section-2" title="Nukkad Naatak">
+    <!--section 2: Nukkad Naatak-->
+    <a href="http://www.nukkadnaatak.com" id="nukkad-a-out">
+    <div class="col-sm-3 section-div" id="section-2">
         <div class="sec-1 div-box-bck" id="section-sub-2">
-            <span class="text-home">
+            <span class="text-home" id="section-h-2">
             Nukkad Naatak
             </span>
             <br/>
@@ -33,27 +33,32 @@ title: Exsete Home Page
             Share everyday joys with the world. Live stream your talent, experience and fun.  
             </span>
             <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
+                <div class="text-details collapse" id="section-t-2">
+                Share everyday joys with the world. Live stream your talent, experience and fun.  
+                </div>
+                <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
         </div>
     </div>
     </a>
     <div class="col-sm-1 divider-div" id="divider-div-2"></div>
-    <!--section3-->
-    <a href="http://www.daku.net.in">
-        <div class="col-sm-3 section-div" id="section-3" title="Daku">
+    <!--section 3: Daku-->
+    <a href="http://www.daku.net.in" id="daku-a-out">
+        <div class="col-sm-3 section-div" id="section-3">
         <div class="sec-1 div-box-bck" id="section-sub-3">
-            <span class="text-home">
+            <span class="text-home" id="section-h-3">
             Daku
             </span>
             <br/>
-            <span class="text-details">
-            Get noticed and reach out to your audience with our digital marketing services
-            </span>
-            <img src="data/img/Daku%20logo.png" alt="Daku symbol" id="Daku-symbol" class="symbol"/>
+                <div class="text-details collapse" id="section-t-3">
+                Get noticed and reach out to your audience with our digital marketing services
+                </div>
+                <img src="data/img/Daku%20logo.png" alt="Daku symbol" id="Daku-symbol" class="symbol"/>
         </div>
     </div>
     </a>
 </div>
 <!--contact page-->
+<!--Popover for message sending-->
 <div id="overlay">
     <div id="popup">
         <h4 id="sndg-msg-rchus">Sending Message<br/></h4>
@@ -63,9 +68,11 @@ title: Exsete Home Page
 </div>
 <div class="container-fluid bakgrnd-con" id="contact-page-div">
     <a id="contact"></a>
+    <!--Heading-->
     <header>
         <h3 class="heading-con">Drop Us A Message</h3>
     </header>
+    <!--contact us form-->
     <div class="row margin-top">
         <div class="col-sm-6" id="form-div">
             <form role="form" method="POST"  id="form_reach_us" >
@@ -94,6 +101,7 @@ title: Exsete Home Page
         </div>
     </div>
     <br/>
+    <!--Footer-->
     <footer class="footer">
         <p class="cont-bottom-txt" title="Copyright Exsete">
             © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display"/>

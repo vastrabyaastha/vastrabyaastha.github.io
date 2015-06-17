@@ -1,5 +1,5 @@
 $('document').ready(function(){
-    if($(window).width()>768){
+    if($(window).width()>480){
         $("#section-1").hover(function(){
             $("#section-2,#section-3").addClass("hover-background-l");
             $("#section-1 .text-details").fadeIn();
@@ -30,7 +30,7 @@ $('document').ready(function(){
             $("#section-sub-3").css("height","59px");
         });
     }
-    /*if($(window).width()<=768){
+    /*if($(window).width()<=480){
         $("#section-1").hover(function(){
             $("#section-1").css("height","200px");
         },function(){
