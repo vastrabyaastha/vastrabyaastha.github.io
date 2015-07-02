@@ -11,7 +11,7 @@
     </head>
 <body>
     <!--Starting loader-->
-    <div id="se-pre-con" style="position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999;background: url(/data/img/ajax-loader.GIF) 41% no-repeat, url(/data/img/logo.png) center no-repeat;background-color: #fff;"></div>
+    <div id="se-pre-con" style="position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999;background: url(/data/img/exsete.gif) center no-repeat;background-color: #fff;"></div>
 
 <!--Navbar-->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -77,11 +77,11 @@
             <div class="sec-1 div-box-bck" id="section-sub-2">
                 <span class="text-home" id="section-h-2">
                 Nukkad Naatak
-                </span>
                 <br/>
+                <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
+                </span>
                 <div class="text-details collapse" id="section-t-2">
                 Share everyday joys with the world. Live stream your talent, experience and fun.  
-                <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
                 </div>
             </div>
         </div>
@@ -130,12 +130,12 @@
     <!--contact us form-->
     <div class="row margin-top">
         <div class="col-sm-6" id="form-div">
-            <form role="form" method="POST"  id="form_reach_us" >
+            <form role="form" method="POST"  id="form_reach_us" novalidate="novalidate">
                 <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" title="Enter Your Email" required/>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" title="Enter Your Email"/>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content" required ></textarea>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content"></textarea>
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><span id="Button-txt" title="Click to Submit">Submit</p></button>
@@ -188,6 +188,7 @@
     <script type="text/javascript" src="/data/js/hovereff.js" async="async" defer="defer"></script>
     <!--height related issues-->
     <script type="text/javascript" src="/data/js/height.js" async="async" defer="defer"></script>
+    <script type="text/javascript" src="/data/js/formValidate.js" async="async" defer="defer"></script>
     <!--Contact page-->
     <script type="text/javascript" src="/data/js/contact.js" async="async" defer="defer"></script>
     <!--change element type-->
@@ -196,5 +197,8 @@
     <script type="text/javascript" src="/data/js/collapse.js" async="async" defer="defer"></script>
     <script type="text/javascript" src="/data/js/parallax.js" async="async" defer="defer"></script>
     <script type="text/javascript" src="/data/js/scrollSmooth.js" async="async" defer="defer"></script>
+    <!--include jQuery Validation Plugin-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js" type="text/javascript" async="async" defer="defer"></script>
+
 </html>
 

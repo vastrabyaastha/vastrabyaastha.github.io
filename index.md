@@ -41,11 +41,11 @@ title: Exsete Home Page
             <div class="sec-1 div-box-bck" id="section-sub-2">
                 <span class="text-home" id="section-h-2">
                 Nukkad Naatak
-                </span>
                 <br/>
+                <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
+                </span>
                 <div class="text-details collapse" id="section-t-2">
                 Share everyday joys with the world. Live stream your talent, experience and fun.  
-                <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
                 </div>
             </div>
         </div>
@@ -86,12 +86,12 @@ title: Exsete Home Page
     <!--contact us form-->
     <div class="row margin-top">
         <div class="col-sm-6" id="form-div">
-            <form role="form" method="POST"  id="form_reach_us" >
+            <form role="form" method="POST"  id="form_reach_us" novalidate="novalidate">
                 <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" title="Enter Your Email" required/>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" title="Enter Your Email"/>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content" required ></textarea>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content"></textarea>
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><span id="Button-txt" title="Click to Submit">Submit</p></button>

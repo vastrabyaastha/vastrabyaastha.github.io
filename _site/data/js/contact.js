@@ -34,6 +34,7 @@ function contactForm() {
 $('document').ready(function(){
     $("#btn-submit").click(function(){
         $("#overlay, #popup").fadeIn();
+        //formValidator();
         return contactForm();
     });
     $(document).ajaxComplete(function(event, request, settings) {
