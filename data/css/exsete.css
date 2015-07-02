@@ -32,6 +32,7 @@ a:hover{
 .navbar-default {
     background-color: #FFFFFF;
     height: 70px;
+    box-shadow: 0px 1px 10px black;
 }
 
 .Navbar-title-font {
@@ -473,4 +474,55 @@ if it's not present, don't show loader */
         position: relative;
         bottom: 36px;
     }
+}
+
+.backgrnd-img {
+    background-image: url(/data/img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+      background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#image-text {
+    position: absolute;
+    top: 21%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    padding: 14px 0;
+    font-family: Century Gothic;
+}
+
+#logo-name {
+    font-size: 36px;
+    line-height: normal;
+}
+
+#logo-phonetics {
+    font-size: 20px;
+    line-height: normal
+}
+
+#logo-pos {
+    font-size: 15px;
+    font-style: italic;
+    line-height: normal;
+    font-family: Century Light;
+    word-wrap: break-word;
+}
+
+#logo-def-ol {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 15.6000003814697px;
+    padding: 0 0 0 40px;
+    word-wrap: break-word;
+}
+
+.logo-def-li {
+    padding: 20px 0;
 }

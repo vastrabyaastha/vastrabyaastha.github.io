@@ -3,59 +3,70 @@ layout: default_home
 title: Exsete Home Page
 ---
 <!--home page-->
-<div class="row top-pad grey-col margin-lr-0" id="home-page">
-    <img src="data/img/background.jpg" alt="background" id="background-img" class="img-responsive backgrnd-img-hm"/>
-    <!--section 1: Freidae-->
-    <a href="http://www.freidae.com" id="freidae-a-out">
-        <div class="col-sm-3 section-div" id="section-1">
-            <div class="sec-1 div-box-bck" id="section-sub-1">
-                <span class="text-home" id="sention-h-1">
-                Freidae
+<div class="row top-pad grey-col margin-lr-0 backgrnd-img" id="home-page">
+    <div id="image-text">
+        <div>
+            <span id="logo-name">Exsete</span>
+            <br/>
+            <span id="logo-phonetics">/ˈɛksɛteɪ/</span>
+            <br />
+            <br />
+            <span id="logo-pos">noun</span>
+            <ol id="logo-def-ol">
+            <li class="logo-def-li">a blend of the Latin word for "following through to the end" (exsequor), and the Greek word for excellence (arete);</li>
+            <li>a technology product startup;</li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <!--section 1: Freidae-->
+        <a href="http://www.freidae.com" id="freidae-a-out">
+            <div class="col-sm-3 section-div" id="section-1">
+                <div class="sec-1 div-box-bck" id="section-sub-1">
+                    <span class="text-home" id="sention-h-1">
+                    Freidae
+                    </span>
+                    <br/>
+                        <div class="text-details collapse" id="section-t-1">
+                        Your personal Man Friday. Lets you focus on things you love, while taking care of the routine jobs
+                        </div>
+                        <img src="data/img/Freidae%20Logo.png" alt="freidae symbol" id="freidae-symbol" class="symbol"/>
+                </div>
+            </div>
+        </a>
+        <div class="col-sm-1 divider-div" id="divider-div-1"></div>
+        <!--section 2: Nukkad Naatak-->
+        <a href="http://www.nukkadnaatak.com" id="nukkad-a-out">
+        <div class="col-sm-3 section-div" id="section-2">
+            <div class="sec-1 div-box-bck" id="section-sub-2">
+                <span class="text-home" id="section-h-2">
+                Nukkad Naatak
                 </span>
                 <br/>
-                    <div class="text-details collapse" id="section-t-1">
-                    Your personal Man Friday. Lets you focus on things you love, while taking care of the routine jobs
-                    </div>
-                    <img src="data/img/Freidae%20Logo.png" alt="freidae symbol" id="freidae-symbol" class="symbol"/>
-            </div>
-        </div>
-    </a>
-    <div class="col-sm-1 divider-div" id="divider-div-1"></div>
-    <!--section 2: Nukkad Naatak-->
-    <a href="http://www.nukkadnaatak.com" id="nukkad-a-out">
-    <div class="col-sm-3 section-div" id="section-2">
-        <div class="sec-1 div-box-bck" id="section-sub-2">
-            <span class="text-home" id="section-h-2">
-            Nukkad Naatak
-            </span>
-            <br/>
-            <span class="text-details">
-            Share everyday joys with the world. Live stream your talent, experience and fun.  
-            </span>
-            <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
                 <div class="text-details collapse" id="section-t-2">
                 Share everyday joys with the world. Live stream your talent, experience and fun.  
-                </div>
                 <img src="data/img/n2%20logo.png" alt="Nukkad Natak symbol" id="Nukkad-Natak-symbol" class="symbol"/>
-        </div>
-    </div>
-    </a>
-    <div class="col-sm-1 divider-div" id="divider-div-2"></div>
-    <!--section 3: Daku-->
-    <a href="http://www.daku.net.in" id="daku-a-out">
-        <div class="col-sm-3 section-div" id="section-3">
-        <div class="sec-1 div-box-bck" id="section-sub-3">
-            <span class="text-home" id="section-h-3">
-            Daku
-            </span>
-            <br/>
-                <div class="text-details collapse" id="section-t-3">
-                Get noticed and reach out to your audience with our digital marketing services
                 </div>
-                <img src="data/img/Daku%20logo.png" alt="Daku symbol" id="Daku-symbol" class="symbol"/>
+            </div>
         </div>
+        </a>
+        <div class="col-sm-1 divider-div" id="divider-div-2"></div>
+        <!--section 3: Daku-->
+        <a href="http://www.daku.net.in" id="daku-a-out">
+            <div class="col-sm-3 section-div" id="section-3">
+            <div class="sec-1 div-box-bck" id="section-sub-3">
+                <span class="text-home" id="section-h-3">
+                Daku
+                </span>
+                <br/>
+                    <div class="text-details collapse" id="section-t-3">
+                    Get noticed and reach out to your audience with our digital marketing services
+                    </div>
+                    <img src="data/img/Daku%20logo.png" alt="Daku symbol" id="Daku-symbol" class="symbol"/>
+            </div>
+        </div>
+        </a>
     </div>
-    </a>
 </div>
 <!--contact page-->
 <!--Popover for message sending-->
@@ -87,6 +98,7 @@ title: Exsete Home Page
                 </div>
             </form>
         </div>
+        <!--contact us Details-->
         <div class="col-sm-6" id="contact-detail-div">
             <p class="p-details" title="Exsete Contact Details">
                 <span class="cont-font-col">

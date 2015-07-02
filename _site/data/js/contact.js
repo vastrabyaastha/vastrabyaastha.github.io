@@ -1,7 +1,8 @@
 function contactForm() {
     var contactFormHost = 'http://reachus-exsete.herokuapp.com',
         form = $('#form_reach_us'),
-        notice = $('#reachus_message');
+        notice = $('#reachus_message'),
+        sendingIndicator = $('#sndg-msg-rchus,#loading-indicator-rchus');
 
     if (form.length) {
         $.ajax({
@@ -13,13 +14,13 @@ function contactForm() {
                 switch (response.message) {
                     case 'success':
                         notice.text(notice.data('success')).fadeIn();
-                        $('#sndg-msg-rchus,#loading-indicator-rchus').hide();
-                        $('#form_reach_us')[0].reset();
+                        sendingIndicator.hide();
+                        form [0].reset();
                         break;
 
                     case 'failure_email':
                         notice.text(notice.data('error')).fadeIn();
-                        $('#sndg-msg-rchus,#loading-indicator-rchus').hide();
+                        sendingIndicator.hide();
                 }
             },
             error: function(xhr, ajaxOptions, thrownError) {
