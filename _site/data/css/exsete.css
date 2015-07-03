@@ -110,10 +110,10 @@ a:hover{
 
 .bakgrnd-con {
     background-color: rgba(102,204,255,0.64);
-    background: -webkit-linear-gradient(bottom,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,rgba(102,204,255,0),rgba(102,204,255,0.9)); /*Fx 3.6-15*/
-    background: linear-gradient(to top,rgba(102,204,255,0), rgba(102,204,255,0.9)); /*Standard*/
+    background: -webkit-linear-gradient(bottom,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Fx 3.6-15*/
+    background: linear-gradient(to top,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Standard*/
 }
 
 .margin-lr-0 {
