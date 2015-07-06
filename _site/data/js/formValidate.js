@@ -8,7 +8,9 @@ $('#form_reach_us :input').each(function()
         onlyOne: false,
         position: 'right',
         multiple:false,
-        autoClose:false});
+        autoClose:false,
+        theme: 'tooltipster-punk'});
+        
 
 });
 

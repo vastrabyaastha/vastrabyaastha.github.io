@@ -376,6 +376,71 @@ if it's not present, don't show loader */
 #freidae-symbol {
     max-width: 51px;
 }
+
+.backgrnd-img {
+    background-image: url(/data/img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#image-text {
+    position: absolute;
+    top: 21%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    padding: 14px 0;
+    font-family: Century Gothic;
+}
+
+#logo-name {
+    font-size: 36px;
+    line-height: normal;
+}
+
+#logo-phonetics {
+    font-size: 20px;
+    line-height: normal
+}
+
+#logo-pos {
+    font-size: 15px;
+    font-style: italic;
+    line-height: normal;
+    font-family: Century Light;
+    word-wrap: break-word;
+}
+
+#logo-def-ol {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 15.6000003814697px;
+    padding: 0 0 0 40px;
+    word-wrap: break-word;
+}
+
+.logo-def-li {
+    padding: 20px 0;
+}
+.tooltipster-punk {
+    border-radius: 5px;
+    border-bottom: 3px solid #f71169;
+    background: #2a2a2a;
+    box-shadow: 2px 0px 9px 2px #ccc;
+    color: #f71169;
+}
+.tooltipster-punk .tooltipster-content {
+    font-family: 'Courier', monospace;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+}
+
 /*For mobile*/
 @media (max-width: 480px)
 {
@@ -476,53 +541,4 @@ if it's not present, don't show loader */
     }
 }
 
-.backgrnd-img {
-    background-image: url(/data/img/background.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-      background-repeat: no-repeat;
-    background-position: 0 0;
-}
 
-#image-text {
-    position: absolute;
-    top: 21%;
-    background-color: rgba(0,0,0,0.7);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    color: #fff;
-    padding: 14px 0;
-    font-family: Century Gothic;
-}
-
-#logo-name {
-    font-size: 36px;
-    line-height: normal;
-}
-
-#logo-phonetics {
-    font-size: 20px;
-    line-height: normal
-}
-
-#logo-pos {
-    font-size: 15px;
-    font-style: italic;
-    line-height: normal;
-    font-family: Century Light;
-    word-wrap: break-word;
-}
-
-#logo-def-ol {
-    font-size: 15px;
-    font-weight: 100;
-    line-height: 15.6000003814697px;
-    padding: 0 0 0 40px;
-    word-wrap: break-word;
-}
-
-.logo-def-li {
-    padding: 20px 0;
-}
