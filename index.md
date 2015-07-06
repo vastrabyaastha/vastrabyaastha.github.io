@@ -9,6 +9,10 @@ title: Exsete Home Page
             <span id="logo-name">Exsete</span>
             <br/>
             <span id="logo-phonetics">/ˈɛksɛteɪ/</span>
+            <span id="audio-cont">
+            <input src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAC5SURBVDhPldIxDgFBFMbx1ejEBYg4AeeQuIZIRIGEVica56DUoXIEiTu4wUahGP9P3siE2WVe8svOe7NvM9l5mXOuSMOec2zRsfzlvfhQx9XWfdzwwMRq0cYqzlD4Wg17FYgBvhor2MFHuKcPnpCjGW7IBmGoNkLP1i3oyCslZaH9Je5oW37A5d9GxQzK18hTGsdIboweNZT0c0K/ruOI6HX4F8oGYIjkkZtarbBR/JAvoCHvWg6XPQFIbJkvWIc2TwAAAABJRU5ErkJggg==" type="image" id="btn-audio"/>
+            <audio src="/data/exsete.mp3" preload="auto" id="audio">Your browser doesnt support audio</audio>
+            </span>
             <br />
             <br />
             <span id="logo-pos">noun</span>
