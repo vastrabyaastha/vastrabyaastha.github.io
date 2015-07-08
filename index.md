@@ -3,7 +3,7 @@ layout: default_home
 title: Exsete Home Page
 ---
 <!--home page-->
-<div class="row top-pad grey-col margin-lr-0 backgrnd-img" id="home-page">
+<div class="row top-pad grey-col home-div-pos backgrnd-img" id="home-page">
     <div id="image-text">
         <div>
             <span id="logo-name">Exsete</span>
@@ -22,7 +22,7 @@ title: Exsete Home Page
             </ol>
         </div>
     </div>
-    <div>
+    <div id="links">
         <!--section 1: Freidae-->
         <a href="http://www.freidae.com" id="freidae-a-out">
             <div class="col-sm-3 section-div" id="section-1">
@@ -38,7 +38,6 @@ title: Exsete Home Page
                 </div>
             </div>
         </a>
-        <div class="col-sm-1 divider-div" id="divider-div-1"></div>
         <!--section 2: Nukkad Naatak-->
         <a href="http://www.nukkadnaatak.com" id="nukkad-a-out">
         <div class="col-sm-3 section-div" id="section-2">
@@ -54,7 +53,6 @@ title: Exsete Home Page
             </div>
         </div>
         </a>
-        <div class="col-sm-1 divider-div" id="divider-div-2"></div>
         <!--section 3: Daku-->
         <a href="http://www.daku.net.in" id="daku-a-out">
             <div class="col-sm-3 section-div" id="section-3">
