@@ -27,12 +27,11 @@ function resp_d(){
 /*mobile page responsiveness*/
 function resp_m(){
     var links=$("#links"),
-    linksTop=($('#image-text').position().top)+$('#image-text').outerHeight(true)+30,
+    linksTop=($('#image-text').position().top)+$('#image-text').outerHeight(true)+(0.2*winheight),
     linksHeight=winheight-linksTop,
     divHeight=linksHeight/3;
     if($(window).width()<=480){//check for mobile
         homeDiv.css('height',winheight-17 + 'px');//set the height of homediv
-        links.css("height",(linksHeight)+"px");
         sections.css("height",divHeight+"px");//set the height of all sections
         sectionSub.css("height",divHeight+"px");//set the height of all sub-sections
     }

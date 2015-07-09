@@ -547,4 +547,10 @@ if it's not present, don't show loader */
         background-image: url(/data/img/background-m.jpg);
         background-size: 100% 100%;
     }
+    #section-t-1,#section-t-2,#section-t-3{
+        padding: 0 5% 3% 5%;
+    }
+    #links{
+        height: auto;
+    }
 }

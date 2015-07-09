@@ -17,7 +17,7 @@ title: Exsete Home Page
             <br />
             <span id="logo-pos">noun</span>
             <ol id="logo-def-ol">
-            <li class="logo-def-li">a blend of the Latin word for "following through to the end" (exsequor), and the Greek word for excellence (arete);</li>
+            <li class="logo-def-li">a blend of the Latin word for "following through to the end" (exsequor), and the Greek word for "excellence" (arete);</li>
             <li>a technology product startup;</li>
             </ol>
         </div>
