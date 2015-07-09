@@ -10,8 +10,8 @@ var document,
     sec2 = $("#section-2"),
     sec3 = $("#section-3"),
     links=$("#links"),
-    toPos=($('#image-text').position().top)+$('#image-text').outerHeight(true)+30,
-    linksHeight=winheight-toPos,
+    linksTop=($('#image-text').position().top)+$('#image-text').outerHeight(true)+30,
+    linksHeight=winheight-linksTop,
     divHeight=linksHeight/3;
 function resp_d(){
     homeDiv.css('height',winheight-17 + 'px');//set the height of homepage
@@ -25,7 +25,7 @@ function resp_d(){
 function resp_m(){
     if($(window).width()<=480){//check for mobile
         homeDiv.css('height',winheight-17 + 'px');//set the height of homediv
-        console.log(toPos+"-"+linksHeight);
+        console.log(linksTop+"-"+linksHeight);
         links.css("height",(linksHeight)+"px");
         sections.css("height",divHeight+"px");//set the height of all sections
         sectionSub.css("height",divHeight+"px");//set the height of all sub-sections
