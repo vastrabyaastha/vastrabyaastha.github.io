@@ -27,7 +27,6 @@ function resp_m(){
     divHeight=linksHeight/3;
     if($(window).width()<=480){//check for mobile
         homeDiv.css('height',winheight-17 + 'px');//set the height of homediv
-        console.log(linksTop+"-"+linksHeight);
         links.css("height",(linksHeight)+"px");
         sections.css("height",divHeight+"px");//set the height of all sections
         sectionSub.css("height",divHeight+"px");//set the height of all sub-sections

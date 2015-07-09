@@ -543,4 +543,8 @@ if it's not present, don't show loader */
         top: 10%;
         padding: 14px 11px;
     }
+    .backgrnd-img{
+        background-image: url(/data/img/background-m.jpg);
+        background-size: 100% 100%;
+    }
 }
