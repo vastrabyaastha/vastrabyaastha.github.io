@@ -11,13 +11,18 @@ var document,
     sec3 = $("#section-3");
 
 
-function resp_d(){
+function resp_g(){
     homeDiv.css('height',winheight-17 + 'px');//set the height of homepage
     contactDiv.css('height',winheight-61 + 'px');//set the height of contact page
-    sec1.css("bottom","0");//setting the sections at bottom
-    sec2.css("bottom","0");
-    sec3.css("bottom","0");
-    sections.css("height",winheight*0.459);
+}
+function resp_d(){
+    resp_g();
+    if($(window).width()>480){
+        sec1.css("bottom","0");//setting the sections at bottom
+        sec2.css("bottom","0");
+        sec3.css("bottom","0");
+        sections.css("height",winheight*0.459);
+    }
 }
 /*mobile page responsiveness*/
 function resp_m(){
