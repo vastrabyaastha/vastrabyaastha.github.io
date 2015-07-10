@@ -491,15 +491,6 @@ if it's not present, don't show loader */
     .div-box-bck{
         height: 102px;
     }
-    #section-2{
-        margin-top: -99%;
-        margin-left: 0%;
-    }
-    #section-3{
-        width: 100%;
-        margin-left: 0%;
-        margin-top: -96%;
-    }
     .heading-con{
         margin-top: 2%;
     }
@@ -530,6 +521,8 @@ if it's not present, don't show loader */
         position: static;
         padding: 0;
         margin: 0;
+        min-height: 45px;
+        width: 100%;
     }
     .se-pre-con {
         background: url(/data/img/ajax-loader.GIF) 22% no-repeat, url(/data/img/logo.png) center no-repeat;

@@ -82,11 +82,11 @@ title: Exsete Home Page
 <div class="container-fluid bakgrnd-con" id="contact-page-div">
     <a id="contact"></a>
     <!--Heading-->
-    <header>
+    <header id="contact-header">
         <h3 class="heading-con">Drop Us A Message</h3>
     </header>
     <!--contact us form-->
-    <div class="row margin-top">
+    <div class="row margin-top" id="contact-info">
         <div class="col-sm-6" id="form-div">
             <form role="form" method="POST"  id="form_reach_us" novalidate="novalidate">
                 <div class="form-group">
@@ -116,7 +116,7 @@ title: Exsete Home Page
     </div>
     <br/>
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer" id="footer-cont">
         <p class="cont-bottom-txt" title="Copyright Exsete">
             © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display"/>
             <a href="http://www.rohitsant.com">
