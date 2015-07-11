@@ -14,12 +14,14 @@ function contactForm() {
             success: function(response) {
                 switch (response.message) {
                     case 'success':
+                        NProgress.done();
                         notice.text(notice.data('success')).fadeIn();
                         sendingIndicator.hide();
                         form [0].reset();
                         break;
 
                     case 'failure_email':
+                        NProgress.done();
                         notice.text(notice.data('error')).fadeIn();
                         sendingIndicator.hide();
                 }
@@ -37,6 +39,7 @@ $('document').ready(function(){
         var formStatus = validator.form();
         if(formStatus == true){
         $("#overlay, #popup").fadeIn();
+        NProgress.start();
         //formValidator();
         return contactForm();
         }
