@@ -11,6 +11,10 @@ function anchorScroll(this_obj, that_obj, base_speed) {
         that_offset = that_obj.offset(),
         offset_diff = Math.abs(that_offset.top - this_offset.top),
         speed       = (offset_diff * base_speed) / 1000;
+    if(speed<base_speed)
+        {
+            speed=base_speed;
+        }
 
     $("html,body").animate({
         scrollTop: that_offset.top

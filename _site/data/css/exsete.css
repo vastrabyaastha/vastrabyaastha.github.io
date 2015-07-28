@@ -1,3 +1,7 @@
+body{
+    color: white;
+}
+
 .sec-img {
     height: 586px;
     width: 115%;
@@ -46,11 +50,6 @@ a:hover{
     padding-bottom: 0px;
     padding-top: 14px;
     width: 110%;
-}
-
-.navbar-top-list {
-    margin-top: 1%;
-    width: 16%;
 }
 
 .navbar-top-li {
@@ -177,6 +176,7 @@ a:hover{
 }
 
 .cont-bottom-txt {
+    color: black;
     width: 98%;
     position: relative;
     bottom: -117px;
@@ -191,7 +191,9 @@ a:hover{
 }
 
 #myNavbar {
-    min-width: 210px;
+    width: 37%;
+    min-width: 474px;
+    margin-top: 1%;
 }
 
 .margin-top {
@@ -252,10 +254,6 @@ a:hover{
 #section-2 {
     margin-left: 33%;  
 }
-
-
-
-
 
 #section-3 {
     margin-left: 66%;
@@ -442,12 +440,139 @@ if it's not present, don't show loader */
     width: 100%;
 }
 
+.m-r-0 {
+    margin-right: 0;
+}
+
+.pagelink {
+    position: relative;
+    top: -71px;
+    display: block;
+    visibility: hidden;
+    width: 100%;
+}
+
+#about-us-container {
+    background-color: #14248A;
+}
+
+.centre-txt {
+    margin: 0 auto 0 auto;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+.flex-outside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-inside {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 4px 0;
+}
+
+.about-img {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+}
+
+.abt-img-txt {
+    display: block;
+    text-align: center;
+}
+
+.flex-ele {
+    margin: 5px;
+    order: 1;
+    max-width: 200px;
+}
+
+#last-flex-module {
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroller {
+    width: 10%;
+    min-width: 87px;
+    display: flex;
+    justify-content: space-around;
+    height: 24px;
+    margin: 5% 0 3% 0;
+}
+
+.scroll-arw {
+    display: inline;
+    width: 24%;
+    margin: 0 9%;
+}
+
+.txt-white {
+    color: white;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-black {
+    color: black;
+}
+
+#careers-container {
+    background-color: #356D9C;
+}
+
+.openings-header {
+    font-weight: 600;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+#car-hdr {
+    padding-left: 2%;
+}
+
+#jobs-heading {
+    padding-left: 2%;
+}
+
+.job-dtl {
+    background-color: rgba(0,0,0,0.85);
+    border-bottom: red 2px solid;
+    border-top: red 2px solid;
+    color: white;
+    padding: 2%;
+    display: none;
+}
+
+#car-fotr {
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+#team-img {
+    background-image: url(/data/img/team-img.jpg);
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+}
+
 /*For mobile*/
 @media (max-width: 480px)
 {
     .navbar-top-list{
         background-color: white;
-        height: 97px;
+        height: auto;
         border-top: white;
         margin-top: -8px;
     }
@@ -545,5 +670,15 @@ if it's not present, don't show loader */
     }
     #links{
         height: auto;
+    }
+    .mobile-width {
+        width: 20%;
+    }
+    #you-img {
+        max-width: 116px;
+    }
+    #myNavbar {
+        min-width: 210px;
+        margin-top: -2%;
     }
 }
