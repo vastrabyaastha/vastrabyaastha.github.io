@@ -147,7 +147,7 @@ title: Exsete Home Page
     <section>
         <h4 class="txt-black" id="jobs-heading">Current Openings</h4>
         <div>
-            <span class="openings-header txt-black" onclick="collapseToggle(this)">Content Specialist:</span><br/>
+        <span class="openings-header txt-black" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-hand-right"></span>   Content Specialist:</span><br/>
             <span id="job-dtl-1" class="job-dtl"><b>Key Skills:</b><br/>
             <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in literature/mass communications but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
 
@@ -161,7 +161,7 @@ If you think we are the right fit for you just drop in your resume at hello@exse
             
         </div><br/>
         <div>
-        <span class="openings-header txt-black" onclick="collapseToggle(this)">Graphic Designer, UX/UI Designer:</span><br/>
+        <span class="openings-header txt-black" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-hand-right"></span>  Graphic Designer, UX/UI Designer:</span><br/>
         <span class="job-dtl"><b>Key Skills:</b>Graphic Designing, Web Designing, Illustrations, UX/UI Designing<br/>
         <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in arts/design but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
 
@@ -175,7 +175,7 @@ What are you waiting for? Send us your portfolio at hello@exsete.com and we shal
             
         </div><br/>
         <div>
-        <span class="openings-header txt-black" onclick="collapseToggle(this)">Content Intern:</span><br/>
+        <span class="openings-header txt-black" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-hand-right"></span>  Content Intern:</span><br/>
         <span class="job-dtl"><b>Key Skills:</b> Creative Writing, Writing, Content Writing, Content Editing<br/>
         <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in literature/mass communications but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
 

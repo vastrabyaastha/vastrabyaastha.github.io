@@ -1,8 +1,9 @@
 function collapseToggle(col){
     var opt = col.nextElementSibling.nextElementSibling;
             $(opt).animate({
-                padding: "toggle",
+                "padding-top":"toggle",
+                "padding-bottom":"toggle",
                 height: "toggle",
                 opacity:"toggle"
-            }, 1000, "linear");
+            }, 2000, "linear");
 }

@@ -679,6 +679,9 @@ if it's not present, don't show loader */
     }
     #myNavbar {
         min-width: 210px;
-        margin-top: -2%;
+        margin-top: -2.3%;
+    }
+    .pagelink{
+        top:-61px;
     }
 }
