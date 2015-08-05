@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(".anchorLink").click(function(e) {
         e.preventDefault();
 
-        anchorScroll( $(this), $($(this).attr("href")), 2000 );
+        anchorScroll( $(this), $($(this).attr("href")), 1000 );
     });
 });
 

@@ -41,7 +41,7 @@
     <!--home page-->
 
 
-<div class="row top-pad grey-col home-div-pos backgrnd-img" id="home-page">
+<div class="row top-pad back-col home-div-pos backgrnd-img main-page" id="home-page" data-tag="hme">
     <div id="image-text">
         <div>
             <span id="logo-name">Exsete</span>
@@ -113,7 +113,7 @@
 <!--about us-->
 
 
-<div id="about-us-container" class="container-fluid">
+<div id="about-us-container" class="container-fluid back-col main-page" data-tag="abt">
     <a id="about" class="pagelink"></a>
     <header>
     <h2><b>About Us</b></h2>
@@ -170,7 +170,7 @@
                 </a>
             </div>
         </div>
-
+        
     </section>
 </div>
 
@@ -178,7 +178,7 @@
 <!--Careers Page-->
 
 
-<div class="container-fluid padding-0" id="careers-container">
+<div class="container-fluid padding-0 back-col main-page" id="careers-container" data-tag="car">
     <a id="career" class="pagelink"></a>
     <header>
     <h2 id="car-hdr"><b>Careers</b></h2>
@@ -203,7 +203,7 @@ As the content specialist, you would have to build and manage content across dif
 If you think we are the right fit for you just drop in your resume at connect@exsete.com.<br/><br/>
 <b>We are based in Delhi NCR</b><br/>
 </span>
-
+            
         </div><br/>
         <div>
         <span class="openings-header txt-black font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Graphic Designer, UX/UI Designer:</span><br/>
@@ -217,7 +217,7 @@ Ours is a small team, individuals would be working closely on multiple tasks so 
 What are you waiting for? Send us your portfolio at connect@exsete.com and we shall talk about this further.<br/><br/>
 <b>We are based in Delhi NCR</b><br/>
 </span>
-
+            
         </div><br/>
         <div>
         <span class="openings-header txt-black font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Content Intern:</span><br/>
@@ -253,7 +253,7 @@ If you have a story teller hidden deep within, we suggest you send us an example
 </div>
 
 
-<div class="container-fluid bakgrnd-con" id="contact-page-div">
+<div class="container-fluid bakgrnd-con main-page" id="contact-page-div" data-tag="cntct">
     <a id="contact" class="pagelink"></a>
     <!--Heading-->
     <header id="contact-header">
@@ -262,12 +262,18 @@ If you have a story teller hidden deep within, we suggest you send us an example
     <div class="row margin-top disp-flex flex-center" id="contact-info">
         <!--contact us form-->
         <div class="col-sm-6" id="form-div">
-            <form role="form" method="POST"  id="form_reach_us" novalidate="novalidate">
+            <form role="form" method="POST"  id="form_reach_us">
                 <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" title="Enter Your Email"/>
+                    <input type="email" class="form-control" id="inputEmail" name="email" title="Enter Your Email" required/>
+                    <span class="highlight"></span>
+                    <span class="hBar"></span>
+                    <label>Email</label>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content"></textarea>
+                    <input type="text" class="form-control" id="comment" name="comment" title="Enter the content" required/>
+                    <span class="highlight"></span>
+                    <span class="hBar"></span>
+                    <label>Comment</label>
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><span id="Button-txt" title="Click to Submit">Submit</p></button>
@@ -308,7 +314,8 @@ If you have a story teller hidden deep within, we suggest you send us an example
     <script src="/data/plugin/nprogress/nprogress.js" type="text/javascript"></script>
     <script src="/data/js/nprogress.js" type="text/javascript"></script>
     <!--veiwport selectors-->
-    <script src="/data/plugin/extra-selectors/extra-selectors.js" async="async" defer="defer"></script>
+    <script src="/data/plugin/extra-selectors/withinviewport.min.js" async="async" defer="defer"></script>
+    <script src="/data/plugin/extra-selectors/jquery.withinviewport.min.js" async="async" defer="defer"></script>
     <!--External css-->
     <link rel="stylesheet" type="text/css" href="/data/css/exsete.css"/>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -320,7 +327,9 @@ If you have a story teller hidden deep within, we suggest you send us an example
     <!--hovering effects-->
     <script type="text/javascript" src="/data/js/hovereff.js" async="async" defer="defer"></script>
     <!--height related issues-->
-    <script type="text/javascript" src="/data/js/height.js" async="async" defer="defer"></script>
+    <script type="text/javascript" src="/data/js/height.js" async="async" defer="defer"></script><!--height related issues-->
+    <!--viewprot related tasks-->
+    <script type="text/javascript" src="/data/js/veiwport.js" async="async" defer="defer"></script>
     <!--form validtor-->
     <script type="text/javascript" src="/data/js/formValidate.js" async="async" defer="defer"></script>
     <!--Contact page-->

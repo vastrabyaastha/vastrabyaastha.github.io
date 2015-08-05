@@ -74,6 +74,11 @@ a:hover{
     color: crimson!important;
 }
 
+.focused{
+    border-top: 3px solid crimson;
+    color: crimson!important;
+}
+
 .pad-t-15-lr-0 {
     padding-top: 19px;
     padding-left: 0px;
@@ -92,8 +97,8 @@ a:hover{
     margin-right: 12%;
 }
 
-.grey-col {
-    background-color: darkgrey;
+.back-col {
+    background-color: #000033;
 }
 
 .heading-con {
@@ -108,11 +113,11 @@ a:hover{
 }
 
 .bakgrnd-con {
-    background-color: rgba(102,204,255,0.64);
-    background: -webkit-linear-gradient(bottom,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Fx 3.6-15*/
-    background: linear-gradient(to top,rgba(39,71,100,0), rgba(39,71,100,0.9)); /*Standard*/
+    background-color: rgba(0,0,51,1);
+    background: -webkit-linear-gradient(bottom,rgba(0,0,51,0.4), rgba(0,0,51,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,rgba(0,0,51,0.4), rgba(0,0,51,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,rgba(0,0,51,0.4), rgba(0,0,51,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to top,rgba(0,0,51,0.4), rgba(0,0,51,1)); /*Standard*/
 }
 
 .home-div-pos {
@@ -125,8 +130,7 @@ a:hover{
 }
 
 .form-control {
-    width: 60%;
-    background-color: rgba(255,255,255,.72);
+    background-color: transparent;
     text-align: center;
     font-family: 'Century Gothic';
     color: #000000;
@@ -136,6 +140,15 @@ a:hover{
     margin-right: auto;
     min-width: 304px;
     height: 50px;
+    border:none;
+    border-bottom: 1px solid #757575;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 #btn-submit {
@@ -452,9 +465,7 @@ if it's not present, don't show loader */
     width: 100%;
 }
 
-#about-us-container {
-    background-color: #14248A;
-}
+
 
 .centre-txt {
     margin: 0 auto 0 auto;
@@ -525,9 +536,7 @@ if it's not present, don't show loader */
     color: black;
 }
 
-#careers-container {
-    background-color: #356D9C;
-}
+
 
 .openings-header {
     font-weight: 600;
@@ -702,5 +711,102 @@ if it's not present, don't show loader */
     }
     .flex-outside.font-18{
         font-size: 12px;
+    }
+}
+
+label {
+    color:#999999;
+    font-size:20px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition: 0.3s ease all;
+    -moz-transition:0.3s ease all;
+    -webkit-transition:0.3s ease all;
+}
+input:focus ~ label, input:valid~label{
+    top:-20px;
+    font-size:14px;
+    color:#fff;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.hBar {
+    position:relative;
+    display:block;
+    width:100%;
+}
+.hBar:before, .hBar:after{
+    content:'';
+    height:2px;
+    width:0;
+    bottom:4px;
+    position:absolute;
+    background:#fff;
+    transition:0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition:0.3s ease all;
+}
+
+.hBar:before{
+    left:50%;
+}
+
+.hBar:after{
+    right:50%;
+}
+
+input:focus ~ .hBar:before, input:focus ~ .hBar:after{
+    width:50%;
+}
+
+.highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+input:focus ~ .highlight{
+    -webkit-animation:inputHighlighter 0.4s ease;
+    -moz-animation:inputHighlighter 0.4s ease;
+    animation:inputHighlighter 0.4s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from{
+        background:#5264AE;
+    }
+    to{
+        width:0;
+        background:transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from{
+        background:#5264AE;
+    }
+    to{
+        width:0;
+        background:transparent;
+    }
+}
+
+@keyframes inputHighlighter{
+    from{
+        background:#5264AE;
+    }
+    to{
+        width:0;
+        background:transparent;
     }
 }

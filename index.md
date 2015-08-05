@@ -3,7 +3,7 @@ layout: default_home
 title: Exsete Home Page
 ---
 <!--home page-->
-<div class="row top-pad grey-col home-div-pos backgrnd-img" id="home-page">
+<div class="row top-pad back-col home-div-pos backgrnd-img main-page" id="home-page" data-tag="hme">
     <div id="image-text">
         <div>
             <span id="logo-name">Exsete</span>
@@ -71,7 +71,7 @@ title: Exsete Home Page
     </div>
 </div>
 <!--about us-->
-<div id="about-us-container" class="container-fluid">
+<div id="about-us-container" class="container-fluid back-col main-page" data-tag="abt">
     <a id="about" class="pagelink"></a>
     <header>
     <h2><b>About Us</b></h2>
@@ -132,7 +132,7 @@ title: Exsete Home Page
     </section>
 </div>
 <!--Careers Page-->
-<div class="container-fluid padding-0" id="careers-container">
+<div class="container-fluid padding-0 back-col main-page" id="careers-container" data-tag="car">
     <a id="career" class="pagelink"></a>
     <header>
     <h2 id="car-hdr"><b>Careers</b></h2>
@@ -199,7 +199,7 @@ If you have a story teller hidden deep within, we suggest you send us an example
         <div id="reachus_message" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again." data-success="Message successfully sent!"></div>
     </div>
 </div>
-<div class="container-fluid bakgrnd-con" id="contact-page-div">
+<div class="container-fluid bakgrnd-con main-page" id="contact-page-div" data-tag="cntct">
     <a id="contact" class="pagelink"></a>
     <!--Heading-->
     <header id="contact-header">
@@ -208,12 +208,18 @@ If you have a story teller hidden deep within, we suggest you send us an example
     <div class="row margin-top disp-flex flex-center" id="contact-info">
         <!--contact us form-->
         <div class="col-sm-6" id="form-div">
-            <form role="form" method="POST"  id="form_reach_us" novalidate="novalidate">
+            <form role="form" method="POST"  id="form_reach_us">
                 <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" title="Enter Your Email"/>
+                    <input type="email" class="form-control" id="inputEmail" name="email" title="Enter Your Email" required/>
+                    <span class="highlight"></span>
+                    <span class="hBar"></span>
+                    <label>Email</label>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Comment" name="comment" title="Enter the content"></textarea>
+                    <input type="text" class="form-control" id="comment" name="comment" title="Enter the content" required/>
+                    <span class="highlight"></span>
+                    <span class="hBar"></span>
+                    <label>Comment</label>
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><span id="Button-txt" title="Click to Submit">Submit</p></button>
