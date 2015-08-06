@@ -21,7 +21,7 @@ title: Exsete Home Page
             <span id="logo-pos">noun</span>
             <ol id="logo-def-ol">
             <li class="logo-def-li">a blend of the Latin word for "following through to the end" (exsequor), and the Greek word for "excellence" (arete);</li>
-            <li>pursuing excellence;</li>
+            <li>pursuing excellence</li>
             </ol>
         </div>
     </div>
@@ -71,6 +71,9 @@ title: Exsete Home Page
             </div>
         </div>
         </a>
+    </div>
+    <div class="scrolle-arrow">
+        <a href="#about" class="anchorLink"><span class="glyphicon glyphicon-chevron-down color-white"></span></a>
     </div>
 </div>
 <!--about us-->
@@ -130,9 +133,12 @@ title: Exsete Home Page
                     <img src="/data/img/about_us/arrow.png" class="img-responsive scroll-arw" id="dwn-arw" alt="down arrow"/>
                 </a>
             </div>
-        </div>
-        
+        </div>  
     </section>
+    <div class="scrolle-arrow">
+        <a href="#home" class="anchorLink"><span class="glyphicon glyphicon-chevron-up color-white"></span></a>
+        <a href="#career" class="anchorLink"><span class="glyphicon glyphicon-chevron-down color-white"></span></a>
+    </div>
 </div>
 <!--Careers Page-->
 <div class="container-fluid padding-0 back-col main-page" id="careers-container" data-tag="car">
@@ -192,6 +198,10 @@ If you have a story teller hidden deep within, we suggest you send us an example
     <footer id="car-fotr">
         Not sure where you fit in? Let us help you find the perfect fit, send in the resume to connect@exsete.com<br/>If we think you are the right fit, we shall definetly be in touch.
     </footer>
+    <div class="scrolle-arrow" id="carrers-scroll-arrow">
+        <a href="#about" class="anchorLink"><span class="glyphicon glyphicon-chevron-up color-white"></span></a>
+        <a href="#contact"class="anchorLink"><span class="glyphicon glyphicon-chevron-down color-white"></span></a>
+    </div>
 </div>
 <!--contact page-->
 <!--Popover for message sending-->
@@ -232,6 +242,9 @@ If you have a story teller hidden deep within, we suggest you send us an example
     </div>
     <div class="row disp-flex flex-center">
         <span class="cont-font-col"><span class="glyphicon glyphicon-envelope"></span> connect@exsete.com</span>
+    </div>
+    <div class="scrolle-arrow">
+        <a href="#career" class="anchorLink"><span class="glyphicon glyphicon-chevron-up color-white"></span></a>
     </div>
     <br/>
     <!--Footer-->

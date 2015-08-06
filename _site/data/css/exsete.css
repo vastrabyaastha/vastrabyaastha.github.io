@@ -1,6 +1,7 @@
 body{
     font-family: "Century Gothic";
     color: white;
+    background-color: #003;
 }
 
 .sec-img {
@@ -592,6 +593,127 @@ if it's not present, don't show loader */
     align-content: center;
 }
 
+label {
+    color:#999999;
+    font-size:20px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition: 0.3s ease all;
+    -moz-transition:0.3s ease all;
+    -webkit-transition:0.3s ease all;
+}
+input:focus ~ label, input:valid~label{
+    top:-20px;
+    font-size:14px;
+    color:#fff;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.hBar {
+    position:relative;
+    display:block;
+    width:100%;
+}
+.hBar:before, .hBar:after{
+    content:'';
+    height:2px;
+    width:0;
+    bottom:4px;
+    position:absolute;
+    background:#fff;
+    transition:0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition:0.3s ease all;
+}
+
+.hBar:before{
+    left:50%;
+}
+
+.hBar:after{
+    right:50%;
+}
+
+input:focus ~ .hBar:before, input:focus ~ .hBar:after{
+    width:50%;
+}
+
+.highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+input:focus ~ .highlight{
+    -webkit-animation:inputHighlighter 0.4s ease;
+    -moz-animation:inputHighlighter 0.4s ease;
+    animation:inputHighlighter 0.4s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from{
+        background:#5264AE;
+    }
+    to{
+        width:0;
+        background:transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from{
+        background:#5264AE;
+    }
+    to{
+        width:0;
+        background:transparent;
+    }
+}
+
+@keyframes inputHighlighter{
+    from{
+        background:#5264AE;
+    }
+    to{
+        width:0;
+        background:transparent;
+    }
+}
+
+#social-links {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    top: 56px;
+    z-index: 10;
+}
+
+.scrolle-arrow {
+    display: inline;
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    font-size: 24px;
+}
+
+.color-white {
+    color: white;
+}
+
+.main-page {
+    position: relative;
+}
+
 /*For mobile*/
 @media (max-width: 480px)
 {
@@ -712,108 +834,7 @@ if it's not present, don't show loader */
     .flex-outside.font-18{
         font-size: 12px;
     }
-}
-
-label {
-    color:#999999;
-    font-size:20px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    transition: 0.3s ease all;
-    -moz-transition:0.3s ease all;
-    -webkit-transition:0.3s ease all;
-}
-input:focus ~ label, input:valid~label{
-    top:-20px;
-    font-size:14px;
-    color:#fff;
-}
-
-.form-group {
-    position: relative;
-    margin-bottom: 45px;
-}
-
-.hBar {
-    position:relative;
-    display:block;
-    width:100%;
-}
-.hBar:before, .hBar:after{
-    content:'';
-    height:2px;
-    width:0;
-    bottom:4px;
-    position:absolute;
-    background:#fff;
-    transition:0.3s ease all;
-    -moz-transition: 0.3s ease all;
-    -webkit-transition:0.3s ease all;
-}
-
-.hBar:before{
-    left:50%;
-}
-
-.hBar:after{
-    right:50%;
-}
-
-input:focus ~ .hBar:before, input:focus ~ .hBar:after{
-    width:50%;
-}
-
-.highlight {
-    position:absolute;
-    height:60%;
-    width:100px;
-    top:25%;
-    left:0;
-    pointer-events:none;
-    opacity:0.5;
-}
-input:focus ~ .highlight{
-    -webkit-animation:inputHighlighter 0.4s ease;
-    -moz-animation:inputHighlighter 0.4s ease;
-    animation:inputHighlighter 0.4s ease;
-}
-
-@-webkit-keyframes inputHighlighter {
-    from{
-        background:#5264AE;
+    #carrers-scroll-arrow{
+        bottom: 0;
     }
-    to{
-        width:0;
-        background:transparent;
-    }
-}
-
-@-moz-keyframes inputHighlighter {
-    from{
-        background:#5264AE;
-    }
-    to{
-        width:0;
-        background:transparent;
-    }
-}
-
-@keyframes inputHighlighter{
-    from{
-        background:#5264AE;
-    }
-    to{
-        width:0;
-        background:transparent;
-    }
-}
-
-#social-links {
-        display: inline;
-    position: absolute;
-    right: 15px;
-    top: 56px;
 }
