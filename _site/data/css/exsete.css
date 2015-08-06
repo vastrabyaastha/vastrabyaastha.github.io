@@ -810,3 +810,10 @@ input:focus ~ .highlight{
         background:transparent;
     }
 }
+
+#social-links {
+        display: inline;
+    position: absolute;
+    right: 15px;
+    top: 56px;
+}
