@@ -127,12 +127,6 @@ title: Exsete Home Page
         <div class="flex-inside" id="last-flex-module">
             <img class="img-responsive about-img" src="/data/img/about_us/you.png" id="you-img" alt="you"/>
             <span class="abt-img-txt"><b>You</b></span>
-            <div class="scroller">
-            <a href="#career" class="anchorLink">
-                    <span class="txt-white">Join Us</span>
-                    <img src="/data/img/about_us/arrow.png" class="img-responsive scroll-arw" id="dwn-arw" alt="down arrow"/>
-                </a>
-            </div>
         </div>  
     </section>
     <div class="scrolle-arrow">
@@ -147,15 +141,15 @@ title: Exsete Home Page
     <h2 id="car-hdr"><b>Careers</b></h2>
     </header><br/>
     <section class="txt-center font-18">
-    <span class="txt-center txt-black">
+    <span class="txt-center">
     Our passionate team is growing fast. If you are smart, driven and pretty damn cool<br/> Exsete may just be the place for you.
     </span>
     </section><br/>
     <section id="team-img"></section>
     <section>
-        <h4 class="txt-black" id="jobs-heading">Current Openings</h4>
+        <h4 id="jobs-heading">Current Openings</h4>
         <div>
-        <span class="openings-header txt-black font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>   Content Specialist:</span><br/>
+        <span class="openings-header font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>   Content Specialist:</span><br/>
             <span id="job-dtl-1" class="job-dtl font-16"><b>Key Skills:</b><br/>
             <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in literature/mass communications but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
 
@@ -169,7 +163,7 @@ If you think we are the right fit for you just drop in your resume at connect@ex
             
         </div><br/>
         <div>
-        <span class="openings-header txt-black font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Graphic Designer, UX/UI Designer:</span><br/>
+        <span class="openings-header font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Graphic Designer, UX/UI Designer:</span><br/>
         <span class="job-dtl font-16"><b>Key Skills:</b>Graphic Designing, Web Designing, Illustrations, UX/UI Designing<br/>
         <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in arts/design but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
 
@@ -183,7 +177,7 @@ What are you waiting for? Send us your portfolio at connect@exsete.com and we sh
             
         </div><br/>
         <div>
-        <span class="openings-header txt-black font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Content Intern:</span><br/>
+        <span class="openings-header font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Content Intern:</span><br/>
         <span class="job-dtl font-16"><b>Key Skills:</b> Creative Writing, Writing, Content Writing, Content Editing<br/>
         <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in literature/mass communications but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
 
@@ -229,7 +223,7 @@ If you have a story teller hidden deep within, we suggest you send us an example
                     <label>Email</label>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="comment" name="comment" title="Enter the content" required/>
+                <textarea rows="5" class="form-control" id="comment" name="comment" title="Enter the content" required></textarea>
                     <span class="highlight"></span>
                     <span class="hBar"></span>
                     <label>Comment</label>
@@ -241,17 +235,16 @@ If you have a story teller hidden deep within, we suggest you send us an example
         </div>
     </div>
     <div class="row disp-flex flex-center">
-        <span class="cont-font-col"><span class="glyphicon glyphicon-envelope"></span> connect@exsete.com</span>
+    <span class="cont-font color-white"><span>We would love to hearing from you</span><br/><span class="glyphicon glyphicon-envelope"></span> connect@exsete.com</span>
     </div>
     <div class="scrolle-arrow">
         <a href="#career" class="anchorLink"><span class="glyphicon glyphicon-chevron-up color-white"></span></a>
-    </div>
-    <br/>
+    </div><br/>
     <!--Footer-->
     <footer class="footer" id="footer-cont">
         <p class="cont-bottom-txt" title="Copyright Exsete">
             © 2015 by Exsete Consulting Pvt. Ltd.<br class="mobile-display"/>
-            <a href="http://www.rohitsant.com">
+            <a href="http://www.rohitsant.com" class="color-white">
                 <span class="courtesy-sml"> Image courtesy of Rohit Sant</span>
             </a>
         </p>

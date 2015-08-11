@@ -33,7 +33,8 @@ var validator = $("#form_reach_us").validate(
             {
                 email: 
                 {
-                    required: "Please enter your email address"
+                    required: "An email id is required",
+                    email: "Please enter a valid email id"
                 },
                 comment: 
                 {

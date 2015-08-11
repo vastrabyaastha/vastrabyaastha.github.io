@@ -134,7 +134,7 @@ a:hover{
     background-color: transparent;
     text-align: center;
     font-family: 'Century Gothic';
-    color: #000000;
+    color: inherit;
     font-size: 19px;
     margin-bottom: 5px;
     margin-left: auto;
@@ -185,15 +185,15 @@ a:hover{
       line-height: 35.2000007629395px;
 }
 
-.cont-font-col {
-    color: #333366;
+.cont-font {
+    text-align: center;
 }
 
 .cont-bottom-txt {
-    color: black;
+    color: inherit;
     width: 98%;
     position: relative;
-    bottom: -97px;
+    bottom: 0;
     text-align: center;
     font-family: 'Century Gothic';
     font-size: 12px;
@@ -211,7 +211,7 @@ a:hover{
 }
 
 .margin-top {
-    margin-top: 100px
+    margin-top: 80px
 }
 
 #section-1,#section-2,#section-3{
@@ -343,9 +343,7 @@ a:hover{
     word-wrap: break-word
 }
 
-.courtesy-sml {
-    color: initial;
-}
+
 
 .mobile-display {
     display: none;
@@ -558,7 +556,6 @@ if it's not present, don't show loader */
 }
 
 .job-dtl {
-    color: black;
     padding: 2%;
     display: none;
 }
@@ -605,7 +602,7 @@ label {
     -moz-transition:0.3s ease all;
     -webkit-transition:0.3s ease all;
 }
-input:focus ~ label, input:valid~label{
+.form-control:focus ~ label, .form-control:valid~label{
     top:-20px;
     font-size:14px;
     color:#fff;
@@ -641,7 +638,7 @@ input:focus ~ label, input:valid~label{
     right:50%;
 }
 
-input:focus ~ .hBar:before, input:focus ~ .hBar:after{
+.form-control:focus ~ .hBar:before, .form-control:focus ~ .hBar:after{
     width:50%;
 }
 
@@ -654,7 +651,7 @@ input:focus ~ .hBar:before, input:focus ~ .hBar:after{
     pointer-events:none;
     opacity:0.5;
 }
-input:focus ~ .highlight{
+.form-control:focus ~ .highlight{
     -webkit-animation:inputHighlighter 0.4s ease;
     -moz-animation:inputHighlighter 0.4s ease;
     animation:inputHighlighter 0.4s ease;
