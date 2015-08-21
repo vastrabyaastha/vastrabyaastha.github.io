@@ -89,38 +89,38 @@ title: Exsete Home Page
     </section>
     <section class="flex-outside font-18">
         <div class="flex-inside">
-            <div class="flex-ele mobile-width">
-                <img class="img-responsive about-img" src="/data/img/about_us/Sid.png" id=""/>
+            <div class="flex-ele mobile-width"  onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Sid.png" data-name="Sid"/>
                 <span class="abt-img-txt"><b>Sid</b><br/>CEO</span>
             </div>
-            <div class="flex-ele mobile-width">
-                <img class="img-responsive about-img" src="/data/img/about_us/Anubhav.png" id=""/>
+            <div class="flex-ele mobile-width"  onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Anubhav.png" data-name="Anubhav"/>
                 <span class="abt-img-txt"><b>Anubhav</b><br/>Head Sales & Business Development</span>
             </div>
-            <div class="flex-ele mobile-width">
-                <img class="img-responsive about-img" src="/data/img/about_us/Stuti.png" id=""/>
+            <div class="flex-ele mobile-width"  onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Stuti.png" data-name="Stuti"/>
                 <span class="abt-img-txt"><b>Stuti</b><br/>Creative Director</span>
             </div>
-            <div class="flex-ele mobile-width">
-                <img class="img-responsive about-img" src="/data/img/about_us/Ankur.png" id=""/>
+            <div class="flex-ele mobile-width"  onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Ankur.png" data-name="Ankur"/>
                 <span class="abt-img-txt"><b>Ankur</b><br/>Developer</span>
             </div>
-            <div class="flex-ele mobile-width">
-                <img class="img-responsive about-img" src="/data/img/about_us/mukul.png" id=""/>
+            <div class="flex-ele mobile-width"  onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Mukul.png" data-name="Mukul"/>
                 <span class="abt-img-txt"><b>Mukul</b><br/>Developer</span>
             </div>
         </div>
-        <div class="flex-inside">
-            <div class="flex-ele">
-                <img class="img-responsive about-img" src="/data/img/about_us/Seerat.png" id=""/>
+        <div class="flex-inside" >
+            <div class="flex-ele" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Seerat.png" data-name="Seerat"/>
                 <span class="abt-img-txt"><b>Seerat</b><br/>Developer</span>
             </div>
-            <div class="flex-ele">
-                <img class="img-responsive about-img" src="/data/img/about_us/Udbhav%202.png" id=""/>
+            <div class="flex-ele" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Udbhav.png" data-name="Udbhav"/>
                 <span class="abt-img-txt"><b>Udbhav</b><br/>Developer</span>
             </div>
-            <div class="flex-ele">
-                <img class="img-responsive about-img" src="/data/img/about_us/Vikas.png" alt="vikas" id=""/>
+            <div class="flex-ele" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Vikas.png" alt="vikas" data-name="Vikas"/>
                 <span class="abt-img-txt"><b>Vikas</b><br/>Developer</span>
             </div>
         </div>
