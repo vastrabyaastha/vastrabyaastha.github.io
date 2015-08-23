@@ -106,7 +106,7 @@ title: Exsete Home Page
                 <span class="abt-img-txt"><b>Ankur</b><br/>Developer</span>
             </div>
             <div class="flex-ele mobile-width"  onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
-                <img class="img-responsive about-img" src="/data/img/about_us/Mukul.png" data-name="Mukul"/>
+                <img class="img-responsive about-img" src="/data/img/about_us/mukul.png" data-name="mukul"/>
                 <span class="abt-img-txt"><b>Mukul</b><br/>Developer</span>
             </div>
         </div>
@@ -226,7 +226,7 @@ If you have a story teller hidden deep within, we suggest you send us an example
                 <textarea rows="5" class="form-control" id="comment" name="comment" title="Enter the content" required></textarea>
                     <span class="highlight"></span>
                     <span class="hBar"></span>
-                    <label>Comment</label>
+                    <label>Message</label>
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><span id="Button-txt" title="Click to Submit">Submit</p></button>
@@ -235,7 +235,7 @@ If you have a story teller hidden deep within, we suggest you send us an example
         </div>
     </div>
     <div class="row disp-flex flex-center">
-    <span class="cont-font color-white"><span>We would love to hearing from you</span><br/><span class="glyphicon glyphicon-envelope"></span> connect@exsete.com</span>
+    <span class="cont-font color-white"><span>We look forward to hearing from you</span><br/><span class="glyphicon glyphicon-envelope"></span> connect@exsete.com</span>
     </div>
     <div class="scrolle-arrow">
         <a href="#career" class="anchorLink"><span class="glyphicon glyphicon-chevron-up color-white"></span></a>
