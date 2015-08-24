@@ -77,12 +77,12 @@ title: Exsete Home Page
     </div>
 </div>
 <!--about us-->
-<div id="about-us-container" class="container-fluid back-col main-page" data-tag="abt">
+<div id="about-us-container" class="container-fluid pad-0 back-col main-page" data-tag="abt">
     <a id="about" class="pagelink"></a>
-    <header>
+    <header class="pad-l-r-15">
     <h2><b>About Us</b></h2>
     </header><br/>
-    <section class="font-18">
+    <section class="font-18 pad-l-r-15">
     <span>The hard work of passionate individuals  has brought Exsete to life. They wanted to 'make a dent in the universe' and in 2014 they did just that by setting up Exsete.</span><br/><br/>
         <span>The name says it all, a portmanteau of Exsequor (Latin for follow through to the end) & Arete (Greek for Excellence), Exsete aims at making life easier for the average Joe through its suite of services. With a talented and highly qualified team of individuals, this start up is on its way to making a big impact.</span><br/><br/>
         <h3 class="centre-txt">Let's meet the team</h3>
@@ -135,7 +135,7 @@ title: Exsete Home Page
     </div>
 </div>
 <!--Careers Page-->
-<div class="container-fluid padding-0 back-col main-page" id="careers-container" data-tag="car">
+<div class="container-fluid pad-0 back-col main-page" id="careers-container" data-tag="car">
     <a id="career" class="pagelink"></a>
     <header>
     <h2 id="car-hdr"><b>Careers</b></h2>

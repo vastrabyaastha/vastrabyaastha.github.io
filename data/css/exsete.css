@@ -102,6 +102,11 @@ a:hover{
     background-color: #000033;
 }
 
+.pad-l-r-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .heading-con {
     text-align: center;
     font-family: 'Century Gothic';
@@ -500,7 +505,7 @@ if it's not present, don't show loader */
 .flex-ele {
     margin: 5px;
     order: 1;
-    max-width: 200px;
+    max-width: 170px;
 }
 
 #last-flex-module {
@@ -541,10 +546,6 @@ if it's not present, don't show loader */
     font-weight: 600;
     padding-left: 2%;
     cursor: pointer;
-}
-
-.padding-0 {
-    padding: 0;
 }
 
 #car-hdr {
