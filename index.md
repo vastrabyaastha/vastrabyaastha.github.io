@@ -4,9 +4,6 @@ title: Exsete Home Page
 ---
 <!--home page-->
 <div class="row top-pad back-col home-div-pos backgrnd-img main-page" id="home-page" data-tag="hme">
-    <div id="social-links">
-        <a href="https://www.linkedin.com/company/exsete-consulting-pvt--ltd-?trk=ppro_cprof"><img class="img-social-links" src="/data/img/Linkedin%20icon.png" alt="linked in icon"/></a>
-    </div>
     <div id="image-text">
         <div>
             <span id="logo-name">Exsete</span>
@@ -210,12 +207,21 @@ If you have a story teller hidden deep within, we suggest you send us an example
     <a id="contact" class="pagelink"></a>
     <!--Heading-->
     <header id="contact-header">
-        <h3 class="heading-con">Contact</h3>
+        <h3 class="heading-con">Contact</h3><br/>
+        <div id="social-links">
+        <a href="https://www.linkedin.com/company/exsete-consulting-pvt--ltd-?trk=ppro_cprof"><img class="img-social-links" src="/data/img/Linkedin%20icon.png" alt="linked in icon"/></a>
+        </div>
     </header>
     <div class="row margin-top disp-flex flex-center" id="contact-info">
         <!--contact us form-->
         <div class="col-sm-6" id="form-div">
             <form role="form" method="POST"  id="form_reach_us">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="inputName" name="fullName" title="Enter Your Name" required/>
+                    <span class="highlight"></span>
+                    <span class="hBar"></span>
+                    <label>Full Name</label>
+                </div>
                 <div class="form-group">
                     <input type="email" class="form-control" id="inputEmail" name="email" title="Enter Your Email" required/>
                     <span class="highlight"></span>

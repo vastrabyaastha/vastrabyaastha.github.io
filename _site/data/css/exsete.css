@@ -158,7 +158,9 @@ a:hover{
 }
 
 #btn-submit {
-      background: #89ccdd;
+      background-color: transparent;
+      border: white 3px solid;
+      transition: all 0.3s ease-out;
       height: 34px;
       margin-left: auto!important;
       margin-right: auto!important;
@@ -227,6 +229,7 @@ a:hover{
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     padding-left: 10%;
+    padding-right: 10%;
 }
 .backgrnd-img-hm {
     padding-top: 41px;
@@ -285,6 +288,7 @@ a:hover{
     font-family: 'Century Gothic';
     font-size: 16px;
     text-align: justify;
+    padding-top: 4%;
 }
 
 .hover-background-l{
@@ -835,4 +839,11 @@ label {
     #carrers-scroll-arrow{
         bottom: 0;
     }
+}
+
+#btn-submit:focus, #btn-submit:hover, #btn-submit:active {
+    outline: 0;
+    border-width: 0;
+    background-color: white;
+    color: #036;
 }
