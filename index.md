@@ -120,11 +120,7 @@ title: Exsete Home Page
                 <img class="img-responsive about-img" src="/data/img/about_us/Vikas.png" alt="vikas" data-name="Vikas"/>
                 <span class="abt-img-txt"><b>Vikas</b><br/>Developer</span>
             </div>
-        </div>
-        <div class="flex-inside" id="last-flex-module">
-            <img class="img-responsive about-img" src="/data/img/about_us/you.png" id="you-img" alt="you"/>
-            <span class="abt-img-txt"><b>You</b></span>
-        </div>  
+        </div> 
     </section>
     <div class="scrolle-arrow">
         <a href="#home" class="anchorLink"><span class="glyphicon glyphicon-chevron-up color-white"></span></a>
@@ -145,34 +141,6 @@ title: Exsete Home Page
     <section id="team-img"></section>
     <section>
         <h4 id="jobs-heading">Current Openings</h4>
-        <div>
-        <span class="openings-header font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>   Content Specialist:</span><br/>
-            <span id="job-dtl-1" class="job-dtl font-16"><b>Key Skills:</b><br/>
-            <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in literature/mass communications but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
-
-If you are a story teller and have a story worth telling, well we are listening and would love for you to join our team. We are looking for creative individuals with a passion for the written word, individuals who can make a brand come alive with the tippity tap of the keyboard or with just a few alphabets strewn across a page.<br/><br/>
-
-As the content specialist, you would have to build and manage content across different platforms. Ours is a small team, individuals would be working closely on multiple tasks so it goes without saying that the right candidate should be comfortable multi tasking and must be a team player. Timelines need to be adhered to without compromise on quality.<br/><br/>
-
-If you think we are the right fit for you just drop in your resume at connect@exsete.com.<br/><br/>
-<b>We are based in Delhi NCR</b><br/>
-</span>
-            
-        </div><br/>
-        <div>
-        <span class="openings-header font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Graphic Designer, UX/UI Designer:</span><br/>
-        <span class="job-dtl font-16"><b>Key Skills:</b>Graphic Designing, Web Designing, Illustrations, UX/UI Designing<br/>
-        <b>Experience:</b> We would prefer someone with 1+ years of experience with a degree in arts/design but this would not be a deal breaker for the right candidate. Freshers are welcome.<br/><br/>
-
-As a graphic and UX/UI designer you would be working closely with our team of developers and social media experts. Your primary duty would be to translate the brief into your interpretation of the outcome. Creativity and pure imagination with expertise and the know how about the right tools are the only pre-requisites for this job.<br/><br/>
-
-Ours is a small team, individuals would be working closely on multiple tasks so it goes without saying that the right candidate should be comfortable multi tasking and must be a team player. Timelines need to be adhered to without compromise on quality.<br/><br/>
-
-What are you waiting for? Send us your portfolio at connect@exsete.com and we shall talk about this further.<br/><br/>
-<b>We are based in Delhi NCR</b><br/>
-</span>
-            
-        </div><br/>
         <div>
         <span class="openings-header font-16" onclick="collapseToggle(this)"><span class="glyphicon glyphicon-plus"></span>  Content Intern:</span><br/>
         <span class="job-dtl font-16"><b>Key Skills:</b> Creative Writing, Writing, Content Writing, Content Editing<br/>
