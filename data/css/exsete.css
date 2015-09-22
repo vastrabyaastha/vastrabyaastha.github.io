@@ -172,6 +172,7 @@ a:hover{
 .btn-div {
       width: 23%;
       min-width: 145px;
+      margin-bottom: 10px!important;
       margin-left: auto;
       margin-right: auto;
 }
@@ -212,13 +213,13 @@ a:hover{
 }
 
 #myNavbar {
-    width: 30%;
-    min-width: 375px;
+    width: 35%;
+    min-width: 452px;
     margin-top: 1%;
 }
 
 .margin-top {
-    margin-top: 80px
+    margin-top: 20px
 }
 
 #section-1,#section-2,#section-3{
@@ -473,8 +474,6 @@ if it's not present, don't show loader */
     width: 100%;
 }
 
-
-
 .centre-txt {
     margin: 0 auto 0 auto;
     display: block;
@@ -499,6 +498,7 @@ if it's not present, don't show loader */
     max-height: 200px;
     width: 100%;
     min-width: 70px;
+    border-radius: 50%;
 }
 
 .abt-img-txt {
@@ -543,8 +543,6 @@ if it's not present, don't show loader */
 .txt-black {
     color: black;
 }
-
-
 
 .openings-header {
     font-weight: 600;
@@ -615,7 +613,7 @@ label {
 
 .form-group {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 28px;
 }
 
 .hBar {
@@ -692,12 +690,11 @@ label {
     }
 }
 
-#social-links {
-    display: inline;
-    position: absolute;
-    right: 15px;
-    top: 56px;
-    z-index: 10;
+#social-links-top {
+    margin-top: 20%;
+    margin-left: 15%;
+    width: 100%;
+    min-width: 60px;
 }
 
 .scrolle-arrow {
@@ -846,4 +843,12 @@ label {
     border-width: 0;
     background-color: white;
     color: #036;
+}
+
+#social-links-bottom {
+    width: 13%;
+    min-width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
 }

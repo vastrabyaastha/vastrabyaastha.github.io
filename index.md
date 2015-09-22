@@ -103,20 +103,28 @@ title: Exsete Home Page
                 <span class="abt-img-txt"><b>Ankur</b><br/>Developer</span>
             </div>
             <div class="flex-ele mobile-width"  onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
-                <img class="img-responsive about-img" src="/data/img/about_us/mukul.png" data-name="mukul"/>
-                <span class="abt-img-txt"><b>Mukul</b><br/>Developer</span>
+                <img class="img-responsive about-img" src="/data/img/about_us/Aparna.png" data-name="Aparna"/>
+                <span class="abt-img-txt"><b>Aparna</b><br/>Creative Content Startegist</span>
             </div>
         </div>
         <div class="flex-inside" >
-            <div class="flex-ele" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+            <div class="flex-ele mobile-width" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/mukul.png" data-name="mukul"/>
+                <span class="abt-img-txt"><b>Mukul</b><br/>Developer</span>
+            </div>
+            <div class="flex-ele mobile-width" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
                 <img class="img-responsive about-img" src="/data/img/about_us/Seerat.png" data-name="Seerat"/>
                 <span class="abt-img-txt"><b>Seerat</b><br/>Developer</span>
             </div>
-            <div class="flex-ele" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+            <div class="flex-ele mobile-width" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+                <img class="img-responsive about-img" src="/data/img/about_us/Shipra.png" data-name="Shipra"/>
+                <span class="abt-img-txt"><b>Shipra</b><br/>Creative Content Writer</span>
+            </div>
+            <div class="flex-ele mobile-width" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
                 <img class="img-responsive about-img" src="/data/img/about_us/Udbhav.png" data-name="Udbhav"/>
                 <span class="abt-img-txt"><b>Udbhav</b><br/>Developer</span>
             </div>
-            <div class="flex-ele" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
+            <div class="flex-ele mobile-width" onmouseover="imgChangeColor(this)" onmouseout="imgChangeSketch(this)">
                 <img class="img-responsive about-img" src="/data/img/about_us/Vikas.png" alt="vikas" data-name="Vikas"/>
                 <span class="abt-img-txt"><b>Vikas</b><br/>Developer</span>
             </div>
@@ -176,9 +184,6 @@ If you have a story teller hidden deep within, we suggest you send us an example
     <!--Heading-->
     <header id="contact-header">
         <h3 class="heading-con">Contact</h3><br/>
-        <div id="social-links">
-        <a href="https://www.linkedin.com/company/exsete-consulting-pvt--ltd-?trk=ppro_cprof"><img class="img-social-links" src="/data/img/Linkedin%20icon.png" alt="linked in icon"/></a>
-        </div>
     </header>
     <div class="row margin-top disp-flex flex-center" id="contact-info">
         <!--contact us form-->
@@ -204,6 +209,10 @@ If you have a story teller hidden deep within, we suggest you send us an example
                 </div>
                 <div class="form-group btn-div">
                     <button id="btn-submit" type="submit" class="btn" onclick="return false;"><span id="Button-txt" title="Click to Submit">Submit</p></button>
+                </div>
+                <div id="social-links-bottom">
+                <a href="https://www.linkedin.com/company/exsete-consulting-pvt--ltd-?trk=ppro_cprof"><img class="img-social-links" src="/data/img/Linkedin%20icon.png" alt="linked in icon"/></a>
+                <a href="https://www.facebook.com/exsete?fref=ts"><img class="img-social-links" src="/data/img/FB%20%5B54924%5D.png" alt="facebook icon"/></a>
                 </div>
             </form>
         </div>
