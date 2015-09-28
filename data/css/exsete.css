@@ -494,11 +494,13 @@ if it's not present, don't show loader */
 }
 
 .about-img {
+    position: relative;
     max-width: 170px;
     max-height: 200px;
     width: 100%;
     min-width: 70px;
     border-radius: 50%;
+    z-index: 3;
 }
 
 .abt-img-txt {
@@ -713,6 +715,10 @@ label {
     position: relative;
 }
 
+#about-us-container:hover > .scrolle-arrow{
+    position:fixed;
+}
+
 /*For mobile*/
 @media (max-width: 480px)
 {
@@ -851,4 +857,8 @@ label {
     margin-left: auto;
     margin-right: auto;
     z-index: 10;
+}
+
+#scrl-arw-abt {
+    z-index: 2;
 }
