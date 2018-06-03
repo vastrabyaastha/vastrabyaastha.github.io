@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Exsete Consulting</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/coming-soon.min.css" rel="stylesheet">
+
+    <!-- Google reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script>
+      var onContctUsSubmit = function () {
+        $(document).ready(function () {
+            $(".thanks").hide();
+            $(".sending").hide();
+            $(".errors").hide();
+            if ($("#contact-us-form input[name='email']").val() === "") {
+                $(".errors").show();
+                $("#contact-us-form button").show();
+            } else {
+                $(".errors").hide();
+                $.post($("#contact-us-form").attr('action'), JSON.stringify({
+                    name: "Roonil Wazlib",
+                    email: $("#contact-us-form input[name='email']").val(),
+                    phone: $("#contact-us-form input[name='phone']").val(),
+                    message: $("#contact-us-form textarea[name='message']").val(),
+                    'g-recaptcha-response': $("#contact-us-form textarea[name='g-recaptcha-response']").val()
+                }), function (data) {
+                    $(".thanks").show();
+                    $("#contact-us-form button").hide();
+                    $("#contact-us-form input[name='email']").val('');
+                    $("#contact-us-form input[name='phone']").val('');
+                    $("#contact-us-form textarea[name='message']").val('');
+                }, 'json');
+            }
+        });
+    };
+    </script>
+  </head>
+
+  <body>
+
+    <div class="overlay"></div>
+
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <h1 class="mb-3"><img class="logo" src="img/logo.png"/><span>Exsete</span></h1>
+              <p class="mb-5">We're working hard to update this site. Our target launch date is
+                <strong>July 2018</strong>! You can always get in touch using the form below!</p>
+              <!-- <div class="input-group input-group-newsletter">
+                <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">Notify Me!</button>
+                </div>
+              </div> -->
+              <!-- Contact Us -->
+              <!-- https://hackernoon.com/serverless-contact-us-form-for-static-websites-facccb7be27f -->
+              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/" method="POST" id="contact-us-form">
+                  <!-- <div class="form-group">
+                      <label for="nameInputEmail1">Name</label>
+                      <input type="text" class="form-control" id="nameInputEmail1" name="name" placeholder="Full name">
+                  </div> -->
+                  <div class="form-group">
+                      <!-- <label for="exampleInputEmail1">Email address</label> -->
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                             placeholder="Email address">
+                  </div>
+                  <div class="form-group">
+                      <!-- <label for="phoneInputEmail1">Phone number</label> -->
+                      <input type="text" class="form-control" id="phoneInputEmail1" name="phone"
+                             placeholder="Phone number">
+                  </div>
+                  <div class="form-group">
+                      <!-- <label for="messageInputEmail1">Message</label> -->
+                      <textarea type="textarea" class="form-control" id="messageInputEmail1" name="message"
+                                placeholder="Message"></textarea>
+                  </div>
+                  <p class="thanks">Thanks!  We'll contact you soon.</p>
+                  <p class="sending">Sending...</p>
+                  <button type="submit" class="btn btn-secondary g-recaptcha"
+                          data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
+                          data-callback="onContctUsSubmit" data-badge="inline" >Contact Me!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="mailto:connect@exsete.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="https://www.facebook.com/exsete">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <!-- <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/vide/jquery.vide.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/coming-soon.min.js"></script>
+
+  </body>
+
+</html>
