@@ -271,28 +271,7 @@
     =    	Portfolio Masonry Activation    =
     =========================================*/
 
-        $('.projects-masonary-wrapper').imagesLoaded(function () {
-
-            // filter items on button click
-            $('.messonry-button').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
-                $(this).siblings('.is-checked').removeClass('is-checked');
-                $(this).addClass('is-checked');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-
-            // init Isotope
-            var $grid = $('.mesonry-list').isotope({
-                percentPosition: true,
-                transitionDuration: '0.7s',
-                layoutMode: 'masonry',/*
-                masonry: {
-                    columnWidth: '.resizer',
-                }*/
-            });
-        });
+       
     
   
     /*==================================
@@ -301,7 +280,7 @@
 
     $('.masonry-activation').imagesLoaded(function () {
         // init Isotope
-        var $grid = $('.masonry-wrap').isotope({
+        var $grid = $('.masonry-wrap')({
             itemSelector: '.masonary-item',
             percentPosition: true,
             transitionDuration: '0.7s',
