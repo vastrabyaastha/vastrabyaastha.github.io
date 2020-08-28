@@ -58,10 +58,10 @@ class TextScramble {
   
   const phrases = [
     'About Us,',
-    'What U Get',
+    'what you get',
     'you\'re going to realize',
     'We`re passionate about w@rk',
-    'Complete requirment & Satisfy customers',
+    'complete requirment & satisfy customers',
     
   ]
   
