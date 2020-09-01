@@ -51,63 +51,10 @@
                             <div class="header__navigation menu-style-four preview-menu d-none d-xl-block">
                                 <nav class="navigation-menu navigation-menu--onepage navigation-menu-right">
                                     <ul>
-                                        <li><a href="#section-demos"><span>About Us</span></a></li>
+                                        <li><a onclick="smoothScroll(document.getElementById('about-us'))"><span>About Us</span></a></li>
                                         <li class="has-children">
-                                            <a href="#element"><span>Services</span></a>
-                                            <ul class="megamenu megamenu--mega">
-                                                <li>
-                                                    <h2 class="page-list-title"> Application Performance</h2>
-                                                    <ul>
-                                                        <li><a href="element-accordion.html"><span>Infrastructure Monitoring</span></a></li>
-                                                        <li><a href="element-box-icon.html"><span>Health Metrics</span></a></li>
-                                                        <li><a href="element-box-image.html"><span>Integration with Netow</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <h2 class="page-list-title">Digital Transformation</h2>
-                                                    <ul>
-                                                        <li><a href="element-counters.html"><span>Data Visualization</span></a></li>
-                                                        <li><a href="element-dividers.html"><span>Grafana</span></a></li>
-                                                        <li><a href="element-flexible-image-slider.html"><span>Kibana</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <h2 class="page-list-title">Business KPI</h2>
-                                                    <ul>
-                                                        <li><a href="element-popup-video.html"><span>Performance Metrics</span></a></li>
-                                                       </ul>
-                                                </li>
-                                                <li>
-                                                    <h2 class="page-list-title">AI OPS</h2>
-                                                    <ul>
-                                                        <li><a href="element-testimonials.html"><span>Data Lake</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>Self Heal Interactive ChatBot</span></a></li>
-                                                        <li><a href="element-carousel-sliders.html"><span>Process Automation - Workflow Engine</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <h2 class="page-list-title">DevOps</h2>
-                                                    <ul>
-                                                        <li><a href="element-testimonials.html"><span>Continuous Development</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>Continuous Integration</span></a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <h2 class="page-list-title">API Integration</h2>
-                                                    <ul>
-                                                        <li><a href="element-testimonials.html"><span>Service Management Tools</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>Solarwinds</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>Windows SCOM</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>Nagios</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>OEM</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>Timeseries Databases</span></a></li>
-                                                        <li><a href="element-timeline.html"><span>Network Nodes</span></a></li>    
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="https://hasthemes.com/contact-us/" target="_blank"><span>Contact</span></a></li>
-                                    </ul>
+                                            <a onclick="smoothScroll(document.getElementById('service'))"><span>Services</span></a>
+                                            
                                 </nav>
 
                             </div>
@@ -116,7 +63,7 @@
                                 <div class="header__actions">
                                     <div class="header__icons-wrapper header-right-inner" id="hidden-icon-wrapper">
                                         <div class="header-button downlode-btn ml-4">
-                                            <a href="https://themeforest.net/item/mitech-it-solutions-html-template/24906742?ref=AslamHasib" class="ht-btn ht-btn-md">Careers</a>
+                                            <a onclick="smoothScroll(document.getElementById('contact-us'))" class="ht-btn ht-btn-md">Contact-Us</a>
                                         </div>
                                     </div>
                                     <!-- mobile menu -->
@@ -169,7 +116,7 @@
     </div>
     <!-- service container start -->
     <div id="particles-js">  
-        <div class="col-md-12"><h3 style="color: white;font-style: CerebriSans;padding: 20px 0px;left: 40%;position: absolute;">Our Services</h3></div>
+        <div id="service" class="col-md-12"><h3 style="color: white;font-style: CerebriSans;padding: 20px 0px;left: 40%;position: absolute;">Our Services</h3></div>
     <div class="section-services">
         <div class="container">
         <div class="row justify-content-center">
@@ -262,7 +209,7 @@
     </div>
     </div>
 </div>
-    <div class="container">
+    <div class="container" id="about-us">
        <div><h5 class="about-heading"></h5></div>
        <div>Exsete Consulting Pvt. Ltd. is a Technology Solution Provider & Software Consultancy firm focused on areas of Artificial Intelligence Operations (AIOps) ,  Data Science , DevOps , RPA Automation process , Application performance management (APM) , Product support & implementation.
 
@@ -313,7 +260,7 @@
       </div>
 </div>
 </div>
-<div class="contact-us">
+<div id="contact-us" class="contact-us">
     <h2 class="team-heading my-5">Contact Us</h2>
 <div class="container">
     <div class="row">
@@ -383,23 +330,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
     <script type="text/javascript">
-        jQuery(function ($) {
-            function init_map1() {
-                var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
-                var mapOptions = {
-                    center: myLocation,
-                    zoom: 16
-                };
-                var marker = new google.maps.Marker({
-                    position: myLocation,
-                    title: "Property Location"
-                });
-                var map = new google.maps.Map(document.getElementById("map1"),
-                    mapOptions);
-                marker.setMap(map);
-            }
-            init_map1();
-        })
+       window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { 
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { 
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
     </script> 
 
     </body>
