@@ -76,18 +76,7 @@
     =            One page nav active          =
     ===========================================*/
     
-    var top_offset = $('.navigation-menu--onepage').height() - 60;
-    $('.navigation-menu--onepage ul').onePageNav({
-        currentClass: 'active',
-        scrollOffset: top_offset,
-    });
-    
-    var top_offset_mobile = $('.header-area').height();
-    $('.offcanvas-navigation--onepage ul').onePageNav({
-        currentClass: 'active',
-        scrollOffset: top_offset_mobile,
-    });
-    
+   
     
     /*===========================================
     =            Submenu viewport position      =
@@ -277,21 +266,6 @@
     /*==================================
     =	      Mesonry Activation       =
     ===================================*/
-
-    $('.masonry-activation').imagesLoaded(function () {
-        // init Isotope
-        var $grid = $('.masonry-wrap')({
-            itemSelector: '.masonary-item',
-            percentPosition: true,
-            transitionDuration: '0.7s',
-            masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: 2,
-                percentPosition: true
-            }
-        });
-
-    });
     
     
     /*=============================================
@@ -834,13 +808,6 @@
     =            circle progress active            =
     =============================================*/
     
-    $('.chart-progress , .chart-progress__box').appear(function () {
-		$('.chart-progress, .chart-progress__box').circleProgress({
-			startAngle: -Math.PI / 4 * 2,
-		});
-
-	});
-    
     /*======================================
     =       Countdown Activation          =     
     ======================================*/
@@ -897,10 +864,7 @@
     =            counter up active            =
     =============================================*/
     
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+
    
     /*===================================
         Svg Icon Draw
@@ -917,64 +881,6 @@
         });
     });
     
-    /*=====================================
-    =          Countdown Time Circles     =
-    =======================================*/
-
-    $('#DateCountdown').TimeCircles({
-        "animation": "smooth",
-        "bg_width": 0.60,
-        "fg_width": 0.025,
-        "circle_bg_color": "#eeeeee",
-        "time": {
-            "Days": {
-                "text": "Days",
-                "color": "#086AD8",
-                "show": true
-            },
-            "Hours": {
-                "text": "Hours",
-                "color": "#086AD8",
-                "show": true
-            },
-            "Minutes": {
-                "text": "Minutes",
-                "color": "#086AD8",
-                "show": true
-            },
-            "Seconds": {
-                "text": "Seconds",
-                "color": "#086AD8",
-                "show": true
-            }
-        }
-    });
-    
-    /*=================================- 
-    =        Scroll Up Color Change    =
-    ==================================-*/
-
-    $('.slide-scroll-bg').height('.slide-scroll-bg').scrollie({
-        scrollOffset: 0,
-        scrollingInView: function (elem) {
-            console.log(elem);
-            var bgColor = elem.data('background');
-            $('.bg-body-color').css('background-color', bgColor);
-
-        }
-    });
-
-    /*=============================================
-    =            light gallery active            =
-    =============================================*/
-    
-    $('.popup-images').lightGallery(); 
-
-    $('.video-popup').lightGallery(); 
-    
-    /*=============================================
-        showcoupon toggle function
-   =============================================*/
     $( '#showcoupon' ).on('click', function() {
         $('#checkout-coupon' ).slideToggle(500);
     });

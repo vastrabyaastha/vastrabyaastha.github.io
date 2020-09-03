@@ -97,9 +97,11 @@
   background-color: #0d8abc;
 }
 
-html, body {
-  height: 100%;
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 
 body {
   line-height: 1.74;
@@ -14552,4 +14554,33 @@ color: #757575;
   background-color: #af93d8;
   text-align: center;
   height: 600px;
+}
+
+.service-heading{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 42px;
+  align-items: flex-start;
+  margin-right: 257px;
+  color: black;
+}
+
+.service-sub{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  color: #ff00eb;
+}
+
+.service-dis{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+}
+.service-sub-li{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  color: blue;
+}
+
+.service-content{
+margin-left: 5em;
 }
