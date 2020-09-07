@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Exsete</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.png">
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
     <link rel="stylesheet" href="assets/css/plugins/partical.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -122,18 +122,17 @@
     </div>
     <!-- service container start -->
     <div id="particles-js">
-        <div id="service" class="col-md-12">
+        <div id="service" class="col-sm-12 col-md-12">
             <h3 style="color: white;font-style: CerebriSans;padding: 20px 0px;left: 40%;position: absolute;">Our
                 Services</h3>
         </div>
-        <div class="section-services">
-            <div class="container">
+        
+            <div class="container-fluid">
+                <div class="section-services">
                 <div class="row justify-content-center">
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="card shadow" style="width: 20rem;">
-                            <div class="inner">
-                            </div>
-                            <div class="card-body text-center">
+                            <div class="card-body  text-center">
                                 <h5 class="card-title">Application Performance</h5>
                                 <p class="card-text">
                                     The load is the volume of transactions processed by the application, e.g.,
@@ -144,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="card shadow" style="width: 20rem;">
                             <div class="inner">
                             </div>
@@ -159,7 +158,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="card shadow" style="width: 20rem;">
                             <div class="inner">
                             </div>
@@ -178,10 +177,11 @@
 
             </div>
         </div>
-        <div class="section-services-2">
-            <div class="container">
+        
+            <div class="container-fluid">
+                <div class="section-services-2">
                 <div class="row justify-content-center">
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="card shadow" style="width: 20rem;">
                             <div class="inner">
                             </div>
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="card shadow" style="width: 20rem;">
                             <div class="inner">
                             </div>
@@ -211,7 +211,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-md-4">
                         <div class="card shadow" style="width: 20rem;">
                             <div class="inner">
                             </div>
@@ -296,11 +296,11 @@
             </div>
         </div>
     </div>
-    <div class="my-5" style="margin-left: 235px;">
-        <div class="service-heading">ABOUT SERVICES
+    <div class="container-fluid">
+        <div class="service-heading col-sm-12">ABOUT SERVICES
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div id="applicaton-performance" class="service-sub">Application Performance</div>
         <div class="row"></div>
         <li class="service-sub-li">Infrastructure Monitoring</li>
@@ -311,20 +311,19 @@
         <div class="service-content">Health Metrics can consolidate system metrics details into single database like
             Time series Database where the data points can be queried for analysis by Operations Team or customized
             algorithm program codes to identify & co-relation purposes. </div>
-        <div data-tilt class="my-5"><img style="width: 72%; margin-left: 158px;" src="assets/images/hero/Picture1.png"
+        <div data-tilt class="my-5"><img style="width: 100%;" src="assets/images/hero/Picture1.png"
                 alt="health-metric"></div>
         <div id="digital-transformation" class="service-sub">Digital Transformation</div>
-        <div class="service-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis autem itaque,
-            expedita dolores architecto vero aperiam laboriosam praesentium, sed quibusdam sunt, hic blanditiis minima
-            magni ut? Eius, veniam minima. Asperiores?</div>
-        <div data-tilt class="my-5"><img style="width: 72%; margin-left: 158px;"
+        <div class="service-content">Consolidation of the data,logs,information for providing insights for data driven decisions & enable teams both from Business & Technology domains to move beyond the legacy,traditional way of planning & data interpretation.
+            Move ahead at a faster rate of integration with New Age Technologies in DevOps , IoT , Automation process,data visualization,AIOps,Microservices</div>
+        <div data-tilt class="my-5"><img style="width: 100%;"
                 src="assets/images/hero/digital-transformation.jpeg" alt="health-metric"></div>
         <div id="business-kpi" class="service-sub">Business KPI Mapping</div>
         <div class="service-content">Business KPI Mapping & developing the right set of KPIs for the business and
             extracting meaningful insights from the data is all well and good in a way Business Team can understand – so
             that they can make better decisions. KPI dashboards are a great way of communicating insights from key
             performance indicators to the business & application owner.</div>
-        <div data-tilt class="my-5"><img style="width: 72%; margin-left: 158px;" src="assets/images/hero/Picture4.jpeg"
+        <div data-tilt class="my-5"><img style="width: 100%;" src="assets/images/hero/Picture4.jpeg"
                 alt="health-metric"></div>
         <div id="aiops" class="service-sub">AIOPS – Artificial Intelligence Operations Analytics</div>
 
@@ -336,28 +335,23 @@
             to fix the issue.In addition , it gives an option to the IT teams to have an Interactive Chat Bot for
             diagnosis / Event based Triggers Notification & pre-defined Actions for IT Ops team & thereby limiting the
             Incident Ticket generation</div>
-        <div data-tilt class="my-5"><img style="width: 72%; margin-left: 158px;" src="assets/images/hero/apiops.jpeg"
+        <div data-tilt class="my-5"><img style="width: 100%;" src="assets/images/hero/apiops.jpeg"
                 alt="aiops"></div>
         <div id="devops" class="service-sub">DevOps</div>
-        <div class="service-content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus numquam
-            dolorem quas aliquam, temporibus, quidem eos minus tempore officiis dicta sint delectus ad illum saepe,
-            doloremque id amet? Saepe, cupiditate. </div>
-        <div data-tilt class="my-5"><img style="width: 72%; margin-left: 158px;" src="assets/images/hero/Picture3.png"
+        <div class="service-content">DevOps Work along with Customer to plan regarding the type of application that needs to be developed/moniotired  & prepare a rough draft plan to make the high level overview regarding the development process.Plan for the code development,integration,testing, deployment of release into the environment.Eventually,Monitor the performance of the application as per the client requirement & observe performance of the application. Ready to make modifications to cater to the customer requirement mapping.</div>
+        <div data-tilt class="my-5"><img style="width: 100%" src="assets/images/hero/Picture3.png"
                 alt="api"></div>
         <div id="api" class="service-sub">API Integration with Tools</div>
-        <div class="service-content">API ( Application Programmable Integration Interface) support enabled the IT Teams
-            to be able to fetch the data metric parameters from not only the Infrastructure Node , Network Node - LAN &
-            WAN Devices , Switches , Load Balancers , Firewalls , Storage But also from Application Module exposing API
-            Interface like Service Now , Solarwinds , Weblogic , Windows SCOM , Kubernetes Cluster</div>
-        <div data-tilt class="my-5"><img style="width: 72%; margin-left: 158px;" src="assets/images/hero/api.jpeg"
+        <div class="service-content">API(Application Programmable Integration Interface) based IT Platforms,Business Application shall enable Robust,scalable IT Tools & Automation process.API support enabled the IT Teams to be able to fetch the data metric parameters from not only the Infrastructure Node,Network Node-LAN & WAN Devices,Switches,Load Balancers,Firewalls,Storage But also from Application Module exposing API Interface like Service Now, Solarwinds,Weblogic,Windows SCOM,Kubernetes Cluster</div>
+        <div data-tilt class="my-5"><img style="width: 100%;" src="assets/images/hero/api.jpeg"
                 alt="api"></div>
     </div>
 
 
     <div id="contact-us" class="contact-us">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4 col-lg-4">
                     <div class="wrap-contact100">
                         <form class="contact100-form validate-form">
                             <div class="wrap-input100 validate-input">
@@ -391,6 +385,7 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-md-"></div>
                 <div class="col-md-6">
                     <div class="contact-info">
                 <h5>Contact-Us</h5>

@@ -14598,7 +14598,6 @@ color: #757575;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 42px;
   align-items: flex-start;
-  margin-right: 257px;
   color: black;
 }
 
@@ -14656,7 +14655,7 @@ button:hover {
 
 
 .wrap-contact100 {
-  width: 500px;
+  width: 100%;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
