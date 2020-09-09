@@ -16,46 +16,8 @@
 	var $html = $('html');
 	var $body = $('body');
 
-	windows.on('scroll', function () {
-		var scroll = windows.scrollTop();
-		var headerHeight = sticky.height();
-
-		if (screenSize >= 320) {
-			if (scroll < headerHeight) {
-				sticky.removeClass('is-sticky');
-			} else {
-				sticky.addClass('is-sticky');
-            }
-		}
-
-    });
     /*----------  Scroll to top  ----------*/
-    function scrollToTop() {
-        var $scrollUp = $('#scroll-top'),
-            $lastScrollTop = 0,
-            $window = $(window);
 
-        $window.on('scroll', function () {
-            var st = $(this).scrollTop();
-            if (st > $lastScrollTop) {
-                $scrollUp.removeClass('show');
-            } else {
-                if ($window.scrollTop() > 200) {
-                    $scrollUp.addClass('show');
-                } else {
-                    $scrollUp.removeClass('show');
-                }
-            }
-            $lastScrollTop = st;
-        });
-
-        $scrollUp.on('click', function (evt) {
-            $('html, body').animate({scrollTop: 0}, 600);
-            evt.preventDefault();
-        });
-    }
-    scrollToTop();
-    
     /*=========================================
     =            Preloader active            =
     ===========================================*/
@@ -71,6 +33,9 @@
         }, 1000);
 	});
     
+    windows.scroll(function() {
+        console.log("enter in scroll");
+      }); 
 
     /*=========================================
     =            One page nav active          =
@@ -283,29 +248,7 @@
     =            wavify activation            =
     =============================================*/
 
-    
-
-    if($('#feel-the-wave , .feel-the-wave').length) {
-        $('#feel-the-wave , .feel-the-wave').wavify({
-            height: 80,
-            bones: 5,
-            amplitude: 100,
-            color: 'rgba(224,238,255,0.5)',
-            //color: 'url(#gradient1)',
-            speed: .15
-        });
-    }
-
-    if($('#feel-the-wave-two , .feel-the-wave-two').length) {
-        $('#feel-the-wave-two , .feel-the-wave-two').wavify({
-            height: 120,
-            bones: 4,
-            amplitude: 60,
-            color: 'rgba(224,238,255,0.4)',
-            //color: 'url(#gradient2)',
-            speed: .25
-        });
-    }
+       
 
     /*=====  End of wavify activation  ======*/
 
@@ -783,26 +726,6 @@
     /*=====  End of swiper slider activation  ======*/
     });
     
-    /* =====================================
-        Fullpage Scroll Animation   
-    ======================================*/
-    if ($('#fullpage').length) {
-        $('#fullpage').fullpage({
-            scrollBar: false,
-            navigation: true,
-            loopBottom: false,
-            sectionSelector: 'section',
-            scrollingSpeed: 1000,
-            autoScrolling: true,
-            fitToSection: true,
-            fitToSectionDelay: 1000,
-            afterLoad: function () {
-                var activeSetion = $('.fp-viewing-' + 3);
-                activeSetion.addClass('tm-one-page-footer-expanded');
-            },
-        });
-    }
-
     
     /*=============================================
     =            circle progress active            =
@@ -945,5 +868,7 @@
         allAnimationx();
     })*/  
 
+     
+   
 })(jQuery);
 
