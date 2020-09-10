@@ -29,30 +29,9 @@
       <a href="index.html" class="logo mr-auto"><img src="assets/images/logo/Untitled-2.png" alt="" class="img-fluid">
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li class="drop-down"><a href="">Drop Down</a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="drop-down"><a href="#">Deep Drop Down</a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-
+              <li><a href="#" onclick="smoothScroll(document.getElementById('about-us'))">About Us</a></li>
+              <li><a href="#" onclick="smoothScroll(document.getElementById('services'))">Services</a></li>
+              <li><a href="#" onclick="smoothScroll(document.getElementById('contact-us'))">Contact</a></li>
           </ul>
         </nav>
     </div>
@@ -73,16 +52,16 @@
     </div>
   </section>
   <!-- service container start -->
-  <div id="particles-js">
-    <div id="service">
-      <h3 class="text-center" style="color: white;">Our
-        Services</h3>
-    </div>
-    <div class="container">
 
-      <div class="row section-services justify-content-center">
-        <div class="col-sm-4 col-md-4">
-          <div class="card shadow" style="width: 78%;">
+  <div id="particalJS">
+    <div  id="services" class="container container__partical">
+      <div class="container__header">
+        <h2>Our Services</h2>
+      </div>
+      <div class="row">
+        <!-- Card Start -->
+        <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+          <div class="card shadow">
             <div class="card-body text-center">
               <h5 class="card-title">Application Performance</h5>
               <p class="card-text">
@@ -94,65 +73,71 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="card shadow" style="width: 78%;">
+        <!-- Card End -->
+
+        <!-- Card Start -->
+        <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+          <div class="card shadow">
             <div class="card-body text-center">
               <h5 class="card-title">Digital<br>Transformation</h5>
               <p class="card-text">
                 Integration of digital technology <br> into all areas of a business, fundamentally
                 changing how you operate and deliver value to customers.
               </p>
-              <a href="#" onclick="smoothScroll(document.getElementById('digital-transformation'))"
+              <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
                 class="btn btn-success">Learn More...</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="card shadow" style="width: 78%;">
+        <!-- Card End -->
+        <!-- Card Start -->
+        <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+          <div class="card shadow">
             <div class="card-body text-center">
               <h5 class="card-title">Business <br> KPI</h5>
               <p class="card-text">
                 Organizations use KPIs at multiple levels to evaluate their success at reaching
                 targets.High-level KPIs may focus on the overall performance of the business
               </p>
-              <a href="#" onclick="smoothScroll(document.getElementById('business-kpi'))" class="btn btn-success">Learn
-                More...</a>
+              <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                class="btn btn-success">Learn More...</a>
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
-    <div class="container">
-      <div class="row section-services-2 justify-content-center">
-        <div class="col-sm-4 col-md-4">
-          <div class="card shadow" style="width: 78%;">
+        <!-- Card End -->
+        <!-- Card Start -->
+        <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+          <div class="card shadow">
             <div class="card-body text-center">
-              <h5 class="card-title">AI OPS</h5>
+              <h5 class="card-title">AIOps</h5>
               <p class="card-text">
                 It has become essential for monitoring and managing modern IT environments that are
                 hybrid, dynamic, distributed and componentized.
               </p>
-              <a href="#" onclick="smoothScroll(document.getElementById('aiops'))" class="btn btn-success">Learn
-                More...</a>
+              <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                class="btn btn-success">Learn More...</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="card shadow" style="width: 78%;">
+        <!-- Card End -->
+        <!-- Card Start -->
+        <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+          <div class="card shadow">
             <div class="card-body text-center">
               <h5 class="card-title">DevOps</h5>
               <p class="card-text">
                 DevOps is the combination of cultural philosophies and tools that increases an
                 organization’s ability to deliver applications and services at high velocity.
               </p>
-              <a href="#" onclick="smoothScroll(document.getElementById('devops'))" class="btn btn-success">Learn
-                More...</a>
+              <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                class="btn btn-success">Learn More...</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-md-4">
-          <div class="card shadow" style="width: 78%;">
+        <!-- Card End -->
+        <!-- Card Start -->
+        <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
+          <div class="card shadow">
             <div class="card-body text-center">
               <h5 class="card-title">API Integration</h5>
               <p class="card-text">
@@ -160,14 +145,17 @@
                 data
                 and facilitates connectivity between devices and programs.
               </p>
-              <a href="#" onclick="smoothScroll(document.getElementById('api'))" class="btn btn-success">Learn
-                More...</a>
+              <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                class="btn btn-success">Learn More...</a>
             </div>
           </div>
         </div>
+        <!-- Card End -->
+            
       </div>
     </div>
   </div>
+
   <div class="container" id="about-us">
     <div>
       <h5 class="about-heading"></h5>

@@ -33,9 +33,6 @@
         }, 1000);
 	});
     
-    windows.scroll(function() {
-        console.log("enter in scroll");
-      }); 
 
     /*=========================================
     =            One page nav active          =
@@ -867,7 +864,18 @@
         }
         allAnimationx();
     })*/  
-
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+        
+          $('#header').addClass('header-scrolled');
+        } else {
+          $('#header').removeClass('header-scrolled');
+        }
+      });
+    
+      if ($(window).scrollTop() > 100) {
+        $('#header').addClass('header-scrolled');
+      }
      
    
 })(jQuery);
