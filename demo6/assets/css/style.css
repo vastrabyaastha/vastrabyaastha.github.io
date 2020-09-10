@@ -14983,3 +14983,78 @@ color: #ff9933;
   font-size: 13px;
 }
 
+/* ########### Navbar css ############## */
+#navbarHamburger a{
+  color: #FF9933;
+  font-size:16px;
+  font-weight: 600;
+}
+
+.navbar__a--link {
+  margin: 0px 15px;
+}
+
+.navbar_img  {
+  max-width: 140px;
+}
+
+.hero__section{
+  background :white;
+  background: linear-gradient( to bottom, #ff9933 0%, #ff9933 50%, white 50%, white 100% );
+  /* 68px is the height of the header */
+  height: 100vh;
+
+}
+
+.hero__section--title{
+  font-size: 26px;
+  font-family: 'Roboto Mono', 'monospace';
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align:right; 
+}
+
+.hero__span--title{
+  font-size: 16px;
+  color:white;
+}
+
+.hero__section--left,
+.hero__section--right{
+  display: flex;
+  align-items: center;
+  height:50vh;
+}
+
+.hero__img{
+  object-fit: cover;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) { 
+  .hero__section--title{
+    font-size:42px !important;
+  }
+  .hero__span--title{
+    font-size: 20px;
+    color:#333333;
+  }
+  .hero__section{
+    background: linear-gradient( to right, #ff9933 0%, #ff9933 30%, white 30%, white 100% );
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) { 
+  .hero__section--left{
+    padding-right:150px;
+    box-sizing: border-box;
+  }
+
+}
+
+@media (min-width: 1200px) { 
+
+}
