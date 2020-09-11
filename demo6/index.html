@@ -19,7 +19,8 @@
   <!-- Main Style CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"></script>
+
   <script>
     var onContctUsSubmit = function () {
       $(document).ready(function () {
@@ -441,32 +442,36 @@
         <div class="row">
           <div class="col-md-4 col-lg-4">
             <div class="wrap-contact100">
-              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" id="contact-us-form"
-                method="POST" class="contact100-form validate-form">
+              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" 
+                method="POST" class="contact100-form">
 
+                
                 <div class="wrap-input100 validate-input">
                   <span class="label-input100">Email</span>
-                  <input class="input100" type="text" name="email" id="exampleInputEmail1" name="email"
+                  <input class="input100" type="text" name="email" name="email"
                     placeholder="Enter your email addess">
                   <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input">
                   <span class="label-input100">Phone</span>
-                  <input class="input100" type="text" id="phoneInputEmail1" name="phone"
+                  <input class="input100" type="text" name="phone"
                     placeholder="Enter your phone addess">
                   <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input">
                   <span class="label-input100">Message</span>
-                  <textarea class="input100" name="message" id="messageInputEmail1"
+                  <textarea class="input100" name="message" 
                     placeholder="Your message here..."></textarea>
                   <span class="focus-input100"></span>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" data-si></div>
+                <div class="contact__msg" style="display: none;">
+                  <p>Your message was sent successfully.</p>
+              </div>
+                <div class="g-recaptcha" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" ></div>
                 <div class="container-contact100-form-btn ">
                   <div class="wrap-contact100-form-btn">
                     <div class="contact100-form-bgbtn"></div>
-                    <button class="contact100-form-btn" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
+                    <button class="contact100-form-btn"
                       data-callback="onContctUsSubmit" data-badge="inline">
                       <span class="g-recaptcha">
                         Submit
@@ -491,6 +496,8 @@
       </div>
     </div>
   </section>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script src="assets/js/contact.js"></script>
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
@@ -502,7 +509,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/plugins/partical.js"></script>
   <script src="assets/js/plugins/text-scrm.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
   <script type="text/javascript" src="assets/js/plugins/vanilla-tilt.min.js"></script>
