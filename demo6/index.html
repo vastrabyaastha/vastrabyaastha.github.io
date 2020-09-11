@@ -1,121 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Exsete</title>
-    <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/partical.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Exsete</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png" />
 
-  <body>
-    <!--====================  Header Navbar ====================-->
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/vendor/vendor.min.css" />
+  <link rel="stylesheet" href="assets/css/plugins/plugins.min.css" />
+  <link rel="stylesheet" href="assets/css/plugins/partical.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  <script>
+    var onContctUsSubmit = function () {
+      $(document).ready(function () {
+        console.log("enter in onContact")
+        $(".thanks").hide();
+        $(".sending").hide();
+        $(".errors").hide();
+        if ($("#contact-us-form input[name='email']").val() === "") {
+          $(".errors").show();
+          $("#contact-us-form button").show();
+        } else {
+          $(".errors").hide();
+          $.post($("#contact-us-form").attr('action'), JSON.stringify({
+            name: "Roonil Wazlib",
+            email: $("#contact-us-form input[name='email']").val(),
+            phone: $("#contact-us-form input[name='phone']").val(),
+            message: $("#contact-us-form textarea[name='message']").val(),
+            'g-recaptcha-response': $("#contact-us-form textarea[name='g-recaptcha-response']").val()
+          }), function (data) {
+            $(".thanks").show();
+            $("#contact-us-form button").hide();
+            $("#contact-us-form input[name='email']").val('');
+            $("#contact-us-form input[name='phone']").val('');
+            $("#contact-us-form textarea[name='message']").val('');
+          }, 'json');
+        }
+      });
+    };
+  </script>
+</head>
 
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/images/logo/exsete.png"
-            alt=""
-            class="img-fluid navbar_img"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarHamburger"
-          aria-controls="navbarHamburger"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!--====================  Header Navbar ====================-->
 
-        <div class="collapse navbar-collapse" id="navbarHamburger">
-          <ul class="navbar-nav ml-auto">
-            <li>
-              <a
-                href="#"
-                onclick="smoothScroll(document.getElementById('about-us'))"
-                class="navbar__a--link"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                onclick="smoothScroll(document.getElementById('services'))"
-                class="navbar__a--link"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                onclick="smoothScroll(document.getElementById('contact-us'))"
-                class="navbar__a--link"
-                >Contact</a
-              >
-            </li>
-          </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top" id="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo/exsete.png" alt="" class="img-fluid navbar_img" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHamburger"
+        aria-controls="navbarHamburger" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarHamburger">
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <a href="#about-us" class="navbar__a--link">About Us</a>
+          </li>
+          <li>
+            <a href="#services" class="navbar__a--link">Services</a>
+          </li>
+          <li>
+            <a href="#" onclick="smoothScroll(document.getElementById('contact-us'))"
+              class="navbar__a--link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--====================  Hero Section ====================-->
+
+  <section class="hero__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 hero__section--left">
+          <h2 class="hero__section--title">
+            Better Solutions For Your Business
+            <br />
+            <span class="hero__span--title">Exsete Consulting Private Limited</span>
+          </h2>
         </div>
-      </nav>
-    </header>
-
-    <!--====================  Hero Section ====================-->
-
-    <section class="hero__section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 hero__section--left">
-            <h2 class="hero__section--title">
-              Better Solutions For Your Business
-              <br />
-              <span class="hero__span--title"
-                >Exsete Consulting Private Limited</span
-              >
-            </h2>
-          </div>
-          <div class="col-sm-12 col-md-6 hero__section--right">
-            <img class="hero__img" src="assets/images/logo/illustration1.png" alt="" />
-          </div>
+        <div class="col-sm-12 col-md-6 hero__section--right">
+          <img class="hero__img" src="assets/images/logo/illustration1.png" alt="" />
         </div>
       </div>
-    </section>
-
+    </div>
+  </section>
+  <section id="services" style="padding: 60px;">
     <div id="particalJS">
-      <div id="services" class="container container__partical">
+      <div class="container container__partical">
         <div class="container__header">
           <h2>Our Services</h2>
         </div>
         <div class="row">
           <!-- Card Start -->
-          <div
-            class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0"
-          >
+          <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
             <div class="card shadow">
               <div class="card-body text-center">
                 <h5 class="card-title">Application Performance</h5>
@@ -124,21 +116,15 @@
                   application, e.g., transactions per second (tps), requests per
                   second, pages per second
                 </p>
-                <a
-                  href="#"
-                  onclick="smoothScroll(document.getElementById('applicaton-performance'))"
-                  class="btn btn-success"
-                  >Learn More...</a
-                >
+                <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                  class="btn btn-success">Learn More...</a>
               </div>
             </div>
           </div>
           <!-- Card End -->
 
           <!-- Card Start -->
-          <div
-            class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0"
-          >
+          <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
             <div class="card shadow">
               <div class="card-body text-center">
                 <h5 class="card-title">Digital<br />Transformation</h5>
@@ -147,20 +133,14 @@
                   into all areas of a business, fundamentally changing how you
                   operate and deliver value to customers.
                 </p>
-                <a
-                  href="#"
-                  onclick="smoothScroll(document.getElementById('applicaton-performance'))"
-                  class="btn btn-success"
-                  >Learn More...</a
-                >
+                <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                  class="btn btn-success">Learn More...</a>
               </div>
             </div>
           </div>
           <!-- Card End -->
           <!-- Card Start -->
-          <div
-            class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0"
-          >
+          <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
             <div class="card shadow">
               <div class="card-body text-center">
                 <h5 class="card-title">
@@ -172,20 +152,14 @@
                   success at reaching targets.High-level KPIs may focus on the
                   overall performance of the business
                 </p>
-                <a
-                  href="#"
-                  onclick="smoothScroll(document.getElementById('applicaton-performance'))"
-                  class="btn btn-success"
-                  >Learn More...</a
-                >
+                <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                  class="btn btn-success">Learn More...</a>
               </div>
             </div>
           </div>
           <!-- Card End -->
           <!-- Card Start -->
-          <div
-            class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0"
-          >
+          <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
             <div class="card shadow">
               <div class="card-body text-center">
                 <h5 class="card-title">AIOps</h5>
@@ -194,20 +168,14 @@
                   environments that are hybrid, dynamic, distributed and
                   componentized.
                 </p>
-                <a
-                  href="#"
-                  onclick="smoothScroll(document.getElementById('applicaton-performance'))"
-                  class="btn btn-success"
-                  >Learn More...</a
-                >
+                <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                  class="btn btn-success">Learn More...</a>
               </div>
             </div>
           </div>
           <!-- Card End -->
           <!-- Card Start -->
-          <div
-            class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0"
-          >
+          <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
             <div class="card shadow">
               <div class="card-body text-center">
                 <h5 class="card-title">DevOps</h5>
@@ -216,20 +184,14 @@
                   that increases an organization’s ability to deliver
                   applications and services at high velocity.
                 </p>
-                <a
-                  href="#"
-                  onclick="smoothScroll(document.getElementById('applicaton-performance'))"
-                  class="btn btn-success"
-                  >Learn More...</a
-                >
+                <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                  class="btn btn-success">Learn More...</a>
               </div>
             </div>
           </div>
           <!-- Card End -->
           <!-- Card Start -->
-          <div
-            class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0"
-          >
+          <div class="container__card col-sm-10 offset-sm-1 col-md-4 offset-md-0">
             <div class="card shadow">
               <div class="card-body text-center">
                 <h5 class="card-title">API Integration</h5>
@@ -238,12 +200,8 @@
                   data, applications, and devices. It delivers data and
                   facilitates connectivity between devices and programs.
                 </p>
-                <a
-                  href="#"
-                  onclick="smoothScroll(document.getElementById('applicaton-performance'))"
-                  class="btn btn-success"
-                  >Learn More...</a
-                >
+                <a href="#" onclick="smoothScroll(document.getElementById('applicaton-performance'))"
+                  class="btn btn-success">Learn More...</a>
               </div>
             </div>
           </div>
@@ -251,22 +209,25 @@
         </div>
       </div>
     </div>
-  <div class="container" id="about-us">
-    <div>
-      <h5 class="about-heading"></h5>
+  </section>
+  <section id="about-us" style="padding: 60px 0">
+    <div class="container">
+      <div>
+        <h5 class="about-heading"></h5>
+      </div>
+      <div>
+        <p>Exsete Consulting Pvt. Ltd. is a Technology Solution Provider & Software Consultancy firm focused on
+          areas of Artificial Intelligence Operations (AIOps),Data Science,DevOps,RPA Automation
+          process,Application performance management (APM),Product support & implementation.</p>
+        <p>
+          Exsete Team has over the years built an expertise working across different Organization sectors like
+          Banks,Telecom Operator,Data Center,Network Operations Center,Service Management & helps organization in
+          Building large aggregated Data Centralized Repository Lake for data interpretation & analysis,driving
+          the Operational Efficiency,Data Visualization – One View customizable dashboard for IT
+          Ops,CXO’s,Business view</p>
+      </div>
     </div>
-    <div>
-      <p>Exsete Consulting Pvt. Ltd. is a Technology Solution Provider & Software Consultancy firm focused on
-        areas of Artificial Intelligence Operations (AIOps),Data Science,DevOps,RPA Automation
-        process,Application performance management (APM),Product support & implementation.</p>
-      <p>
-        Exsete Team has over the years built an expertise working across different Organization sectors like
-        Banks,Telecom Operator,Data Center,Network Operations Center,Service Management & helps organization in
-        Building large aggregated Data Centralized Repository Lake for data interpretation & analysis,driving
-        the Operational Efficiency,Data Visualization – One View customizable dashboard for IT
-        Ops,CXO’s,Business view</p>
-    </div>
-  </div>
+  </section>
   <div class="py-2 my-5 team3 bg-light">
     <div class="container">
       <div class="row justify-content-center mb-1">
@@ -317,7 +278,7 @@
             </div>
             <div class="col-md-12">
               <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Siddharth</h5>
+                <h5 class="mt-4 font-weight-medium mb-0">Siddharatha</h5>
                 <h6 class="subtitle">CEO</h6>
                 <p>10+ years of experience in Technology Delivery for enterprise and customer-centric
                   products. Hands-on expertise across multiple technologies like Java, PHP, .Net, MEAN, etc and has
@@ -404,8 +365,8 @@
       process,data visualization,AIOps,Microservices</div>
     <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
         src="assets/images/hero/pastedImage (11).png" alt="health-metric"></div>
-        <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
-          src="assets/images/hero/pastedImage (12).png" alt="health-metric"></div>
+    <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
+        src="assets/images/hero/pastedImage (12).png" alt="health-metric"></div>
     <div id="business-kpi" class="service-sub">Business KPI Mapping</div>
     <div class="service-content">Business KPI Mapping & developing the right set of KPIs for the business and
       extracting meaningful insights from the data is all well and good in a way Business Team can understand – so
@@ -428,8 +389,8 @@
       Incident Ticket generation</div>
     <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
         src="assets/images/hero/pastedImage (16).png" alt="aiops"></div>
-        <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
-          src="assets/images/hero/pastedImage (18).png" alt="aiops"></div>
+    <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
+        src="assets/images/hero/pastedImage (18).png" alt="aiops"></div>
     <div id="devops" class="service-sub">DevOps</div>
     <div class="service-content">Work along with Customer to plan regarding the type of application that
       needs to be developed/moniotired & prepare a rough draft plan to make the high level overview regarding the
@@ -452,56 +413,62 @@
     <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
         src="assets/images/hero/pastedImage (17).png" alt="api-2"></div>
   </div>
-  <div id="contact-us" class="contact-us">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 col-lg-4">
-          <div class="wrap-contact100">
-            <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" method="POST"  class="contact100-form validate-form">
-    
-              <div class="wrap-input100 validate-input">
-                <span class="label-input100">Email</span>
-                <input class="input100" type="text" name="email" id="exampleInputEmail1" name="email" placeholder="Enter your email addess">
-                <span class="focus-input100"></span>
-              </div>
-              <div class="wrap-input100 validate-input">
-                <span class="label-input100">Phone</span>
-                <input class="input100" type="text" id="phoneInputEmail1" name="phone" placeholder="Enter your phone addess">
-                <span class="focus-input100"></span>
-              </div>
-              <div class="wrap-input100 validate-input">
-                <span class="label-input100">Message</span>
-                <textarea class="input100" name="message" id="messageInputEmail1" placeholder="Your message here..."></textarea>
-                <span class="focus-input100"></span>
-              </div>
+  <section id="contact-us" style="padding: 60px 0px;">
+    <div class="contact-us">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-lg-4">
+            <div class="wrap-contact100">
+              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" id="contact-us-form"
+                method="POST" class="contact100-form validate-form">
 
-              <div class="container-contact100-form-btn">
-                <div class="wrap-contact100-form-btn">
-                  <div class="contact100-form-bgbtn"></div>
-                  <button class="contact100-form-btn"  data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
-                  data-callback="onContctUsSubmit" data-badge="inline">
-                    <span>
-                      Submit
-                      <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-                    </span>
-                  </button>
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Email</span>
+                  <input class="input100" type="text" name="email" id="exampleInputEmail1" name="email"
+                    placeholder="Enter your email addess">
+                  <span class="focus-input100"></span>
                 </div>
-              </div>
-            </form>
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Phone</span>
+                  <input class="input100" type="text" id="phoneInputEmail1" name="phone"
+                    placeholder="Enter your phone addess">
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Message</span>
+                  <textarea class="input100" name="message" id="messageInputEmail1"
+                    placeholder="Your message here..."></textarea>
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" data-si></div>
+                <div class="container-contact100-form-btn ">
+                  <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
+                      data-callback="onContctUsSubmit" data-badge="inline">
+                      <span class="g-recaptcha">
+                        Submit
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6">
-          <div class="contact-info">
-            <h5>Contact-Us</h5>
-            <h6>Our Office</h6>
-            <p>#904,9<sup>th</sup>Floor <br> Galleria Tower, DLF Galleria Rd <br> DLF Phase IV, Sector 28,
-              <br> Gurugram, Haryana 122009</p>
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <div class="contact-info">
+              <h5>Contact-Us</h5>
+              <h6>Our Office</h6>
+              <p>#904,9<sup>th</sup>Floor <br> Galleria Tower, DLF Galleria Rd <br> DLF Phase IV, Sector 28,
+                <br> Gurugram, Haryana 122009</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
@@ -540,6 +507,7 @@
 
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
+
   </script>
 </body>
 
