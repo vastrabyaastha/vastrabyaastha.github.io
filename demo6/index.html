@@ -501,11 +501,16 @@
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
             var url = ("#contact-form").attr('action');
-              
+            
             $.ajax({
                 type: "POST",
                 url: url,
-                data: $(this).serialize(),
+                data: JSON.stringify({
+                    name: "Roonil Wazlib",
+                    email: $("#contact-form input[name='email']").val(),
+                    phone: $("#contact-form input[name='phone']").val(),
+                    message: $("#contact-form textarea[name='message']").val(),
+                  'g-recaptcha-response': $("#contact-form textarea[name='g-recaptcha-response']").val(),
                 success: function (data) {
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
