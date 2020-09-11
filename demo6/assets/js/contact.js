@@ -1,6 +1,8 @@
 (function ($) {
     'use strict';
-
+   
+   
+   
     var form = $('.contact100-form'),
         message = $('.contact__msg'),
         form_data;
@@ -31,7 +33,11 @@
         $.ajax({
             type: 'POST',
             url: form.attr('action'),
-            data: form_data
+            data: form_data,
+            headers: {
+                "Access-Control-Allow-Headers": "X-Requested-With",
+                "X-Requested-With": "XMLHttpRequest"        
+              },
         })
         .done(done_func)
         .fail(fail_func);
