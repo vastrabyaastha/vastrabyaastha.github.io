@@ -96,23 +96,7 @@
     /*===================================
     =           Menu Activeion          =
     ===================================*/
-    var cururl = window.location.pathname;
-    var curpage = cururl.substr(cururl.lastIndexOf('/') + 1);
-    var hash = window.location.hash.substr(1);
-    if((curpage == "" || curpage == "/" || curpage == "admin") && hash=="")
-        {
-        //$("nav .navbar-nav > li:first-child").addClass("active");
-        } else {
-            $(".navigation-menu li").each(function()
-        {
-            $(this).removeClass("active");
-        });
-        if(hash != "")
-            $(".navigation-menu li a[href*='"+hash+"']").parents("li").addClass("active");
-        else
-        $(".navigation-menu li a[href*='"+curpage+"']").parents("li").addClass("active");
-    }
-    
+  
     
     /*=========================================
     =             open menu Active            =
@@ -867,14 +851,14 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
         
-          $('#header').addClass('header-scrolled');
+          $('#navbar').addClass('bg-white');
         } else {
-          $('#header').removeClass('header-scrolled');
+          $('#navbar').removeClass('bg-white');
         }
       });
     
       if ($(window).scrollTop() > 100) {
-        $('#header').addClass('header-scrolled');
+        $('#navbar').removeClass('bg-white');
       }
      
            

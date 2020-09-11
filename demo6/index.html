@@ -28,7 +28,7 @@
   <!--====================  Header Navbar ====================-->
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
       <a class="navbar-brand" href="#">
         <img src="assets/images/logo/exsete.png" alt="" class="img-fluid navbar_img" />
       </a>
@@ -411,7 +411,7 @@
         <div class="row">
           <div class="col-md-4 col-lg-4">
             <div class="wrap-contact100">
-              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" method="POST"
+              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" method="POST" id="contact-form"
                 class="contact100-form">
 
 
@@ -507,7 +507,7 @@
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
     function onSubmit(token) {
-         document.getElementById("demo-form").submit();
+         document.getElementById("contact-form").submit();
        }
   </script>
 </body>
