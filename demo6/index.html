@@ -28,7 +28,7 @@
   <!--====================  Header Navbar ====================-->
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top" id="navbar">
       <a class="navbar-brand" href="#">
         <img src="assets/images/logo/exsete.png" alt="" class="img-fluid navbar_img" />
       </a>
@@ -411,10 +411,8 @@
         <div class="row">
           <div class="col-md-4 col-lg-4">
             <div class="wrap-contact100">
-              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" method="POST" id="contact-form"
-                class="contact100-form">
-
-
+              <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" id="contact-form"
+                method="POST" class="contact100-form">
                 <div class="wrap-input100 validate-input">
                   <span class="label-input100">Email</span>
                   <input class="input100" type="text" name="email" name="email" placeholder="Enter your email addess">
@@ -430,13 +428,19 @@
                   <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
                   <span class="focus-input100"></span>
                 </div>
-                <p class="thanks">Thanks!  We'll contact you soon.</p>
-                <!-- <div class="g-recaptcha" data-callback="onsubmit" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" data-callback="onSubmit" data-size="invisible"> -->  
-                  <p class="thanks">Thanks!  We'll contact you soon.</p>
-                  <p class="sending">Sending...</p>
-                    <button type="submit" class="btn btn-secondary g-recaptcha"
-                          data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
-                          data-callback="onContctUsSubmit" data-badge="inline" >Sumbit</button>
+                <p class="thanks">Thanks! We'll contact you soon.</p>
+                <div class="g-recaptcha" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
+                  data-callback="onSubmit" data-size="invisible">
+                </div>
+                <div class="container-contact100-form-btn ">
+                  <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                      <span>
+                        Submit
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                      </span>
+                    </button>
                   </div>
                 </div>
               </form>
@@ -456,10 +460,6 @@
     </div>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-  <script type="text/javascript">
-  
-         
-  </script>
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
@@ -476,9 +476,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
   <script type="text/javascript" src="assets/js/plugins/vanilla-tilt.min.js"></script>
   <script type="text/javascript">
-  $(document).ready(function () {
-          $(".thanks").hide();
-      });
+    $(document).ready(function () {
+      $(".thanks").hide();
+    });
     window.smoothScroll = function (target) {
       var scrollContainer = target;
       do {
@@ -501,32 +501,10 @@
 
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
-    var onContctUsSubmit = function () {
-        $(document).ready(function () {
-            $(".thanks").hide();
-            $(".sending").hide();
-            $(".errors").hide();
-            if ($("#contact-us-form input[name='email']").val() === "") {
-                $(".errors").show();
-                $("#contact-us-form button").show();
-            } else {
-                $(".errors").hide();
-                $.post($("#contact-us-form").attr('action'), JSON.stringify({
-                    name: "Roonil Wazlib",
-                    email: $("#contact-us-form input[name='email']").val(),
-                    phone: $("#contact-us-form input[name='phone']").val(),
-                    message: $("#contact-us-form textarea[name='message']").val(),
-                    'g-recaptcha-response': $("#contact-us-form textarea[name='g-recaptcha-response']").val()
-                }), function (data) {
-                    $(".thanks").show();
-                    $("#contact-us-form button").hide();
-                    $("#contact-us-form input[name='email']").val('');
-                    $("#contact-us-form input[name='phone']").val('');
-                    $("#contact-us-form textarea[name='message']").val('');
-                }, 'json');
-            }
-        });
-    };
+    function onsubmit() {
+      console.log("enter in submit")
+      $(".contact-form").submit();
+    }
   </script>
 </body>
 

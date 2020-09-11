@@ -14746,7 +14746,9 @@ color: #ff9933;
   color: #fff;
   position: relative;
 }
-
+body:not(.page-id-189) .grecaptcha-badge {
+  display: none;
+  }
 #hero .btn-watch-video i {
   color: #fff;
   font-size: 32px;
