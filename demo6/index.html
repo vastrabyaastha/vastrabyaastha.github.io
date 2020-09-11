@@ -431,17 +431,12 @@
                   <span class="focus-input100"></span>
                 </div>
                 <p class="thanks">Thanks!  We'll contact you soon.</p>
-                <!-- <div class="g-recaptcha" data-callback="onsubmit" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" data-callback="onSubmit" data-size="invisible"> -->
-                
-                <div id="sumbitBtn" class="container-contact100-form-btn ">
-                  <div class="wrap-contact100-form-btn">
-                    <div class="contact100-form-bgbtn"></div>
-                    <button data-callback="onSubmit" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" class="g-recaptcha contact100-form-btn">
-                      <span>
-                        Submit
-                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-                      </span>
-                    </button>
+                <!-- <div class="g-recaptcha" data-callback="onsubmit" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" data-callback="onSubmit" data-size="invisible"> -->  
+                  <p class="thanks">Thanks!  We'll contact you soon.</p>
+                  <p class="sending">Sending...</p>
+                    <button type="submit" class="btn btn-secondary g-recaptcha"
+                          data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
+                          data-callback="onContctUsSubmit" data-badge="inline" >Sumbit</button>
                   </div>
                 </div>
               </form>
@@ -506,9 +501,32 @@
 
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
-    function onSubmit(token) {
-         document.getElementById("contact-form").submit();
-       }
+    var onContctUsSubmit = function () {
+        $(document).ready(function () {
+            $(".thanks").hide();
+            $(".sending").hide();
+            $(".errors").hide();
+            if ($("#contact-us-form input[name='email']").val() === "") {
+                $(".errors").show();
+                $("#contact-us-form button").show();
+            } else {
+                $(".errors").hide();
+                $.post($("#contact-us-form").attr('action'), JSON.stringify({
+                    name: "Roonil Wazlib",
+                    email: $("#contact-us-form input[name='email']").val(),
+                    phone: $("#contact-us-form input[name='phone']").val(),
+                    message: $("#contact-us-form textarea[name='message']").val(),
+                    'g-recaptcha-response': $("#contact-us-form textarea[name='g-recaptcha-response']").val()
+                }), function (data) {
+                    $(".thanks").show();
+                    $("#contact-us-form button").hide();
+                    $("#contact-us-form input[name='email']").val('');
+                    $("#contact-us-form input[name='phone']").val('');
+                    $("#contact-us-form textarea[name='message']").val('');
+                }, 'json');
+            }
+        });
+    };
   </script>
 </body>
 
