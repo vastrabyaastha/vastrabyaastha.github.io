@@ -75,6 +75,9 @@ div::-webkit-scrollbar {
   margin-top: 50px;
   text-align: center;
 }
+section{
+  padding: 60px 0px;
+}
 .section-services{
   position: absolute;
   top: 10%;
