@@ -415,8 +415,6 @@
         src="assets/images/hero/Picture4.jpeg" alt="business-kpi-1"></div>
     <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 38%;"
         src="assets/images/hero/pastedImage (15).png" alt="business-kpi-2"></div>
-    <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
-        src="assets/images/hero/pastedImage (6).png" alt="business-kpi-2"></div>
 
     <div id="aiops" class="service-sub">AIOPS – Artificial Intelligence Operations Analytics</div>
 
@@ -430,8 +428,10 @@
       Incident Ticket generation</div>
     <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
         src="assets/images/hero/pastedImage (16).png" alt="aiops"></div>
+        <div data-tilt class="my-5"><img class="rounded mx-auto d-block" style="width: 50%;"
+          src="assets/images/hero/pastedImage (18).png" alt="aiops"></div>
     <div id="devops" class="service-sub">DevOps</div>
-    <div class="service-content">DevOps Work along with Customer to plan regarding the type of application that
+    <div class="service-content">Work along with Customer to plan regarding the type of application that
       needs to be developed/moniotired & prepare a rough draft plan to make the high level overview regarding the
       development process.Plan for the code development,integration,testing, deployment of release into the
       environment.Eventually,Monitor the performance of the application as per the client requirement & observe
@@ -457,28 +457,29 @@
       <div class="row">
         <div class="col-md-4 col-lg-4">
           <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
-              <div class="wrap-input100 validate-input">
-                <span class="label-input100">Your Name</span>
-                <input class="input100" type="text" name="name" placeholder="Enter your name">
-                <span class="focus-input100"></span>
-              </div>
-
+            <form action="https://2peelhzps5.execute-api.ap-south-1.amazonaws.com/prod/api" method="POST"  class="contact100-form validate-form">
+    
               <div class="wrap-input100 validate-input">
                 <span class="label-input100">Email</span>
-                <input class="input100" type="text" name="email" placeholder="Enter your email addess">
+                <input class="input100" type="text" name="email" id="exampleInputEmail1" name="email" placeholder="Enter your email addess">
+                <span class="focus-input100"></span>
+              </div>
+              <div class="wrap-input100 validate-input">
+                <span class="label-input100">Phone</span>
+                <input class="input100" type="text" id="phoneInputEmail1" name="phone" placeholder="Enter your phone addess">
                 <span class="focus-input100"></span>
               </div>
               <div class="wrap-input100 validate-input">
                 <span class="label-input100">Message</span>
-                <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+                <textarea class="input100" name="message" id="messageInputEmail1" placeholder="Your message here..."></textarea>
                 <span class="focus-input100"></span>
               </div>
 
               <div class="container-contact100-form-btn">
                 <div class="wrap-contact100-form-btn">
                   <div class="contact100-form-bgbtn"></div>
-                  <button class="contact100-form-btn">
+                  <button class="contact100-form-btn"  data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
+                  data-callback="onContctUsSubmit" data-badge="inline">
                     <span>
                       Submit
                       <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
