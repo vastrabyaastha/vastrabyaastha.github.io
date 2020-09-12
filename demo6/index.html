@@ -532,16 +532,10 @@
     // };
   </script>
   <script>
+    $(document).ready(function () {
+      $(".thanks").hide();
+    });
     var onContctUsSubmit = function () {
-      $(document).ready(function () {
-          $(".thanks").hide();
-          $(".sending").hide();
-          $(".errors").hide();
-          if ($("#contact-us-form input[name='email']").val() === "") {
-              $(".errors").show();
-              $("#contact-us-form button").show();
-          } else {
-              $(".errors").hide();
               $.post($("#contact-form").attr('action'), JSON.stringify({
                   name: "Roonil Wazlib",
                   email: $("#contact-form input[name='email']").val(),
@@ -556,9 +550,8 @@
                   $("#contact-us-form input[name='phone']").val('');
                   $("#contact-us-form textarea[name='message']").val('');
               }, 'json');
-          }
-      });
-  };
+          };
+     
   </script>
 </body>
 
