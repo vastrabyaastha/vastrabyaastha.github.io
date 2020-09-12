@@ -512,6 +512,7 @@
             message: $("#contact-form textarea[name='message']").val(),
             'g-recaptcha-response': $("#contact-form textarea[name='g-recaptcha-response']").val()
           };
+          console.log(dataObj);
         $.ajax({
           type: "POST",
           url: url,
@@ -522,6 +523,7 @@
             
             },
             error: function() {
+              console.log("enter in error");
               reject();
             }
           });
