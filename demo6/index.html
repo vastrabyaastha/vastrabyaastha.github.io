@@ -428,8 +428,8 @@
                   <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
                   <span class="focus-input100"></span>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
-                  data-callback="onSubmit" data-size="invisible">
+                <!-- <div class="g-recaptcha" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
+                  data-callback="onSubmit" data-size="invisible"> -->
                 </div>
 
                 <!-- <div class="container-contact100-form-btn ">
@@ -501,8 +501,7 @@
 
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
-    $('#contact-form').on('submit', function (e) {
-      if (!e.isDefaultPrevented()) {
+    var onContctUsSubmit = function(){
         var url = ("#contact-form").attr('action');
         let dataObj = {
             name: "Roonil Wazlib",
@@ -528,8 +527,7 @@
             }
           });
         return false;
-      }
-    })
+      };
   </script>
 </body>
 
