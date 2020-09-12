@@ -431,7 +431,7 @@
                 <div class="g-recaptcha" data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
                   data-callback="onSubmit" data-size="invisible">
                 </div>
-                
+
                 <!-- <div class="container-contact100-form-btn ">
                   <div class="wrap-contact100-form-btn">
                     <div class="contact100-form-bgbtn"></div>
@@ -444,8 +444,8 @@
                   </div>
                 </div> -->
                 <button type="submit" class="btn btn-secondary g-recaptcha"
-                data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT"
-                data-callback="onContctUsSubmit" data-badge="inline" >Contact Me!</button>
+                  data-sitekey="6LfIAV0UAAAAABudo8ImZka9SXQX8JNtpAyPDnpT" data-callback="onContctUsSubmit"
+                  data-badge="inline">Contact Me!</button>
               </form>
             </div>
           </div>
@@ -502,32 +502,33 @@
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
     $('#contact-form').on('submit', function (e) {
-        if (!e.isDefaultPrevented()) {
-            var url = ("#contact-form").attr('action');
-            
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: JSON.stringify({
-                    name: "Roonil Wazlib",
-                    email: $("#contact-form input[name='email']").val(),
-                    phone: $("#contact-form input[name='phone']").val(),
-                    message: $("#contact-form textarea[name='message']").val(),
-                  'g-recaptcha-response': $("#contact-form textarea[name='g-recaptcha-response']").val(),
-                success: function (data) {
-                    var messageAlert = 'alert-' + data.type;
-                    var messageText = data.message;
-
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    if (messageAlert && messageText) {
-                        $('#contact-form').find('.messages').html(alertBox);
-                        $('#contact-form')[0].reset();
-                        grecaptcha.reset();
-                    }
-                }
-            });
-            return false;
-        }
+      if (!e.isDefaultPrevented()) {
+        var url = ("#contact-form").attr('action');
+        let dataObj = {
+            name: "Roonil Wazlib",
+            email: $("#contact-form input[name='email']").val(),
+            phone: $("#contact-form input[name='phone']").val(),
+            message: $("#contact-form textarea[name='message']").val(),
+            'g-recaptcha-response': $("#contact-form textarea[name='g-recaptcha-response']").val()
+          };
+        $.ajax({
+          type: "POST",
+          url: url,
+          data: dataObj,
+          success: function (data) {
+            console.log(data);
+              var messageAlert = 'alert-' + data.type;
+              var messageText = data.message;
+              var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+              if (messageAlert && messageText) {
+                $('#contact-form').find('.messages').html(alertBox);
+                $('#contact-form')[0].reset();
+                grecaptcha.reset();
+              }
+            }
+          });
+        return false;
+      }
     })
   </script>
 </body>
