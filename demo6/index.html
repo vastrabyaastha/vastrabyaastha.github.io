@@ -550,6 +550,7 @@
                   message: $("#contact-form textarea[name='message']").val(),
                   'g-recaptcha-response': $("#contact-form textarea[name='g-recaptcha-response']").val()
               }), function (data) {
+                console.log("enter in success");
                   $(".thanks").show();
                   $("#contact-us-form button").hide();
                   $("#contact-us-form input[name='email']").val('');
