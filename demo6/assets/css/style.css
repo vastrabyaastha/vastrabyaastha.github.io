@@ -74,6 +74,11 @@ button {
     margin-top: 40px;
 }
 
+.about-us-text {
+    text-align: justify;
+    font-size: 17px;
+}
+
 .dud {
     color: #757575;
 }
@@ -128,7 +133,6 @@ section {
     margin-top: 49px;
     text-align: center;
     font-size: 45px;
-    border-bottom: 2px solid;
 }
 
 .contact-info p {
@@ -143,6 +147,7 @@ section {
     margin-top: 106px;
     text-align: center;
     font-size: 33px;
+    border-bottom: 2px solid;
 }
 
 @keyframes gradient {
@@ -165,7 +170,7 @@ section {
 }
 
 .service-sub {
-    font-size: 30px;
+    margin: 23px 0px;
     color: #f2aa4cff;
 }
 
@@ -174,12 +179,13 @@ section {
 }
 
 .service-sub-li {
-    font-size: 25px;
+    font-size: 18px;
     color: blue;
 }
 
 .service-content {
-    margin-left: 5em;
+    font-size: 14px;
+    text-align: justify;
 }
 
 input {
@@ -420,7 +426,6 @@ textarea.input100 {
 }
 
 
-}
 #hero .container {
     padding-top: 72px;
 }
@@ -752,4 +757,9 @@ body:not(.page-id-189) .grecaptcha-badge {
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team-information {
+    text-align: justify;
+    font-size: 17px;
 }
