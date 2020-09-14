@@ -1,3 +1,7 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -5,7 +9,6 @@ h4,
 h5,
 h6 {
     color: #333333;
-    font-family: 'Roboto Mono', 'monospace';
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
@@ -13,7 +16,7 @@ h6 {
 }
 
 .container__header h2 {
-    font-size: 48px;
+    font-size: 35px;
 }
 
 .container__card h5 {
@@ -66,7 +69,6 @@ button {
     font-weight: 8px;
     font-size: 35px;
     color: #1f1e1e;
-    font-family: 'Quicksand', sans-serif;
     text-align: center;
     margin-bottom: 60px;
     margin-top: 40px;
@@ -127,7 +129,6 @@ section {
     text-align: center;
     font-size: 45px;
     border-bottom: 2px solid;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .contact-info p {
@@ -142,7 +143,6 @@ section {
     margin-top: 106px;
     text-align: center;
     font-size: 33px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 @keyframes gradient {
@@ -159,25 +159,21 @@ section {
 
 .service-heading {
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
     font-size: 42px;
     align-items: flex-start;
     color: black;
 }
 
 .service-sub {
-    font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     color: #f2aa4cff;
 }
 
 .service-dis {
-    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
 }
 
 .service-sub-li {
-    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     color: blue;
 }
@@ -229,7 +225,6 @@ button:hover {
 
 .contact100-form-title {
     display: block;
-    font-family: Poppins-Bold;
     font-size: 39px;
     color: #333333;
     line-height: 1.2;
@@ -249,7 +244,6 @@ button:hover {
 }
 
 .label-input100 {
-    font-family: Poppins-Regular;
     font-size: 13px;
     color: #666666;
     line-height: 1.5;
@@ -260,7 +254,6 @@ button:hover {
     display: block;
     width: 100%;
     background: transparent;
-    font-family: Poppins-Medium;
     font-size: 18px;
     color: #333333;
     line-height: 1.2;
@@ -357,7 +350,6 @@ textarea.input100 {
     padding: 0 20px;
     width: 100%;
     height: 50px;
-    font-family: Poppins-Medium;
     font-size: 16px;
     color: #fff;
     line-height: 1.2;
@@ -449,7 +441,6 @@ textarea.input100 {
     color: #003366;
 }
 #hero .btn-get-started {
-    font-family: "Jost", sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -568,7 +559,6 @@ body:not(.page-id-189) .grecaptcha-badge {
     font-size: 18px;
     letter-spacing: 0.5px;
     font-weight: 500;
-    font-family: "Open Sans", sans-serif;
 }
 .nav-menu a:hover,
 .nav-menu .active>a,
@@ -612,7 +602,6 @@ body:not(.page-id-189) .grecaptcha-badge {
 }
 .nav-menu .drop-down>a:after {
     content: "\ea99";
-    font-family: IcoFont;
     padding-left: 5px;
 }
 .nav-menu .drop-down .drop-down ul {
@@ -629,7 +618,6 @@ body:not(.page-id-189) .grecaptcha-badge {
 }
 .nav-menu .drop-down .drop-down>a:after {
     content: "\eaa0";
-    font-family: IcoFont;
     position: absolute;
     right: 15px;
 }
@@ -647,7 +635,6 @@ body:not(.page-id-189) .grecaptcha-badge {
     }
 }
 .team3 {
-    font-family: 'Roboto Mono', 'monospace';
     color: #8d97ad;
     font-weight: 300;
 }
@@ -718,7 +705,6 @@ body:not(.page-id-189) .grecaptcha-badge {
 }
 .hero__section--title {
     font-size: 26px;
-    font-family: 'Roboto Mono', 'monospace';
     text-transform: uppercase;
     font-weight: bolder;
     text-align: right;
