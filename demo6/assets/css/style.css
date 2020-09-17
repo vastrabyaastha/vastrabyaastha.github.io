@@ -1,5 +1,5 @@
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Arvo', serif;
 }
 
 h1,
@@ -25,6 +25,14 @@ h6 {
 
 .pb-10{
     padding-bottom: 40px;
+}
+
+.hidden-div{
+    position:relative;top:-68px;display:block;visibility:hidden;
+}
+
+.bg-light-blue{
+    background-color: #e0ebf7;
 }
 
 .btn {
@@ -756,7 +764,8 @@ body:not(.page-id-189) .grecaptcha-badge {
     text-transform: uppercase;
     font-weight: bolder;
     text-align: right;
-    color: #003366
+    color: #003366;
+    letter-spacing: 2px;
 }
 
 .hero__span--title {
@@ -780,6 +789,7 @@ body:not(.page-id-189) .grecaptcha-badge {
     .hero__section--title {
         font-size: 42px !important;
         color: #003366;
+        letter-spacing: 2px;
     }
     .hero__span--title {
         font-size: 20px;
@@ -816,6 +826,9 @@ body:not(.page-id-189) .grecaptcha-badge {
     color: black;
 }
 
+.width-92{
+    width: 92%;
+}
 
 .padding-bottom-5{
     padding-bottom: 5px;
