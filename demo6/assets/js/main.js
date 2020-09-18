@@ -860,9 +860,6 @@
     if ($(window).scrollTop() > 100) {
         $('#navbar').removeClass('bg-white');
     }
-    $('#navbar').on('click', function() {
-        $('#navbar').toggleClass('bg-white');
-    });
 
 
 })(jQuery);
