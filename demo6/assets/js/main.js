@@ -822,32 +822,6 @@
         }
     });
 
-
-    /* ====================================
-    =       All Animation For Fade Up      =
-    =======================================*/
-
-    /*  $(window).on('load', function () {
-          function allAnimation() {
-              $('.move-up').css('opacity', 0);
-              $('.move-up').waypoint(function () {
-                  $('.move-up').addClass('animate');
-              }, {
-                  offset: '90%'
-              });
-          }
-          allAnimation();
-
-          function allAnimationx() {
-              $('.move-up-x').css('opacity', 0);
-              $('.move-up-x').waypoint(function () {
-                  $('.move-up-x').addClass('animate');
-              }, {
-                  offset: '90%'
-              });
-          }
-          allAnimationx();
-      })*/
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
 
@@ -860,6 +834,8 @@
     if ($(window).scrollTop() > 100) {
         $('#navbar').removeClass('bg-white');
     }
+
+    
 
 
 })(jQuery);
