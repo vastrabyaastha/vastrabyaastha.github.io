@@ -23,19 +23,26 @@ h6 {
     font-size: 24px;
 }
 
-.pb-10{
+.pb-10 {
     padding-bottom: 40px;
 }
 
-.hidden-div{
-    position:relative;top:-68px;display:block;visibility:hidden;
+.hidden-div {
+    position: relative;
+    top: -68px;
+    display: block;
+    visibility: hidden;
 }
 
-.bg-light-blue{
+.bg-light-blue {
     background-color: #e0ebf7;
 }
 
-.btn {
+.bg-light-grey {
+    background-color: #efefef;
+}
+
+.btn-learn-more {
     font-size: 15px;
     font-weight: 500;
     border-style: solid;
@@ -77,12 +84,13 @@ button {
     cursor: pointer;
 }
 
-.about-heading {
-    font-weight: 8px;
+.about-heading,
+.our-amazing-team-heading,
+.about-services-heading {
     font-size: 35px;
     color: #1f1e1e;
     text-align: center;
-    padding:40px 0px;
+    padding: 40px 0px;
 }
 
 .about-us-text {
@@ -165,9 +173,11 @@ button {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -181,12 +191,12 @@ button {
 }
 
 .service-sub {
-    padding:23px 0;
+    padding: 23px 0;
     color: #f2aa4cff;
 }
 
-.service-sub-1{
-   padding-bottom: 23px;
+.service-sub-1 {
+    padding-bottom: 23px;
     color: #f2aa4cff;
 }
 
@@ -195,8 +205,9 @@ button {
 }
 
 .service-sub-li {
-    font-size: 18px;
+    font-size: 20px;
     color: blue;
+    text-align: justify;
 }
 
 .service-content {
@@ -276,7 +287,7 @@ button:hover {
     display: block;
     width: 100%;
     background: transparent;
-    font-size: 18px;
+    font-size: 16px;
     color: #333333;
     line-height: 1.2;
     padding: 0 5px;
@@ -344,21 +355,19 @@ textarea.input100 {
 }
 
 .wrap-contact100-form-btn {
-    width: 100%;
+    /* width: 100%;
     display: block;
     position: relative;
     z-index: 1;
     border-radius: 25px;
-    overflow: hidden;
+    overflow: hidden; */
     margin: 0 auto;
 }
 
 .contact100-form-bgbtn {
     position: absolute;
     z-index: -1;
-    width: 300%;
-    height: 100%;
-    background: #a64bf4;
+    background: #036;
 }
 
 .contact100-form-btn {
@@ -369,12 +378,14 @@ textarea.input100 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 15px 20px;
     width: 100%;
-    height: 50px;
     font-size: 16px;
     color: #fff;
     line-height: 1.2;
+    background-color: #036;
+    border-color: #036;
+    border-radius: 20px;
 }
 
 .wrap-contact100-form-btn:hover .contact100-form-bgbtn {
@@ -436,7 +447,7 @@ textarea.input100 {
 }
 
 #hero {
-    background: linear-gradient( to right, #ff9933 0%, #ff9933 30%, white 30%, white 100%);
+    background: linear-gradient(to right, #ff9933 0%, #ff9933 30%, white 30%, white 100%);
     height: 100%;
     width: 100%;
 }
@@ -518,13 +529,16 @@ body:not(.page-id-189) .grecaptcha-badge {
         height: 100vh;
         text-align: center;
     }
+
     #hero .animated {
         -webkit-animation: none;
         animation: none;
     }
+
     #hero .hero-img {
         text-align: center;
     }
+
     #hero .hero-img img {
         width: 50%;
     }
@@ -535,11 +549,13 @@ body:not(.page-id-189) .grecaptcha-badge {
         font-size: 28px;
         line-height: 36px;
     }
+
     #hero h2 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
     }
+
     #hero .hero-img img {
         width: 70%;
     }
@@ -549,15 +565,18 @@ body:not(.page-id-189) .grecaptcha-badge {
     #hero .hero-img img {
         width: 80%;
     }
+
     #hero .btn-get-started {
         font-size: 16px;
         padding: 10px 24px 11px 24px;
     }
+
     #hero .btn-watch-video {
         font-size: 16px;
         padding: 10px 0 8px 40px;
         margin-left: 20px;
     }
+
     #hero .btn-watch-video i {
         font-size: 32px;
         top: 7px;
@@ -666,9 +685,11 @@ body:not(.page-id-189) .grecaptcha-badge {
     .nav-menu .drop-down .drop-down ul {
         left: -90%;
     }
+
     .nav-menu .drop-down .drop-down:hover>ul {
         left: -100%;
     }
+
     .nav-menu .drop-down .drop-down>a:after {
         content: "\ea9d";
     }
@@ -691,6 +712,7 @@ body:not(.page-id-189) .grecaptcha-badge {
 .team3 .font-weight-medium {
     font-weight: 500;
     color: black;
+    text-align: justify;
 }
 
 .team3 .bg-light {
@@ -754,7 +776,7 @@ body:not(.page-id-189) .grecaptcha-badge {
 
 .hero__section {
     background: white;
-    background: linear-gradient( to bottom, #ff9933 0%, #ff9933 50%, white 50%, white 100%);
+    background: linear-gradient(to bottom, #ff9933 0%, #ff9933 50%, white 50%, white 100%);
     /* 68px is the height of the header */
     height: 100vh;
 }
@@ -786,17 +808,14 @@ body:not(.page-id-189) .grecaptcha-badge {
 }
 
 @media (min-width: 768px) {
-    .hero__section--title {
-        font-size: 42px !important;
-        color: #003366;
-        letter-spacing: 2px;
-    }
+
     .hero__span--title {
         font-size: 20px;
         color: #003366;
     }
+
     .hero__section {
-        background: linear-gradient( to right, #ff9933 0%, #ff9933 30%, white 30%, white 100%);
+        background: linear-gradient(to right, #ff9933 0%, #ff9933 30%, white 30%, white 100%);
         display: flex;
         align-items: center;
     }
@@ -822,40 +841,336 @@ body:not(.page-id-189) .grecaptcha-badge {
 
 .team-information {
     text-align: justify;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
 }
 
-.width-92{
+.width-92 {
     width: 92%;
 }
 
-footer{
+footer {
     font-size: 11px;
 }
 
-.padding-bottom-5{
+.padding-bottom-5 {
     padding-bottom: 5px;
 }
 
-.padding-bottom-10{
+.padding-bottom-10 {
     padding-bottom: 10px;
 }
 
-.padding-bottom-15{
+.padding-bottom-15 {
     padding-bottom: 15px;
 }
 
-.padding-bottom-20{
+.padding-bottom-20 {
     padding-bottom: 20px;
 }
 
-.padding-bottom-25{
+.padding-bottom-25 {
     padding-bottom: 25px;
 }
 
-.padding-bottom-30{
+.padding-bottom-30 {
     padding-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+    .hero__section--title {
+        text-align: center;
+        font-size: 29px;
+    }
 
+    .container__header h2 {
+        font-size: 26px;
+    }
+
+    .container__card h5 {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .btn-learn-more {
+        font-size: 14px;
+        padding: 22px 22px;
+        height: 0px;
+        line-height: 0px;
+    }
+
+    .about-heading,
+    .our-amazing-team-heading,
+    .about-services-heading {
+        font-size: 26px;
+        padding: 25px 0px;
+    }
+
+    .about-us-text {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .img-team {
+        height: 140px;
+    }
+
+    .team-information {
+        font-size: 14px;
+    }
+
+    .service-sub-1 {
+        font-size: 22px;
+    }
+
+    .service-sub-li {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .service-content {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .img-services-section {
+        margin-top: 0px !important;
+        margin-bottom: 33px;
+    }
+
+    .service-sub {
+        font-size: 22px;
+    }
+
+    .contact-info h5{
+        font-size: 26px;
+        margin-top: 26px;
+    }
+
+    .label-input100 {
+        font-size: 12px;
+    }
+
+    .input100 {
+        font-size: 14px;
+    }
+
+    .contact100-form-btn {
+        font-size: 14px;
+    }
+
+    .contact-info h6 {
+        font-size: 26px;
+        margin-top: 0px;
+    }
+
+    .contact-info p{
+        font-size: 18px;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+    }
+}
+
+/* For Ipads */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .hero__section--title  {
+        font-size: 30px;
+    }
+
+    .container__header h2 {
+        font-size: 30px;
+    }
+
+    .container__card h5 {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .btn-learn-more {
+        font-size: 14px;
+        padding: 22px 22px;
+        height: 0px;
+        line-height: 0px;
+    }
+
+    .about-heading,
+    .our-amazing-team-heading,
+    .about-services-heading {
+        font-size: 30px;
+        padding: 29px 0px;
+    }
+
+    .about-us-text {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .img-team {
+        height: 145px;
+    }
+
+    .team-information {
+        font-size: 14px;
+    }
+
+    .service-sub-1 {
+        font-size: 22px;
+    }
+
+    .service-sub-li {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .service-content {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .img-services-section {
+        margin-top: 0px !important;
+        margin-bottom: 33px;
+    }
+
+    .service-sub {
+        font-size: 22px;
+    }
+
+    .contact-info h5{
+        font-size: 26px;
+        margin-top: 26px;
+    }
+
+    .label-input100 {
+        font-size: 12px;
+    }
+
+    .input100 {
+        font-size: 14px;
+    }
+
+    .contact100-form-btn {
+        font-size: 14px;
+    }
+
+    .contact-info h6 {
+        font-size: 26px;
+        margin-top: 134px;
+    }
+
+    .contact-info p{
+        font-size: 18px;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+    }
+}
+
+
+/* Ipad pro Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .hero__section--title  {
+        font-size: 32px;
+    }
+
+    .container__header h2 {
+        font-size: 30px;
+    }
+
+    .container__card h5 {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .btn-learn-more {
+        font-size: 14px;
+        padding: 22px 22px;
+        height: 0px;
+        line-height: 0px;
+    }
+
+    .about-heading,
+    .our-amazing-team-heading,
+    .about-services-heading {
+        font-size: 30px;
+        padding: 29px 0px;
+    }
+
+    .about-us-text {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .img-team {
+        height: 145px;
+    }
+
+    .team-information {
+        font-size: 14px;
+    }
+
+    .service-sub-1 {
+        font-size: 22px;
+    }
+
+    .service-sub-li {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .service-content {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .img-services-section {
+        margin-top: 0px !important;
+        margin-bottom: 33px;
+    }
+
+    .service-sub {
+        font-size: 22px;
+    }
+
+    .contact-info h5{
+        font-size: 26px;
+        margin-top: 26px;
+    }
+
+    .label-input100 {
+        font-size: 12px;
+    }
+
+    .input100 {
+        font-size: 14px;
+    }
+
+    .contact100-form-btn {
+        font-size: 14px;
+    }
+
+    .contact-info h6 {
+        font-size: 26px;
+        margin-top: 134px;
+    }
+
+    .contact-info p{
+        font-size: 18px;
+    }
+
+    .navbar-collapse {
+        background-color: transparent;
+    }
+}
